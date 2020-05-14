@@ -1,0 +1,150 @@
+/*   
+Theme Name: Dementia Friendly 
+Theme URI: http://joshwhitkin.com
+Description: A style-free theme to get you started on an HTML5-based Wordpress theme of your own.
+Author: Me
+Author URI: http://joshwhitkin.com
+Version: 1
+*/
+@font-face {
+    font-family: "Acherus Grotesque"
+}
+
+body {
+    font-size: 20px;
+    font-family: arial, sans-serif;
+}
+h2, p {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.landing-links {
+
+    background-color: #f3f2f1;
+    padding: 40px 0 80px 0;
+
+}
+
+.text-to-speech {
+    float: right;
+    background-color: #ccedf4;
+    padding: 10px 10px 0 10px;
+    border-radius: 4px;
+}
+
+.landing-links h2 {
+    color: #00a4c7;
+}
+
+.red-btn {
+    color: white;
+    background-color: #f1563f;
+    padding: 0.5em 0.5em;
+}
+
+.btn h3{
+    margin: 0;
+}
+
+.dementia {
+    background: url(images/leaf-bg.png);
+    background-position: 35rem 0;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+ 
+}
+
+
+.cafe {
+    background: url(images/circle-bg.png);
+    background-position: 40rem 0;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.organisation {
+    background: url(images/triangles-bg.png);
+    background-position: 32rem;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+
+@media only screen and (max-width: 767px) {
+    
+    .text-to-speech {
+        width: 100%;
+        padding-left: 40px;
+        border-radius: 0;
+    }
+    
+    .d-text {
+        order: 1;
+    }
+
+    .d-image {
+        order: 2;
+    }
+
+    .c-text {
+        order: 1;
+    }
+
+    .c-image {
+        order: 2;
+    }
+
+    .o-text {
+        order: 1;
+    }
+
+    .o-image {
+        order: 2;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .o-text,
+.c-text,
+.d-text {
+    width: 30%;
+    justify-content: center;
+}
+/*
+    .d-text {
+        float: right;
+    }
+
+    .d-image {
+        float: left;
+    }
+
+    .c-text {
+        float: left;
+    }
+
+    .c-image {
+        float: right;
+    }
+
+    .o-text {
+        float: right;
+    }
+
+    .o-image {
+        float: left;
+    }
+*/
+    
+}
