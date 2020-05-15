@@ -48,9 +48,7 @@ h2, p {
 }
 
 .dementia {
-    background: url(images/leaf-bg.png);
-    background-position: 35rem 0;
-    background-repeat: no-repeat;
+    
     display: flex;
     flex-flow: row wrap;
     align-items: center;
@@ -58,11 +56,14 @@ h2, p {
  
 }
 
+.d-image {
+    background: url(images/leaf-bg.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+
 
 .cafe {
-    background: url(images/circle-bg.png);
-    background-position: 40rem 0;
-    background-repeat: no-repeat;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
@@ -70,15 +71,27 @@ h2, p {
 
 }
 
-.organisation {
-    background: url(images/triangles-bg.png);
-    background-position: 32rem;
+.cafe img {
+    float: right;
+}
+
+.c-image {
+    background: url(images/circle-bg.png);
+    background-position: top left;
     background-repeat: no-repeat;
+}
+
+.organisation {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
     justify-content: center;
 
+}
+.o-image {
+    background: url(images/triangles-bg.png);
+    background-position: right;
+    background-repeat: no-repeat;
 }
 
 @media only screen and (max-width: 767px) {
