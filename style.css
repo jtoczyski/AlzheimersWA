@@ -65,8 +65,26 @@ h1 {
     }
 
 .btn:hover {
-  background-color: #E1523D;
-  color: white;
+  background-color: white;
+  color: #E1523D;
+    border-color: #E1523D;
+}
+
+.footer-img {
+    margin-top: 30px;
+}
+
+.social {
+    width: 50px;
+}
+
+.footer-legal{
+    color: white;
+     transition-duration: 0.4s;
+}
+
+.footer-legal:hover {
+  color: #E1523D;
 }
 
 
@@ -105,10 +123,47 @@ h1 {
         padding-bottom: 20px;
     }
     
+    .bg-2 {
+        padding-left: 60px;
+        padding-right: 60px
+        
+    }
+    
+        .bg-3 p {
+            font-size: 12px
+    }
+    
+    
+    .footer-img {
+        margin-top: 5px;
+        
+    }
+    
+    .social {
+
+
+    }
+    
+    .social-links {
+
+        
+    }
+    
+    .contact {
+        text-align: center;
+        padding-top: 25px;
+        padding-left: auto;
+    }
+    
+    .contact-h1 {
+        text-align: center;
+        padding-left: auto;
+    }
     
     .donate-footer {
         margin-right: auto;
         margin-left: auto;
         padding-left: 0px;
     }
+
     }
