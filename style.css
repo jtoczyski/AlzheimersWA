@@ -1,67 +1,93 @@
 #page-wrap {
-     width: 1200px;
-     margin: 0 auto;
+    width: 1200px;
+    margin: 0 auto;
 }
+
 .header-img {
-    display:block;
+    display: block;
     width: 100%;
-    padding-top:5px;
-    padding-left:3px;
-    padding-right:5px;
+    padding-top: 5px;
+    padding-left: 3px;
+    padding-right: 5px;
+}
+
+.navbar-toggle,
+.collapsed {
+    background-color: #00a4c7;
+}
+
+/*
+.navbar-toggle .icon-bar {
+    display: block;
+    border-radius: 1px;
+    color: #fff;
+}
+*/
+
+#myNavbar {
+  background-color: #f3f2f1;  
+}
+
+.navbar-header {
+    width: 100%;
 }
 
 .nav-bg {
-    background-color:white;
+    background-color: white;
     margin-top: 1em;
+}
+.right-menu {
+    display: flex;
+    justify-content: flex-end;
 }
 
 .nav,
-.navbar-nav, 
+.navbar-nav,
 .navbar-center {
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
-.navbar-spacing{
+.navbar-spacing {
     width: 100%;
     text-align: center;
 }
 
-.navbar-collapse{
+.navbar-collapse {
     padding: 0;
 }
 
 .navbar-inverse {
-    background-color: #f3f2f1;
+    background-color: white;
     border: none;
 }
 
-.navbar-inverse .navbar-nav>li>a {
+.navbar-inverse .navbar-nav > li > a {
     color: #343741;
 }
 
 nav li:hover {
-  background-color: #00a4c7;
+    background-color: #00a4c7;
 }
 
-.navbar-nav>li>a:active:hover,
-.navbar-nav>li>a.active:hover,
-.open > .dropdown-toggle.navbar-nav>li>a:hover,
-.navbar-nav>li>a:active:focus,
-.navbar-nav>li>a.active:focus,
-.open > .dropdown-toggle.navbar-nav>li>a:focus,
-.navbar-nav>li>a:active.focus,
-.navbar-nav>li>a.active.focus,
-.open > .dropdown-toggle.navbar-nav>li>a.focus {
-  color: white;
-  background-color: #00a4c7;
-  border-color: white;
+.navbar-nav > li > a:active:hover,
+.navbar-nav > li > a.active:hover,
+.open > .dropdown-toggle.navbar-nav > li > a:hover,
+.navbar-nav > li > a:active:focus,
+.navbar-nav > li > a.active:focus,
+.open > .dropdown-toggle.navbar-nav > li > a:focus,
+.navbar-nav > li > a:active.focus,
+.navbar-nav > li > a.active.focus,
+.open > .dropdown-toggle.navbar-nav > li > a.focus {
+    color: white;
+    background-color: #00a4c7;
+    border-color: white;
 }
 
 .cust-support {
-    text-align:right;
-    color:#00a4c7;
+    text-align: right;
+    color: #00a4c7;
     margin: 0;
 }
 
@@ -72,15 +98,11 @@ nav li:hover {
 }
 
 .search-form {
-     color: black;
+    color: black;
     background-color: #f3f2f1;
     border-color: #dbd7d6;
 }
 
-@media only screen and (max-width: 767px) {
-    
-}
+@media only screen and (max-width: 767px) {}
 
-@media only screen and (min-width: 768px) {
-    
-}
+@media only screen and (min-width: 768px) {}
