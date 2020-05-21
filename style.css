@@ -43,12 +43,22 @@ p {
 
 .contact {
     padding-top:55px;
+    margin-right: 0px;
+    margin-left: -px;
 }
 
 h1 {
     color:#009CBD;
     padding-bottom: 5px;
     font-size: 18px;
+}
+
+.contact-2 {
+    margin-left: -25px;
+}
+
+.contact-h1 {
+    margin-left: 20px;
 }
 
 
@@ -75,7 +85,13 @@ h1 {
 }
 
 .social {
+    margin-top: 35px; 
+    height: 50px;
     width: 50px;
+}
+
+.social-links {
+    width: 296px; 
 }
 
 .footer-legal{
@@ -94,12 +110,55 @@ h1 {
 }
 
 @media screen and (max-width: 990px) {
+    
+    .donate-footer {
+        margin-right: auto;
+        margin-left: 70px;
+        padding-left: 0px;
+    }
+    
+    .btn {
+        margin-top: 15px;
+        margin-right: auto;
+        margin-left: 5px;
+    }
+    
+    .social {
+        margin-top: 34px;
+        height: 25px;
+        width: 25px;
+    }
+    
+    .social-links {
+        
+    }
+    
+        .contact {
+        text-align: center;
+        padding-top: 72px;
+        padding-left: auto;
+        line-height: ;
+    }
+    
+    .contact-h1 {
+        text-align: center;
+        margin-left: ;
+    }
+    
+    .bg-2 {
+    background-color: white;
+    color: #53565A;
+    padding-top: 20px;
+    padding-bottom:20px;
+    padding-left: 30px;
+    padding-right: 40px;
+}
 
 }
 
 @media screen and (max-width: 745px) {
-        .donate-footer {
-
+        
+    .donate-footer {
         margin-right: auto;
         margin-left: auto;
         padding-left: 0px;
