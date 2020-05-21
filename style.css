@@ -4,6 +4,7 @@
 }
 .header-img {
     display:block;
+    width: 100%;
     padding-top:5px;
     padding-left:3px;
     padding-right:5px;
@@ -11,6 +12,7 @@
 
 .nav-bg {
     background-color:white;
+    margin-top: 1em;
 }
 
 .nav,
@@ -60,6 +62,7 @@ nav li:hover {
 .cust-support {
     text-align:right;
     color:#00a4c7;
+    margin: 0;
 }
 
 .btn-search {
