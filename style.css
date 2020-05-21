@@ -18,3 +18,15 @@
     text-align:right;
     color:#00a4c7;
 }
+
+.btn-search {
+    color: #00a4c7;
+    background-color: #dbd7d6;
+    border-color: #dbd7d6;
+}
+
+.search-form {
+     color: black;
+    background-color: #f3f2f1;
+    border-color: #dbd7d6;
+}
