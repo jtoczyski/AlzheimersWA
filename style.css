@@ -9,43 +9,84 @@
 }
 
 .header-img {
-    display: block;
-    height: inherit;
+    width: 100%;
+    /*    height: inherit;*/
     padding-top: 5px;
     padding-left: 3px;
     padding-right: 5px;
 }
+
 .img-responsive {
-  display: block;
-  max-width: 100%;
-  height: inherit;
+    display: block;
+    max-width: 100%;
+    height: inherit;
+}
+
+.navbar-toggle {
+    margin: 1em 0 0 1em;
 }
 
 .navbar-toggle,
+.navbar-inverse .navbar-toggle:focus,
 .collapsed {
     background-color: #00a4c7;
+    padding: 1em;
 }
 
-/*
-.navbar-toggle .icon-bar {
-    display: block;
-    border-radius: 1px;
-    color: #fff;
+.navbar-inverse .navbar-toggle {
+    border: none;
 }
-*/
+
+.navbar-inverse .navbar-toggle:hover {
+    background-color: #80d1e3;
+}
+
+.navbar-inverse .navbar-collapse,
+.navbar-inverse .navbar-form {
+    border-style: none;
+    margin: 0;
+    width: 100%;
+}
+
+form-group,
+input {
+    max-width: 100%;
+    line-height: 1.59em;
+    border: 2px solid;
+    border-color: #dbd7d6;
+    border-radius: 0.25em;
+}
+
+form.navbar-form.navbar-right {
+    display: flex;
+    align-items: flex-end;
+}
+
+form.navbar-form.navbar-right {
+    background-color: #f3f2f1;
+}
 
 #myNavbar {
-  background-color: #f3f2f1;  
+    background-color: #f3f2f1;
 }
 
 .navbar-header {
+    display: flex;
+    align-items: flex-end;
     width: 100%;
+}
+
+.nav,
+.navbar-nav {
+    margin: 0;
+    padding: 0;
 }
 
 .nav-bg {
     background-color: white;
     margin-top: 1em;
 }
+
 .right-menu {
     display: flex;
     justify-content: flex-end;
@@ -81,6 +122,13 @@ nav li:hover {
     background-color: #00a4c7;
 }
 
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:focus,
+.navbar-inverse .navbar-nav > .open > a:hover {
+    color: #fff;
+    background-color: #00a4c7;
+}
+
 .navbar-nav > li > a:active:hover,
 .navbar-nav > li > a.active:hover,
 .open > .dropdown-toggle.navbar-nav > li > a:hover,
@@ -96,12 +144,36 @@ nav li:hover {
 }
 
 .cust-support {
-    text-align: right;
     color: #00a4c7;
     margin: 0;
+    background-color: #dbd7d6;
+    display: inline-block;
+}
+
+.cust-support .hover-white {
+    display: none;
+    position: absolute;
+    top: 0.6em;
+    left: 1em;
+    z-index: 99;
+}
+
+.cust-support:hover .hover-white {
+    display: inline-block;
+}
+
+.cust-support > a > h5:hover {
+    color: #fff;
+}
+
+h5 {
+    display: inline;
+    padding-left: 1em;
+    color: #00a4c7;
 }
 
 .btn-search {
+    padding: 0.2em 1em;
     color: #00a4c7;
     background-color: #dbd7d6;
     border-color: #dbd7d6;
@@ -113,14 +185,88 @@ nav li:hover {
     border-color: #dbd7d6;
 }
 
-@media only screen and (max-width: 767px) {
-    .cust-support {order: 3}
-    .navbar-right {order: 1}
-    .navbar-nav {
-        order: 2;
-    flex-flow: column wrap;
+@media only screen and (min-width: 329px) {
+    .btn-search {
+        position: relative;
+        right: 2em;
     }
-    
 }
 
-@media only screen and (min-width: 768px) {}
+@media only screen and (max-width: 767px) {
+    .header-img {
+        width: 250%
+    }
+
+
+    .navbar-nav {
+        flex-flow: column wrap;
+    }
+
+    .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+        color: #343741;
+    }
+
+    .navbar-inverse .navbar-nav > li > a {
+        border-bottom: 1px solid;
+        border-bottom-color: white;
+    }
+
+    .desktop-header {
+        display: none;
+        position: absolute;
+        top: 0.6em;
+        left: 1em;
+        z-index: 99;
+    }
+
+    .menu-pads {
+        padding-left: 3em;
+    }
+
+
+}
+
+@media only screen and (min-width: 768px) {
+    .header-img {
+        margin-bottom: 1em;
+    }
+
+    .desktop-header {
+        margin: 0.5em 0;
+    }
+
+    h5,
+    h6 {
+        margin: 0 1em 0 0;
+        color: #00a4c7;
+        display: block;
+        text-align: right;
+        position: relative;
+        right: 4rem;
+    }
+
+    form.navbar-form.navbar-right {
+        background-color: #fff;
+        margin: 0.5em 0;
+    }
+
+    .desktop-input {
+        background-color: #f3f2f1;
+    }
+
+    .navbar-nav .search-nav {
+        display: none;
+        position: absolute;
+        top: 0.6em;
+        left: 1em;
+        z-index: 99;
+    }
+
+    .navbar-nav .cust-support {
+        display: none;
+        position: absolute;
+        top: 0.6em;
+        left: 1em;
+        z-index: 99;
+    }
+}
