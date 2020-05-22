@@ -23,95 +23,74 @@
 <body>
 
     <div id="page-wrap">
-        
-        <!--
-          <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mynavbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-    </div>
--->
-        <!--
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      
-    </div>
--->
-       <!--Navbar-->
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-      <div class="row">
-          
-          
-    <div class="navbar-header">
-        <div class="col-md-1"></div>
-        <div class="col-md-3">
-        <a class="navbar-brand" href="#"><img class="header-img" src="images/awa-logo-with-tagline-final.png" alt="AWA Logo"></a>
-        </div>
-        <div class="col-md-3"></div>
-        <div class="col-md-5 right-menu">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      
-        <div class="row">
-                    <div>
-                        <h4 class="cust-support">Customer Support:<br>1300 66 77 88</h4>
-                    </div>
-                    <form class="navbar-form navbar-right" action="">
-                        <div class="form-group">
-                            <input type="text" class="form-control search-form">
+
+        <!--Navbar-->
+        <nav class="flex-container navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="row">
+
+
+                    <div class="navbar-header">
+                        <div class="col-md-3">
+                            <a class="navbar-brand" href="#"><img class="header-img" src="images/awa-logo-with-tagline-final.png" alt="AWA Logo"></a>
                         </div>
-                        <button type="submit" class="btn btn-search">Search</button>
-                    </form>
+                        <div class="col-md-4"></div>
+                        <div class="col-md-5 right-menu">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+
+                            <div class="row">
+                                <div>
+                                    <h4 class="cust-support">Customer Support:<br>1300 66 77 88</h4>
+                                </div>
+                                <form class="navbar-form navbar-right" action="">
+                                    <div class="form-group">
+                                        <input type="text" id="mySearch" onkeyup="myFunction()" title="Type in a category">
+                                    </div>
+                                    <button type="submit" class="btn btn-search">Search</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#">Home</a></li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">What is Dementia?<span></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">5 Simple Tips</a></li>
+                                    <li><a href="#">Where to Access Support</a></li>
+                                    <li><a href="#">Becoming an Advocate</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Memory Cafés<span></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Setting up a Memory Café</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Information for Organisations<span></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Resources for businesses</a></li>
+                                    <li><a href="#">Resources for Local Governments</a></li>
+                                    <li><a href="#">Success stories</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-    </div>
-          </div>
-      <div class="row">
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li><a href="#">Home</a></li>
-        <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">What is Dementia?<span></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">5 Simple Tips</a></li>
-            <li><a href="#">Where to Access Support</a></li>
-            <li><a href="#">Becoming an Advocate</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Memory Cafés<span></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Setting up a Memory Café</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Information for Organisations<span></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Resources for businesses</a></li>
-            <li><a href="#">Resources for Local Governments</a></li>
-            <li><a href="#">Success stories</a></li>
-          </ul>
-        </li>
-          <li><a href="#">Contact</a></li>
-      </ul>
-    </div>
-          </div>
-  </div>
-</nav>
+        </nav>
 
 
-<!--
+        <!--
                 <nav class="navbar navbar-inverse">
                     <div class="collapse navbar-collapse" id="mynavbar">
                         <ul class="nav navbar-nav navbar-center">
@@ -126,11 +105,30 @@
                 </nav>
 -->
 
-                <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-                <!-- Include all compiled plugins (below), or include individual files as needed -->
-                <script src="js/bootstrap.min.js"></script>
-            </div>
-</body>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+        <script>
+function myFunction() {
+  // Declare variables
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("mySearch");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myNavbar");
+  li = ul.getElementsByTagName("li");
 
+  // Loop through all list items, and hide those who don't match the search query
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+</script>
+    </div>
+</body>
 </html>
