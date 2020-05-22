@@ -40,7 +40,7 @@
                                 
                                 <a href="tel:1300667788" ><h6>Customer Support:</h6> <h5>1300 66 77 88</h5>
                                 </a> 
-                                <form class="navbar-form navbar-right" action="">
+                                <form class="navbar-form navbar-right">
                                     <div class="form-group">
                                         <input class="desktop-input" type="text" id="mySearch" onkeyup="myFunction()" title="Type in a category">
                             
@@ -62,9 +62,9 @@
                     <div class="collapse navbar-collapse" id="myNavbar">
                         <ul class="nav navbar-nav">
                             <li class="menu-pads search-nav">
-                            <form class="navbar-form navbar-right" action="">
+                            <form class="navbar-form navbar-right">
                                     <div class="form-group">
-                                        <input type="text" id="mySearch" onkeyup="myFunction()" title="Type in a category">
+                                        <input type="text" id="mySearch2" onkeyup="myFunction()" title="Type in a category">
                             
                                     <button type="submit" class="btn btn-search">Search</button></div>
                                 </form></li>
@@ -127,6 +127,25 @@ function myFunction() {
     }
   }
 }
+            function myFunction() {
+  // Declare variables
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("mySearch2");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myNavbar");
+  li = ul.getElementsByTagName("li");
+
+  // Loop through all list items, and hide those who don't match the search query
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+            
 </script>
     </div>
 </body>
