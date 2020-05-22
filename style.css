@@ -1,14 +1,24 @@
 #page-wrap {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
 }
 
 .header-img {
     display: block;
-    width: 100%;
+    height: inherit;
     padding-top: 5px;
     padding-left: 3px;
     padding-right: 5px;
+}
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: inherit;
 }
 
 .navbar-toggle,
@@ -103,6 +113,14 @@ nav li:hover {
     border-color: #dbd7d6;
 }
 
-@media only screen and (max-width: 767px) {}
+@media only screen and (max-width: 767px) {
+    .cust-support {order: 3}
+    .navbar-right {order: 1}
+    .navbar-nav {
+        order: 2;
+    flex-flow: column wrap;
+    }
+    
+}
 
 @media only screen and (min-width: 768px) {}
