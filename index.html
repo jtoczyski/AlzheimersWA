@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,6 +10,7 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -16,13 +18,116 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
+</head>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-  </body>
+<body>
+
+    <div id="page-wrap">
+
+        <!--Navbar-->
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="row">
+
+
+                    <div class="navbar-header">
+                        <div class="col-xs-4">
+                            <a href="#"><img class="header-img" src="images/awa-logo-with-tagline-final.png" alt="AWA Logo"></a>
+                        </div>
+                        <div class="col-xs-2"></div>
+                        <div class="col-xs-6 right-menu">
+                            <div class="row desktop-header">
+                                
+                                <a href="tel:1300667788" ><h6>Customer Support:</h6> <h5>1300 66 77 88</h5>
+                                </a> 
+                                <form class="navbar-form navbar-right" action="">
+                                    <div class="form-group">
+                                        <input class="desktop-input" type="text" id="mySearch" onkeyup="myFunction()" title="Type in a category">
+                            
+                                    <button type="submit" class="btn btn-search">Search</button></div>
+                                </form>
+                                
+                            </div>
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                            <li class="menu-pads search-nav">
+                            <form class="navbar-form navbar-right" action="">
+                                    <div class="form-group">
+                                        <input type="text" id="mySearch" onkeyup="myFunction()" title="Type in a category">
+                            
+                                    <button type="submit" class="btn btn-search">Search</button></div>
+                                </form></li>
+                            <li class="menu-pads"><a href="#">Home</a></li>
+                            <li class="menu-pads dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">What is Dementia?<span></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">5 Simple Tips</a></li>
+                                    <li><a href="#">Where to Access Support</a></li>
+                                    <li><a href="#">Becoming an Advocate</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-pads dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Memory Cafés<span></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Setting up a Memory Café</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-pads dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Information for Organisations<span></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Resources for businesses</a></li>
+                                    <li><a href="#">Resources for Local Governments</a></li>
+                                    <li><a href="#">Success stories</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-pads"><a href="#">Contact</a></li>
+                            <li class="menu-pads cust-support">
+                                    <a href="tel:1300667788" ><img src="images/phone-icon.png" alt="blue phone icon"><img src="images/phone-icon-white.png" class="hover-white" alt="white phone icon" > <h5>Call Customer Support</h5>
+                                </a>
+                                </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+        <script>
+function myFunction() {
+  // Declare variables
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("mySearch");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myNavbar");
+  li = ul.getElementsByTagName("li");
+
+  // Loop through all list items, and hide those who don't match the search query
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+</script>
+    </div>
+</body>
 </html>
