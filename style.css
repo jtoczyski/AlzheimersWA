@@ -1,272 +1,249 @@
-#page-wrap {
-    max-width: 1200px;
-    margin: 0 auto;
+/*   
+Theme Name: Dementia Friendly 
+Theme URI: http://joshwhitkin.com
+Description: A style-free theme to get you started on an HTML5-based Wordpress theme of your own.
+Author: Me
+Author URI: http://joshwhitkin.com
+Version: 1
+*/
+@font-face {
+    font-family: "Acherus Grotesque"
 }
 
-.flex-container {
+body {
+    font-size: 20px;
+    font-family: arial, sans-serif;
+}
+
+h2,
+p {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.landing-links {
+
+    background-color: #f3f2f1;
+    padding: 40px 0 80px 0;
+
+}
+
+.text-to-speech {
+    float: right;
+    background-color: #ccedf4;
+    padding: 10px 10px 0 10px;
+    border-radius: 4px;
+}
+
+.landing-links h2 {
+    color: #00a4c7;
+}
+
+.red-btn {
+    color: white;
+    background-color: #f1563f;
+    padding: 0.5em 0.5em;
+}
+
+.btn h3 {
+    margin: 0;
+}
+
+.dementia {
+
+    display: flex;
+    margin-bottom: 2em;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.d-bg {
+    background: url(images/leaf-bg.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+
+
+.cafe {
+    display: flex;
+    margin-bottom: 2em;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.cafe img {
+    float: right;
+}
+
+.c-bg {
+    background: url(images/circle-bg.png);
+    background-position: top left;
+    background-repeat: no-repeat;
+}
+
+.organisation {
     display: flex;
     flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+
 }
 
-.header-img {
-    width: 100%;
-    /*    height: inherit;*/
-    padding-top: 5px;
-    padding-left: 3px;
-    padding-right: 5px;
-}
-
-.img-responsive {
-    display: block;
-    max-width: 100%;
-    height: inherit;
-}
-
-.navbar-toggle {
-    margin: 1em 0 0 1em;
-}
-
-.navbar-toggle,
-.navbar-inverse .navbar-toggle:focus,
-.collapsed {
-    background-color: #00a4c7;
-    padding: 1em;
-}
-
-.navbar-inverse .navbar-toggle {
-    border: none;
-}
-
-.navbar-inverse .navbar-toggle:hover {
-    background-color: #80d1e3;
-}
-
-.navbar-inverse .navbar-collapse,
-.navbar-inverse .navbar-form {
-    border-style: none;
-    margin: 0;
-    width: 100%;
-}
-
-form-group,
-input {
-    max-width: 100%;
-    line-height: 1.59em;
-    border: 2px solid;
-    border-color: #dbd7d6;
-    border-radius: 0.25em;
-}
-
-form.navbar-form.navbar-right {
-    display: flex;
-    align-items: flex-end;
-}
-
-form.navbar-form.navbar-right {
-    background-color: #f3f2f1;
-}
-
-#myNavbar {
-    background-color: #f3f2f1;
-}
-
-.navbar-header {
-    display: flex;
-    align-items: flex-end;
-    width: 100%;
-}
-
-.nav,
-.navbar-nav {
-    margin: 0;
-    padding: 0;
-}
-
-.nav-bg {
-    background-color: white;
-    margin-top: 1em;
-}
-
-.right-menu {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.nav,
-.navbar-nav,
-.navbar-center {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.navbar-spacing {
-    width: 100%;
-    text-align: center;
-}
-
-.navbar-collapse {
-    padding: 0;
-}
-
-.navbar-inverse {
-    background-color: white;
-    border: none;
-}
-
-.navbar-inverse .navbar-nav > li > a {
-    color: #343741;
-}
-
-nav li:hover {
-    background-color: #00a4c7;
-}
-
-.navbar-inverse .navbar-nav > .open > a,
-.navbar-inverse .navbar-nav > .open > a:focus,
-.navbar-inverse .navbar-nav > .open > a:hover {
-    color: #fff;
-    background-color: #00a4c7;
-}
-
-.navbar-nav > li > a:active:hover,
-.navbar-nav > li > a.active:hover,
-.open > .dropdown-toggle.navbar-nav > li > a:hover,
-.navbar-nav > li > a:active:focus,
-.navbar-nav > li > a.active:focus,
-.open > .dropdown-toggle.navbar-nav > li > a:focus,
-.navbar-nav > li > a:active.focus,
-.navbar-nav > li > a.active.focus,
-.open > .dropdown-toggle.navbar-nav > li > a.focus {
-    color: white;
-    background-color: #00a4c7;
-    border-color: white;
-}
-
-.cust-support {
-    color: #00a4c7;
-    margin: 0;
-    background-color: #dbd7d6;
-    display: inline-block;
-}
-
-.cust-support .hover-white {
-    display: none;
-    position: absolute;
-    top: 0.6em;
-    left: 1em;
-    z-index: 99;
-}
-
-.cust-support:hover .hover-white {
-    display: inline-block;
-}
-
-.cust-support > a > h5:hover {
-    color: #fff;
-}
-
-h5 {
-    display: inline;
-    padding-left: 1em;
-    color: #00a4c7;
-}
-
-.btn-search {
-    padding: 0.2em 1em;
-    color: #00a4c7;
-    background-color: #dbd7d6;
-    border-color: #dbd7d6;
-}
-
-.search-form {
-    color: black;
-    background-color: #f3f2f1;
-    border-color: #dbd7d6;
-}
-
-@media only screen and (min-width: 329px) {
-    .btn-search {
-        position: relative;
-        right: 2em;
-    }
+.o-bg {
+    background: url(images/triangles-bg.png);
+    background-position: right;
+    background-repeat: no-repeat;
 }
 
 @media only screen and (max-width: 767px) {
-    .header-img {
-        width: 250%
+
+    .text-to-speech {
+        width: 100%;
+        padding-left: 40px;
+        border-radius: 0;
+        margin-bottom: 2rem;
     }
 
-
-    .navbar-nav {
-        flex-flow: column wrap;
+    .o-text,
+    .c-text,
+    .d-text {
+        padding-right: 10rem;
     }
 
-    .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
-        color: #343741;
+    .d-text {
+        order: 1;
+        background: url(images/leaf-bg-sm.png);
+        background-position: 26rem;
+        background-repeat: no-repeat;
+        background-size: 40%;
     }
 
-    .navbar-inverse .navbar-nav > li > a {
-        border-bottom: 1px solid;
-        border-bottom-color: white;
+    .d-bg {
+        order: 2;
+        background: none;
     }
 
-    .desktop-header {
+    .c-text {
+        order: 1;
+        background: url(images/circle-bg-sm.png);
+        background-position: 26rem;
+        background-repeat: no-repeat;
+        background-size: 40%;
+    }
+
+    .c-bg {
+        order: 2;
+        background: none;
+        
+    }
+
+    .o-text {
+        order: 1;
+        background: url(images/triangle-bg-sm.png);
+        background-position: 26rem;
+        background-repeat: no-repeat;
+        background-size: 40%;
+    }
+
+    .o-bg {
+        order: 2;
+        background: none;
+    }
+
+    .c2image,
+    .d2image,
+    .o2image {
         display: none;
         position: absolute;
-        top: 0.6em;
-        left: 1em;
+        top: 0;
+        left: 0;
         z-index: 99;
     }
 
-    .menu-pads {
-        padding-left: 3em;
+    .c-image,
+    .d-image,
+    .o-image {
+        display: inline;
     }
-
+    
+    .red-btn {
+        margin-bottom: 3rem;
+    }
 
 }
 
-@media only screen and (min-width: 768px) {
-    .header-img {
-        margin-bottom: 1em;
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+
+    .o-text,
+    .c-text,
+    .d-text {
+        /*    width: 30%;*/
+        justify-content: center;
     }
 
-    .desktop-header {
-        margin: 0.5em 0;
+    .c-image,
+    .d-image,
+    .o-image {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 99;
     }
 
-    h5,
-    h6 {
-        margin: 0 1em 0 0;
-        color: #00a4c7;
-        display: block;
-        text-align: right;
+    .d2image,
+    .o2image {
         position: relative;
-        right: 4rem;
+        right: 8rem;
     }
 
-    form.navbar-form.navbar-right {
-        background-color: #fff;
-        margin: 0.5em 0;
+    .c2image {
+        position: relative;
+        left: 8rem;
+    }
+}
+
+
+
+@media only screen and (min-width: 1024px) {
+
+    .o-text,
+    .c-text,
+    .d-text {
+        /*    width: 30%;*/
+        justify-content: center;
     }
 
-    .desktop-input {
-        background-color: #f3f2f1;
+    .c-image {
+        position: relative;
+        bottom: 0rem;
+        left: 9rem;
     }
 
-    .navbar-nav .search-nav {
+    .c2image,
+    .d2image,
+    .o2image {
         display: none;
         position: absolute;
-        top: 0.6em;
-        left: 1em;
+        top: 0;
+        left: 0;
         z-index: 99;
     }
 
-    .navbar-nav .cust-support {
-        display: none;
+    .c-image,
+    .d-image,
+    .o-image {
+        display: inline;
+        /*
         position: absolute;
-        top: 0.6em;
-        left: 1em;
+        top: 0;
+        left: 0;
         z-index: 99;
+*/
     }
+
 }
