@@ -1,295 +1,177 @@
-
 .bg-1 {
     background-color: #009CBD;
     color: white;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding: 4rem 0;
     background-size: cover;
+    }
+
+.donate-section {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+
 }
 
 .bg-2 {
     background-color: white;
     color: #53565A;
-    padding-top: 20px;
-    padding-bottom:20px;
-    padding-left: 50px;
+
+}
+
+.footer-center {
+    display: flex;
+    align-items: center;
+    margin: 2rem;
 }
 
 .footer-img {
-        width: 100%;
-    margin: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.social-links {
+    width: 28%;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-info {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+
+}
+
+h5 {
+    display: inline;
+    color: #00a4c7;
+}
+
+.info-1 {
+    margin: 1rem 1rem 1.5rem;
+    line-height: 1.8rem;
+
+}
+
+.contact {
+    margin: 0 1rem;
+    line-height: 1.8rem;
 }
 
 .bg-3 {
     background-color: #968C83;
     color: white;
-    padding-top: 18px;
-    padding-bottom:8px;
+    padding: 1rem 4rem;
 }
 
 .donate-footer {
-    padding-left: 50px;
-    padding-top: 10px;
     font-size: 16px;
     line-height: 20px;
-    margin-left: 90px;
-    margin-right: auto;
+    text-align: left;
 }
 
 p {
     font-size: 14px;
-    line-height: 12px;
-}
-
-.contact {
-    padding-top:55px;
-    margin-right: 0px;
-    margin-left: -px;
-}
-
-h1 {
-    color:#009CBD;
-    padding-bottom: 5px;
-    font-size: 18px;
-}
-
-.contact-2 {
-    margin-left: -25px;
-}
-
-.contact-h1 {
-    margin-left: 20px;
+    margin: 0;
 }
 
 
+
+.btn,
 .btn-lg {
     color: #009CBD;
     text-align: center;
     display: inline-block;
-    font-size: 30px;
-    padding-left: 30px;
-    padding-right: 30px;
-    margin-left: 10px;
-    margin-right: 400px;
+    padding-left: 2rem;
+    padding-right: 2rem;
     transition-duration: 0.4s;
-    }
+}
+.btn-lg h2 {
+    margin: 0;
+}
 
 .btn:hover {
-  background-color: white;
-  color: #E1523D;
+    background-color: white;
+    color: #E1523D;
     border-color: #E1523D;
 }
 
-.footer-img {
-    margin-top: 25px;
-}
+
 
 .social {
-    margin-top: 35px; 
-    margin-left: 10px;
-    height: 40px;
-    width: 40px;
+    margin: 0.5rem 1rem 0.5rem 0;
+    height: 3rem;
+    width: 3rem;
 }
 
-.footer-legal{
+.footer-legal {
     color: white;
-     transition-duration: 0.4s;
+    transition-duration: 0.4s;
 }
 
 .footer-legal:hover {
-  color: #E1523D;
+    color: #E1523D;
 }
 
-
-
-@media screen and (max-width: 1024px) {
-    
-        .donate-footer {
-        text-align: left;
-        margin-left: auto;
-        padding-top: 25px;
-        width: 470px;
-    }
-    
-    .btn {
-        margin-top: 15px;
-    }
-    
-    .footer-img {
-        margin-top: 18px;
-        width: 230px;
-    }
+@media screen and (min-width: 1290px) {
     
     .social {
-        margin-top: 80px;
-        margin-right: 9px;
-        height: 35px;
-        width: 35px;
+        height: 4rem;
+        width: 4rem;
     }
-    
-    .social-links {
-        padding-right: 0px;
-        margin-left: -238px;
-        width: 320px;
-    }
-    
-     .contact {
-        text-align: left;
-        padding-top: 56px;
-        margin-left: 60px;
-         width: 250px;
-    }
-    
-    .contact-2 {
-        margin-left: 70px;
-        width: 170px;
-    }
-    
+}
+
+@media screen and (max-width: 1024px) {
+
     .contact-h1 {
         margin-left: 60px;
         text-align: left;
         width: 200px;
     }
-    
-    .bg-2 {
-    background-color: white;
-    color: #53565A;
-    padding-top: 20px;
-    padding-bottom: 30px;
-    padding-left: 50px;
-    padding-right: 40px;
-}
+
+    .social-links {
+        width: 60%
+    }
+
+    .contact-info {
+        width: 100%;
+    }
+
 
 }
 
 @media screen and (max-width: 990px) {
-    
-    .donate-footer {
-        text-align: left;
-        margin-left: 150px;
-        padding-right: 79px;
-        padding-left: 0px;
-        padding-top: 17px;
-        width: 370px;
-    }
-    
-    .btn {
-        margin-top: 15px;
-        margin-right: auto;
-        margin-left: 5px;
-    }
-    
-    .footer-img {
-        width: 210px;
-        margin-left: -14px;
-    }
-    
-    .social {
-        margin-top: 94px;
-        margin-right: 5px;
-        height: 35px;
-        width: 35px;
-    }
-    
+
+
     .social-links {
-        margin-left: -238px;
+        width: 50%;
     }
-    
-     .contact {
-        text-align: left;
-        padding-top: 56px;
-        padding-left: 5px;
-        margin-left: auto;
-        margin-right: -30px;
+
+
+    .contact-info {
+        width: 100%;
     }
-    
-    .contact-2 {
-        margin-left: auto;
-        width: 170px;
-    }
-    
-    .contact-h1 {
-        text-align: left;
-        width: 200px;
-        margin-left: auto;
-    }
-    
-    .bg-2 {
-    background-color: white;
-    color: #53565A;
-    padding-top: 20px;
-    padding-bottom: 30px;
-    padding-left: 70px;
-    padding-right: 40px;
-}
 
 }
 
 @media screen and (max-width: 745px) {
-    
-        .bg-2 {
-    background-color: white;
-    color: #53565A;
-    padding-top: 20px;
-    padding-bottom: 30px;
-    padding-left: 45px;
-    padding-right: 40px;
-}
-    
-        
+
+    .footer-center {
+        margin: 2rem 0;
+    }
+
+
+
     .donate-footer {
-        margin-top: 18px;
-        margin-left: 70px;
-        text-align: left;
-        padding: inherit;
-        width: 330px;
-    
+
+
     }
-    
-    .btn {
-        margin-top: 15px;
-        margin-right: auto;
-        margin-left: -120px;
-    }
-    
-        .footer-img {
-        width: 210px;
-        margin-left: -14px;
-        margin-top: 18px;
-    }
-    
-    .social {
-        margin-top: 80px;
-        margin-right: 5px;
-        height: 35px;
-        width: 35px;
-    }
-    
+
     .social-links {
-        margin-right: 0px;
-        margin-left: -190px;
-        width: 233px;
+        width: 100%;
     }
-    
-     .contact {
-        text-align: left;
-        padding-top: 56px;
-        margin-left: 35px;
-        margin-right: -90px;
-         width: 120px;
-    }
-    
-    .contact-2 {
-        margin-left: 65px;
-        width: 170px;
-    }
-    
-    .contact-h1 {
-        margin-left: 25px;
-        text-align: left;
-        width: 200px;
-    }
-    
+
 
 }
 
@@ -297,77 +179,71 @@ h1 {
     .bg-1 {
         align-content: center;
         text-align: center;
-        margin-right: auto;
-        margin-left: auto;
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding: 2rem 0;
     }
     
-    .bg-2 {
-        padding-left: 60px;
-        padding-right: 60px
-        
-    }
-    
-        .bg-3 p {
-            font-size: 12px
-    }
-    
-        .donate-footer {
-        text-align: center;
-        padding: inherit;
-        padding-bottom: 15px;
+    .donate-section {
+    justify-content: center;
+
+}
+
+    .footer-center {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
 
     }
-    
-    .btn {
-        margin:auto;
-    }
-    
-    
+
     .footer-img {
-        width: 100%;
-        margin:auto;        
+       padding: 0 4rem;
+
     }
+
+
+    .social-links {
+        margin: 2rem 0;
+    }
+
+    .contact-info {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+    }
+    
+
+    .bg-3 p {
+        font-size: 12px
+    }
+
+    .donate-footer {
+        text-align: center;
+        padding: 0 4rem 2rem;
+
+    }
+
     
     .social {
-        margin-top: 26px;
-        margin-bottom: 15px;
-        margin-left: 4px;
-        width: 45px;
-        height: 45px;
+        margin: 0.5rem;
+}
 
 
-    }
-    
-    .social-links {
-        margin: auto;
-        padding: inherit;
-        width: 300px;
-
-        
-    }
-    
     .contact {
         text-align: center;
-        padding-top: 25px;
-        margin: auto;
-    }
-    
-    .contact-h1 {
-        text-align: center;
-        padding-left: auto;
-        margin: auto;
-    }
-    
-    .donate-footer {
-        margin-right: auto;
-        margin-left: auto;
-    }
-    
-    .bg-3 p{
-        font-size: 10px;
-    
-    }
+        margin-top: 2rem;
 
     }
+
+    .info-1 {
+        text-align: center;
+        margin: 0;
+
+    }
+
+.bg-3 {
+    padding: 1rem 2rem;
+}
+    .bg-3 p {
+        font-size: 10px;
+    }
+
+}
