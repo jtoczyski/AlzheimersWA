@@ -820,3 +820,14 @@ ul.breadcrumb li a:hover {
 .heading-text {
     color: #ee5741;
 }
+
+.triangle-icon {
+    background: url(images/triangle-bg-sm.png);
+     background-position: right;
+     background-repeat: no-repeat;
+}
+
+.resources-sect {
+    background-color: #f2f1f1;
+    padding-top: 2rem;
+}
