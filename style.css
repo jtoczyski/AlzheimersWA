@@ -829,5 +829,9 @@ ul.breadcrumb li a:hover {
 
 .resources-sect {
     background-color: #f2f1f1;
-    padding-top: 2rem;
+    padding-top: 0.5rem;
+}
+
+.sect-head {
+    color: #00a4c7;
 }
