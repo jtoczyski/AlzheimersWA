@@ -121,6 +121,8 @@
 
  .navbar-inverse .navbar-nav > li > a {
      color: #343741;
+     background-color: #f3f2f1;
+     transition-duration: 0.4s;
  }
 
  nav li:hover {
@@ -188,6 +190,7 @@
      border-color: #dbd7d6;
      position: relative;
      right: 2em;
+     transition-duration: 0.4s;
  }
 
  .search-form {
@@ -228,6 +231,7 @@
      color: white;
      background-color: #f1563f;
      padding: 0.5em 0.5em;
+     transition-duration: 0.4s;
  }
 
  .btn h3 {
@@ -412,6 +416,37 @@
  .footer-legal:hover {
      color: #E1523D;
  }
+
+.carousel-caption h1{
+    background-color: #009CBD; 
+    margin-left: auto;
+}
+
+.carousel-indicators {
+    width: 50px;
+    margin-left: -20px;
+}
+
+.btn-xs {
+    color: white;
+    border-color: white;
+    background-color: transparent;
+    border-radius: 50%;
+    transition-duration: 0.4s;
+}
+
+.btn-xs:hover {
+    color: #009CBD;
+    border-color: #009CBD;
+    background-color: transparent;
+}
+
+#carouselButtons {
+  margin-left: 545px;
+  margin-bottom: 10px;
+  position: absolute;
+  bottom: 20px;
+}
 
 
  @media only screen and (max-width: 767px) {
