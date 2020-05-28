@@ -31,16 +31,18 @@
                         <div class="col-xs-2"></div>
                         <div class="col-xs-6 right-menu">
                             <div class="row desktop-header">
-                                
-                                <a href="tel:1300667788" ><h6>Customer Support:</h6> <h5>1300 66 77 88</h5>
-                                </a> 
+
+                                <a href="tel:1300667788">
+                                    <h6>Customer Support:</h6>
+                                    <h5>1300 66 77 88</h5>
+                                </a>
                                 <form class="navbar-form navbar-right">
                                     <div class="form-group">
                                         <input class="desktop-input" type="text" id="mySearch" onkeyup="myFunction()" title="Type in a category">
-                            
-                                    <button type="submit" class="btn btn-search">Search</button></div>
+
+                                        <button type="submit" class="btn btn-search">Search</button></div>
                                 </form>
-                                
+
                             </div>
                             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                                 <span class="icon-bar"></span>
@@ -48,7 +50,7 @@
                                 <span class="icon-bar"></span>
                             </button>
 
-                            
+
                         </div>
                     </div>
                 </div>
@@ -56,12 +58,13 @@
                     <div class="collapse navbar-collapse" id="myNavbar">
                         <ul class="nav navbar-nav">
                             <li class="menu-pads search-nav">
-                            <form class="navbar-form navbar-right">
+                                <form class="navbar-form navbar-right">
                                     <div class="form-group">
                                         <input type="text" id="mySearch2" onkeyup="myFunction()" title="Type in a category">
-                            
-                                    <button type="submit" class="btn btn-search">Search</button></div>
-                                </form></li>
+
+                                        <button type="submit" class="btn btn-search">Search</button></div>
+                                </form>
+                            </li>
                             <li class="menu-pads"><a href="#">Home</a></li>
                             <li class="menu-pads dropdown">
                                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">What is Dementia?<span></span></a>
@@ -87,245 +90,280 @@
                             </li>
                             <li class="menu-pads"><a href="#">Contact</a></li>
                             <li class="menu-pads cust-support">
-                                    <a href="tel:1300667788" ><img src="images/phone-icon.png" alt="blue phone icon"><img src="images/phone-icon-white.png" class="hover-white" alt="white phone icon" > <h5>Call Customer Support</h5>
+                                <a href="tel:1300667788"><img src="images/phone-icon.png" alt="blue phone icon"><img src="images/phone-icon-white.png" class="hover-white" alt="white phone icon">
+                                    <h5>Call Customer Support</h5>
                                 </a>
-                                </li>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
         </nav>
-        
-<div id="homeCarousel" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#homeCarousel" data-slide-to="1"></li>
-            <li data-target="#homeCarousel" data-slide-to="2"></li>
-        </ol>
-<!--
+
+        <div id="homeCarousel" class="carousel slide" data-ride="carousel">
+            <div class="container-fluid">
+                <div class="row carousel-section">
+                    <!--    <div id="carouselButtons" class="caro-controls">-->
+
+                    <div class="row caro-controls">
+                        <div class="col-xs-3"></div>
+                        <div class="col-xs-6 wrap">
+                            <div id="carouselButtons">
+                                
+                                <button id="playButton" type="button" class="btn btn-xs">
+        <span class="glyphicon glyphicon-play"></span>
+     </button>
+                                <button id="pauseButton" type="button" class="btn btn-xs pause-carousel">
+                                    <span class="glyphicon glyphicon-pause"></span>
+                                </button>
+                            </div>
+
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#homeCarousel" data-slide-to="1"></li>
+                                <li data-target="#homeCarousel" data-slide-to="2"></li>
+                            </ol>
+                        </div>
+                        <div class="col-xs-3"></div>
+                    </div>
+                    <!--       </div>-->
+                    <!--
         <br>
     <button id="toggleCarousel"><i class="fa-play fa-pause"></i></button>
 -->
 
-<!-- Wrapper for slides -->
-        <div class="carousel-inner">
-            <div class="item active">
-                <img src="images/seniors-on-the-beach.png" alt="carousel1">
-                <div class="carousel-caption">
-                    <h1>Dementia Friendly Communities</h1>
-                </div>
-            </div>
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="images/seniors-on-the-beach.png" alt="carousel1">
+                            <div class="carousel-caption">
+                                <h1>Dementia Friendly Communities</h1>
+                            </div>
+                        </div>
 
-            <div class="item">
-                <img src="images/carousel-2.png" alt="carousel2">
-                <div class="carousel-caption">
-                </div>
-            </div>
+                        <div class="item">
+                            <img src="images/carousel-2.png" alt="carousel2">
+                            <div class="carousel-caption">
+                            </div>
+                        </div>
 
-            <div class="item">
-                <img src="images/carousel-3.png" alt="carousel3">
-                <div class="carousel-caption">
+                        <div class="item">
+                            <img src="images/carousel-3.png" alt="carousel3">
+                            <div class="carousel-caption">
+                            </div>
+                            <!--carousel-caption-->
+                        </div>
+                        <!--item-->
+                    </div>
+                    <!--carousel-inner-->
                 </div>
-                <!--carousel-caption-->
             </div>
-            <!--item-->
         </div>
-        <!--carousel-inner-->
-    <div id="carouselButtons">
-    <button id="pauseButton" type="button" class="btn btn-xs">
-        <span class="glyphicon glyphicon-pause"></span>
-     </button>
-    </div>
-        </div>
-        
+
         <section class="container-fluid landing-links">
-        <div class="container">
-            <div class="row">
-        <div class="text-to-speech">
-<!--                button for text-to-speech function-->
-            <p>Listen to this page</p>
-                </div>
-            </div><!--        row-->
-            <div class="row dementia">
-                <div class="col-sm-1"></div>
-                <div class="col-sm-6 d-bg">
-                    <img class="d-image img-responsive" alt="support group" src="images/support-group-lg.jpg"><img class="d2image img-responsive" alt="couple at a cafe" src="images/support-group-md.jpg">
-                </div>
-                <div class="col-sm-4 d-text">
-                    <h1>What is Dementia?</h1>
-                    <p>Find helpful information about dementia and how it effects people’s lives.</p>
-                    <div class="learnmore" id="whatisdementia">
-                        <a href="#" class="btn red-btn" role="button">
-                            <h3>Learn more</h3>
-                        </a>
+            <div class="container">
+                <div class="row">
+                    <div class="text-to-speech">
+                        <!--                button for text-to-speech function-->
+                        <p>Listen to this page</p>
                     </div>
-                </div>
-                <div class="col-sm-1"></div>
-            </div><!--        what is dementia row-->
-            
-            <div class="row cafe">
-                <div class="col-sm-1"></div>
-                
-                <div class="col-sm-4 c-text">
-                    <h1>Memory Cafes</h1>
-                    <p>Learn how Memory Cafès can help people living with dementia and where to find one near you.</p>
-                    <div class="learnmore" id="memorycafes">
-                        <a href="#" class="btn red-btn" role="button">
-                            <h3>Learn more</h3>
-                        </a>
+                </div><!--        row-->
+                <div class="row dementia">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-6 d-bg">
+                        <img class="d-image img-responsive" alt="support group" src="images/support-group-lg.jpg"><img class="d2image img-responsive" alt="couple at a cafe" src="images/support-group-md.jpg">
                     </div>
-                </div>
-                <div class="col-sm-6 c-bg">
-                    <img class="c-image img-responsive" alt="couple at a cafe" src="images/cafe-lg.jpg">
-                    <img class="c2image img-responsive" alt="couple at a cafe" src="images/cafe-md.jpg">
-                </div>
-                <div class="col-sm-1"></div>
-            </div><!--        memory cafe row-->
-            
-             <div class="row organisation">
-                 <div class="col-sm-1"></div>
-                <div class="col-sm-6 o-bg">
-                    <img class="o-image img-responsive" alt="supermarket employee" src="images/employee-at-supermarket-lg.jpg"><img class="o2image img-responsive" alt="couple at a cafe" src="images/employee-at-supermarket-md.jpg">
-                </div>
-                <div class="col-sm-4 o-text">
-                    <h1>Information for Organisations</h1>
-                    <p>Learn how your business or organisation can make changes to assist those living with dementia.</p>
-                    <div class="learnmore" id="organisations">
-                        <a href="#" class="btn red-btn" role="button">
-                            <h3>Learn more</h3>
-                        </a>
+                    <div class="col-sm-4 d-text">
+                        <h1>What is Dementia?</h1>
+                        <p>Find helpful information about dementia and how it effects people’s lives.</p>
+                        <div class="learnmore" id="whatisdementia">
+                            <a href="#" class="btn red-btn" role="button">
+                                <h3>Learn more</h3>
+                            </a>
+                        </div>
                     </div>
-                </div>
-                 <div class="col-sm-1"></div>
-            </div><!--        info for organisations row-->
-        </div><!--          container-->
-    </section>
+                    <div class="col-sm-1"></div>
+                </div><!--        what is dementia row-->
+
+                <div class="row cafe">
+                    <div class="col-sm-1"></div>
+
+                    <div class="col-sm-4 c-text">
+                        <h1>Memory Cafes</h1>
+                        <p>Learn how Memory Cafès can help people living with dementia and where to find one near you.</p>
+                        <div class="learnmore" id="memorycafes">
+                            <a href="#" class="btn red-btn" role="button">
+                                <h3>Learn more</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 c-bg">
+                        <img class="c-image img-responsive" alt="couple at a cafe" src="images/cafe-lg.jpg">
+                        <img class="c2image img-responsive" alt="couple at a cafe" src="images/cafe-md.jpg">
+                    </div>
+                    <div class="col-sm-1"></div>
+                </div><!--        memory cafe row-->
+
+                <div class="row organisation">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-6 o-bg">
+                        <img class="o-image img-responsive" alt="supermarket employee" src="images/employee-at-supermarket-lg.jpg"><img class="o2image img-responsive" alt="couple at a cafe" src="images/employee-at-supermarket-md.jpg">
+                    </div>
+                    <div class="col-sm-4 o-text">
+                        <h1>Information for Organisations</h1>
+                        <p>Learn how your business or organisation can make changes to assist those living with dementia.</p>
+                        <div class="learnmore" id="organisations">
+                            <a href="#" class="btn red-btn" role="button">
+                                <h3>Learn more</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-1"></div>
+                </div><!--        info for organisations row-->
+            </div><!--          container-->
+        </section>
 
 
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <section class="container-fluid bg-1">
-        <div class="container">
-<div class="row donate-section">
-    <div class="col-sm-2"></div>
-<div class="col-sm-5 article-cent">
-            <p class="donate-footer">Those living with dementia will never stand alone because of the vision and generosity of those who make donations.</p>
-
-        </div>
-
- <div class="col-sm-3 article-cent">
-     <a href="https://www.alzheimerswa.org.au/get-involved/donate/" class="btn btn-default btn-lg" target="_blank"><h2>Donate</h2></a>
-        </div>
-    <div class="col-sm-2"></div>
-
-    </div> <!--row-->
-        </div> <!--container-->
-</section> <!--container-fluid-->
-
-    <section class="container-fluid bg-2"><!--contact footer-->
-        <div class="row footer-center">
-        
-        <div class="col-sm-3 text-left">
-            <a class="footer-logo" href="#top"><img class="footer-img" src="images/awa-logo-with-tagline-final.png" alt="AWA Logo"></a>
- </div>
-
-        <div class="col-sm-3 text-left social-links">
-           <a class="social-fb" href="https://www.facebook.com/alzheimerswa/" target="_blank"><img class="social" src="images/fb.png" alt="AWA fb"></a>
-            <a class="social-tw" href="https://twitter.com/alzheimerswa" target="_blank"><img class="social" src="images/tw.png" alt="AWA tw"></a>
-            <a class="social-yt" href="https://www.youtube.com/user/AlzheimersAusWA" target="_blank"><img class="social" src="images/yt.png" alt="AWA yt"></a>
-            <a class="social-insta" href="https://www.instagram.com/alzheimers_wa/" target="_blank"><img class="social" src="images/insta.png" alt="AWA insta"></a>
-            <a class="social-in" href="https://www.linkedin.com/company/alzheimers-wa/" target="_blank"><img class="social" src="images/in.png" alt="AWA in"></a>
-
-        </div>
-
- <div class="col-sm-6 contact-info">
-     <div class="info-1">
-         <h5><b>Head Office</b></h5>
-            <p>55 Walters Drive</p>
-            <p>Osborne Park</p>
-            <p>WA 6017</p>
-            </div>
-     
-        
-            <div class= "contact">
-            <p>PO Box 1509</p>
-            <p>Subiaco, WA 6904</p>
-            </div>
-        
-            <div class= "contact">
-            <p>Telephone: 1300 66 77 88</p>
-            <p>Fax: (08) 9388 2739</p>
-            </div>
-        </div>
-<!--            <div class="col-sm-1"></div>-->
-</div>
- </section>
-
-
-
-    <footer class="container-fluid bg-3 text-left">
-        <p>© 2020 Alzheimer’s WA. All Rights Reserved. <a class="footer-legal" href="https://www.alzheimerswa.org.au/copyright" target="_blank">Copyright.</a> <a class="footer-legal" href="https://www.alzheimerswa.org.au/privacy-policy" target="_blank">Privacy Policy.</a></p>
-    </footer>
-        
-
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="js/bootstrap.min.js"></script>
+
+        <section class="container-fluid bg-1">
+            <div class="container">
+                <div class="row donate-section">
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-5 article-cent">
+                        <p class="donate-footer">Those living with dementia will never stand alone because of the vision and generosity of those who make donations.</p>
+
+                    </div>
+
+                    <div class="col-sm-3 article-cent">
+                        <a href="https://www.alzheimerswa.org.au/get-involved/donate/" class="btn btn-default btn-lg" target="_blank">
+                            <h2>Donate</h2>
+                        </a>
+                    </div>
+                    <div class="col-sm-2"></div>
+
+                </div>
+                <!--row-->
+            </div>
+            <!--container-->
+        </section>
+        <!--container-fluid-->
+
+        <section class="container-fluid bg-2">
+            <!--contact footer-->
+            <div class="row footer-center">
+
+                <div class="col-sm-3 text-left">
+                    <a class="footer-logo" href="#top"><img class="footer-img" src="images/awa-logo-with-tagline-final.png" alt="AWA Logo"></a>
+                </div>
+
+                <div class="col-sm-3 text-left social-links">
+                    <a class="social-fb" href="https://www.facebook.com/alzheimerswa/" target="_blank"><img class="social" src="images/fb.png" alt="AWA fb"></a>
+                    <a class="social-tw" href="https://twitter.com/alzheimerswa" target="_blank"><img class="social" src="images/tw.png" alt="AWA tw"></a>
+                    <a class="social-yt" href="https://www.youtube.com/user/AlzheimersAusWA" target="_blank"><img class="social" src="images/yt.png" alt="AWA yt"></a>
+                    <a class="social-insta" href="https://www.instagram.com/alzheimers_wa/" target="_blank"><img class="social" src="images/insta.png" alt="AWA insta"></a>
+                    <a class="social-in" href="https://www.linkedin.com/company/alzheimers-wa/" target="_blank"><img class="social" src="images/in.png" alt="AWA in"></a>
+
+                </div>
+
+                <div class="col-sm-6 contact-info">
+                    <div class="info-1">
+                        <h5><b>Head Office</b></h5>
+                        <p>55 Walters Drive</p>
+                        <p>Osborne Park</p>
+                        <p>WA 6017</p>
+                    </div>
+
+
+                    <div class="contact">
+                        <p>PO Box 1509</p>
+                        <p>Subiaco, WA 6904</p>
+                    </div>
+
+                    <div class="contact">
+                        <p>Telephone: 1300 66 77 88</p>
+                        <p>Fax: (08) 9388 2739</p>
+                    </div>
+                </div>
+                <!--            <div class="col-sm-1"></div>-->
+            </div>
+        </section>
+
+
+
+        <footer class="container-fluid bg-3 text-left">
+            <p>© 2020 Alzheimer’s WA. All Rights Reserved. <a class="footer-legal" href="https://www.alzheimerswa.org.au/copyright" target="_blank">Copyright.</a> <a class="footer-legal" href="https://www.alzheimerswa.org.au/privacy-policy" target="_blank">Privacy Policy.</a></p>
+        </footer>
+
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="/docs/3.4/dist/js/bootstrap.min.js"></script>
         <script>
-function myFunction() {
-  // Declare variables
-  var input, filter, ul, li, a, i;
-  input = document.getElementById("mySearch");
-  filter = input.value.toUpperCase();
-  ul = document.getElementById("myNavbar");
-  li = ul.getElementsByTagName("li");
-
-  // Loop through all list items, and hide those who don't match the search query
-  for (i = 0; i < li.length; i++) {
-    a = li[i].getElementsByTagName("a")[0];
-    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-      li[i].style.display = "";
-    } else {
-      li[i].style.display = "none";
-    }
-  }
-}
             function myFunction() {
-  // Declare variables
-  var input, filter, ul, li, a, i;
-  input = document.getElementById("mySearch2");
-  filter = input.value.toUpperCase();
-  ul = document.getElementById("myNavbar");
-  li = ul.getElementsByTagName("li");
+                // Declare variables
+                var input, filter, ul, li, a, i;
+                input = document.getElementById("mySearch");
+                filter = input.value.toUpperCase();
+                ul = document.getElementById("myNavbar");
+                li = ul.getElementsByTagName("li");
 
-  // Loop through all list items, and hide those who don't match the search query
-  for (i = 0; i < li.length; i++) {
-    a = li[i].getElementsByTagName("a")[0];
-    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-      li[i].style.display = "";
-    } else {
-      li[i].style.display = "none";
-    }
-  }
- }
+                // Loop through all list items, and hide those who don't match the search query
+                for (i = 0; i < li.length; i++) {
+                    a = li[i].getElementsByTagName("a")[0];
+                    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                        li[i].style.display = "";
+                    } else {
+                        li[i].style.display = "none";
+                    }
+                }
+            }
 
-            $(function() {
-  /* Play trigger */
-  $('#toggleCarousel').click(function() {
-    var state = (paused) ? 'cycle' : 'pause';
-    paused = (paused) ? 0 : 1;
-    $('#homeCarousel').carousel(state);
-    $(this).find('i').toggleClass('fa-play fa-pause');
-  });
+            function myFunction() {
+                // Declare variables
+                var input, filter, ul, li, a, i;
+                input = document.getElementById("mySearch2");
+                filter = input.value.toUpperCase();
+                ul = document.getElementById("myNavbar");
+                li = ul.getElementsByTagName("li");
+
+                // Loop through all list items, and hide those who don't match the search query
+                for (i = 0; i < li.length; i++) {
+                    a = li[i].getElementsByTagName("a")[0];
+                    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                        li[i].style.display = "";
+                    } else {
+                        li[i].style.display = "none";
+                    }
+                }
             }
             
-</script>
+            $(function () {
+    $('#homeCarousel').carousel({
+        interval:2000,
+        pause: "false"
+    });
+    
+    $('#playButton').click(function () {
+        $('#homeCarousel').carousel('cycle');
+    });
+    $('#pauseButton').click(function () {
+        $('#homeCarousel').carousel('pause');
+    });
+                $('.carousel').carousel({
+  keyboard: true
+})
+});
+            
+
+            
+        </script>
     </div>
-</body>
-</html>
+</body></html>
