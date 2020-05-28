@@ -13,6 +13,8 @@
      flex-flow: row wrap;
  }
 
+/*header styling*/
+
  .header-img {
      width: 100%;
      /*    height: inherit;*/
@@ -209,6 +211,10 @@
 
  }
 
+
+
+/*Landing links section Sytling*/
+
  .landing-links {
 
      background-color: #f3f2f1;
@@ -293,6 +299,11 @@
      background-position: right;
      background-repeat: no-repeat;
  }
+
+
+
+
+/*Footer Stlying*/
 
  .bg-1 {
      background-color: #009CBD;
@@ -417,36 +428,80 @@
      color: #E1523D;
  }
 
-.carousel-caption h1{
-    background-color: #009CBD; 
-    margin-left: auto;
+
+
+
+/*Carousel Styling*/
+
+ .carousel-caption h1 {
+     background-color: #009CBD;
+     margin-left: auto;
+ }
+
+.carousel-section {
+/*    position: absolute;*/
+    display: flex;
+     align-items: flex-end;
 }
 
-.carousel-indicators {
-    width: 50px;
-    margin-left: -20px;
+.caro-controls {
+/*    display: inline;*/
+    margin-left: 0;
+    margin-bottom: 0;
+    position: absolute;
+    width: 100%;
+    text-align: center;
 }
 
-.btn-xs {
-    color: white;
-    border-color: white;
-    background-color: transparent;
-    border-radius: 50%;
-    transition-duration: 0.4s;
+ol {
+    margin: 0;
 }
 
-.btn-xs:hover {
-    color: #009CBD;
-    border-color: #009CBD;
-    background-color: transparent;
+ .carousel-indicators {
+     position: relative;
+     left: 0;
+    /* left: 50%; */
+/*     width: 100%;*/
+    width: 15%;
+    padding-left: 0;
+     margin: 0 0 0 1rem;
+    /* margin-left: -30%; */
+    text-align: left;
+    list-style: none;
+     bottom: 0;
+ }
+
+.wrap {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
 }
 
-#carouselButtons {
-  margin-left: 545px;
-  margin-bottom: 10px;
-  position: absolute;
-  bottom: 20px;
+.carousel-inner {
+    position: relative;
 }
+
+ .btn-xs {
+     color: white;
+     border-color: white;
+     background-color: transparent;
+     border-radius: 50%;
+     transition-duration: 0.4s;
+ }
+
+
+ .btn-xs:hover {
+     color: #009CBD;
+     border-color: #009CBD;
+     background-color: transparent;
+ }
+
+ #carouselButtons {
+     position: relative;
+     z-index: 1;
+     margin: 1rem 0;
+ }
 
 
  @media only screen and (max-width: 767px) {
@@ -645,6 +700,15 @@
 
  }
 
+@media only screen and (max-width: 531px) {
+    
+     .carousel-indicators {
+  
+    width: 40%;
+
+ }
+    
+}
 
 
 
