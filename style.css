@@ -200,7 +200,7 @@
      margin: 0;
  }
 
- h1,
+ h2,
  p {
      margin-top: 0;
 
@@ -220,7 +220,7 @@
      border-radius: 4px;
  }
 
- .landing-links h1 {
+ .landing-links h2 {
      color: #00a4c7;
  }
 
@@ -230,8 +230,13 @@
      padding: 0.5em 0.5em;
  }
 
- .btn h3 {
+ .btn h4 {
      margin: 0;
+ }
+
+ h1 {
+     color: #f1563f;
+     font-size: 5rem;
  }
 
  .d-text p,
@@ -386,7 +391,7 @@
      transition-duration: 0.4s;
  }
 
- .btn-lg h2 {
+ .btn-lg h3 {
      margin: 0;
  }
 
@@ -411,6 +416,52 @@
 
  .footer-legal:hover {
      color: #E1523D;
+ }
+
+
+ /*Styling for Landing links page*/
+
+ .landing-page {
+     /*    background-color: #f3f2f1;*/
+ }
+
+ .bc-bg {
+     background: url(images/circles-subpage.png);
+     background-position: top right;
+     background-repeat: no-repeat;
+     background-size: contain;
+ }
+
+ .breadcrumb {
+     background: none;
+     padding: 0;
+ }
+
+ .breadcrumb a {
+     color: #968C83;
+     text-decoration: underline;
+ }
+
+ .breadcrumb > li + li:before {
+     padding: 0 1rem;
+     color: #009CBD;
+     content: "\005C";
+ }
+
+ ol {
+     padding: 0;
+     margin: 0;
+ }
+
+ .breadcrumb > .active {
+     color: #343741;
+ }
+
+ .tts-landing {
+     float: left;
+     background-color: #ccedf4;
+     padding: 10px 10px 0 10px;
+     border-radius: 4px;
  }
 
 
@@ -595,6 +646,14 @@
      }
 
 
+     /*     landing page styling*/
+
+     .tts-landing {
+         width: 100%;
+         border-radius: 0;
+         margin-bottom: 2rem;
+     }
+
  }
 
  @media only screen and (max-width: 425px) {
@@ -736,11 +795,6 @@
 
  @media screen and (max-width: 1024px) {
 
-     .contact-h1 {
-         margin-left: 60px;
-         text-align: left;
-         width: 200px;
-     }
 
      .social-links {
          width: 60%
