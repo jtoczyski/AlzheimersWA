@@ -27,6 +27,10 @@
      height: inherit;
  }
 
+ .nav > li > a {
+     /*     padding: 2rem 10%;*/
+ }
+
  .navbar-toggle {
      margin: 1em 0 0 1em;
  }
@@ -102,7 +106,7 @@
  .navbar-center {
      width: 100%;
      display: flex;
-     justify-content: space-between;
+     justify-content: center;
  }
 
  .navbar-spacing {
@@ -124,7 +128,7 @@
  }
 
  nav li:hover,
-nav li:active {
+ nav li:active {
      background-color: #00a4c7;
  }
 
@@ -144,37 +148,33 @@ nav li:active {
  .navbar-nav > li > a:active.focus,
  .navbar-nav > li > a.active.focus,
  .open > .dropdown-toggle.navbar-nav > li > a.focus,
-.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
+ .navbar-inverse .navbar-nav > li > a:focus,
+ .navbar-inverse .navbar-nav > li > a:hover {
      color: #fff;
      background-color: #00a4c7;
      border-color: white;
  }
 
+ .dropdown:hover .dropdown-menu {
+     display: inline-block;
+ }
 
-/*
-ul {
-    overflow: hidden;
-}
+
+ .navbar-inverse .navbar-nav > li > a.cust-support {
+     color: #00a4c7;
+     /*
+     display: flex;
+     align-items: center;
 */
+ }
 
-.dropdown:hover .dropdown-menu {
-    display: inline-block;
-}
+ .navbar-inverse .navbar-nav > li > a.cust-support:hover {
+     color: #fff;
+ }
 
-
-.navbar-inverse .navbar-nav > li > a.cust-support {
-    color: #00a4c7;
-    display: flex;
-    align-items: center;
-}
-
-.navbar-inverse .navbar-nav > li > a.cust-support:hover {
-    color: #fff;
-}
-
-.nav>li>a>img {
-    padding-right: 1rem;
-}
+ .nav > li > a > img {
+     padding-right: 1rem;
+ }
 
  .cust-support {
      margin: 0;
@@ -189,12 +189,6 @@ ul {
      left: 4rem;
      z-index: 99;
  }
-
-/*
-.hover-white {
-    top: 1rem;
-}
-*/
 
  .cust-support:hover .hover-white {
      display: inline-block;
@@ -351,7 +345,7 @@ ul {
  .footer-center {
      display: flex;
      align-items: center;
-     margin: 2rem;
+     margin: 2rem 0;
  }
 
  .footer-img {
@@ -401,6 +395,7 @@ ul {
 
  .bg-3 p {
      margin-bottom: 0;
+     font-size: 1rem;
  }
 
  .donate-footer {
@@ -451,16 +446,17 @@ ul {
      color: #E1523D;
  }
 
+ .contact-info p {
+     font-size: 1.5rem;
+ }
+
+
+
 
  /*Styling for Landing links page*/
 
- .landing-page {
-     /*    background-color: #f3f2f1;*/
- }
-
  .bc-bg {
      background: url(images/circles-subpage.png);
-     background-position: top right;
      background-repeat: no-repeat;
      background-size: contain;
  }
@@ -493,9 +489,45 @@ ul {
  .tts-landing {
      float: left;
      background-color: #ccedf4;
-     padding: 10px 10px 0 10px;
+     padding: 1rem;
      border-radius: 4px;
  }
+
+ .intro {
+     padding: 4rem 0;
+ }
+
+ .landing-img {
+     width: 50%;
+     float: right;
+     margin: 0 0 2rem 2rem;
+ }
+
+ .more-info {
+     background-color: #f3f2f1;
+     padding: 4rem 0 3rem;
+ }
+
+ .more-info p {
+     font-size: 1.5rem;
+     padding-bottom: 1rem;
+ }
+
+ .more-info h2 {
+     color: #E1523D;
+ }
+
+ h3 {
+     color: #009CBD;
+ }
+
+ .learnmore .btn {
+     font-size: 1.8rem;
+ }
+
+
+
+
 
 
  @media only screen and (max-width: 767px) {
@@ -525,16 +557,11 @@ ul {
          z-index: 99;
      }
 
-/*
-     .menu-pads {
-         padding-left: 3rem;
-     }
-*/
-     .navbar-nav>li>a,
-     .nav>li>a,
+     .navbar-nav > li > a,
+     .nav > li > a,
      .navbar-form {
-    padding: 1rem 1rem 1rem 4rem;
-}
+         padding: 1rem 1rem 1rem 4rem;
+     }
 
      .text-to-speech {
          width: 100%;
@@ -633,7 +660,7 @@ ul {
      }
 
      .footer-img {
-         padding: 0 4rem;
+         padding: 0 5rem;
 
      }
 
@@ -691,12 +718,17 @@ ul {
      .tts-landing {
          width: 100%;
          border-radius: 0;
-         margin-bottom: 2rem;
+         padding-left: 6rem;
+         margin-top: 1rem;
+     }
+
+     .bc-bg {
+         background-position: 40rem;
      }
 
  }
 
- @media only screen and (max-width: 425px) {
+ @media only screen and (max-width: 426px) {
 
      form-group,
      input {
@@ -707,6 +739,27 @@ ul {
          padding-right: 20%;
      }
 
+     /*     landing page styling*/
+
+     .bc-bg {
+         background-position: 24rem;
+     }
+
+     .landing-img {
+         width: 100%;
+         margin: 0 0 2rem 2rem;
+     }
+
+ }
+
+ @media only screen and (max-width: 322px) {
+
+     .d-text,
+     .c-text,
+     .o-text {
+
+         background-position: 22rem;
+     }
  }
 
 
@@ -752,9 +805,28 @@ ul {
      .navbar-nav .cust-support {
          display: none;
          position: absolute;
-         top: 0.6em;
-         left: 1em;
          z-index: 99;
+     }
+
+     a.dropdown-toggle {
+         border-left: solid 1px #fff;
+     }
+
+     .navbar-inverse .navbar-nav > li > a {
+         text-align: center;
+         padding: 2rem;
+     }
+
+     .navbar-nav > li {
+         display: flex;
+         align-items: center;
+     }
+
+     /*     Styling for landing pages*/
+
+     .bc-bg {
+         background-position: top right;
+         margin-right: 4rem;
      }
  }
 
@@ -830,6 +902,15 @@ ul {
      .social {
          height: 4rem;
          width: 4rem;
+     }
+
+ }
+
+ @media only screen and (min-width: 1078px) {
+
+     .navbar-inverse .navbar-nav > li > a {
+
+         padding: 2rem 4rem;
      }
  }
 
