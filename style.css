@@ -5,7 +5,7 @@
 
  #page-wrap {
      max-width: 1200px;
-     margin: 0 auto;
+     margin: 0 auto; =
  }
 
  .flex-container {
@@ -435,7 +435,12 @@
 
  .carousel-caption h1 {
      background-color: #009CBD;
-     margin-left: auto;
+     margin-left: 500px;
+     margin-right: 40px;
+     text-align: left;
+     width: 400px;
+     height: 100px;
+     padding: 10px 20px 20px 20px;
  }
 
 .carousel-section {
