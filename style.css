@@ -123,7 +123,8 @@
      color: #343741;
  }
 
- nav li:hover {
+ nav li:hover,
+nav li:active {
      background-color: #00a4c7;
  }
 
@@ -142,32 +143,64 @@
  .open > .dropdown-toggle.navbar-nav > li > a:focus,
  .navbar-nav > li > a:active.focus,
  .navbar-nav > li > a.active.focus,
- .open > .dropdown-toggle.navbar-nav > li > a.focus {
-     color: white;
+ .open > .dropdown-toggle.navbar-nav > li > a.focus,
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
+     color: #fff;
      background-color: #00a4c7;
      border-color: white;
  }
 
+
+/*
+ul {
+    overflow: hidden;
+}
+*/
+
+.dropdown:hover .dropdown-menu {
+    display: inline-block;
+}
+
+
+.navbar-inverse .navbar-nav > li > a.cust-support {
+    color: #00a4c7;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-inverse .navbar-nav > li > a.cust-support:hover {
+    color: #fff;
+}
+
+.nav>li>a>img {
+    padding-right: 1rem;
+}
+
  .cust-support {
-     color: #00a4c7;
      margin: 0;
      background-color: #dbd7d6;
      display: inline-block;
+     line-height: 2rem;
  }
 
  .cust-support .hover-white {
      display: none;
      position: absolute;
-     top: 0.6em;
-     left: 1em;
+     left: 4rem;
      z-index: 99;
  }
+
+/*
+.hover-white {
+    top: 1rem;
+}
+*/
 
  .cust-support:hover .hover-white {
      display: inline-block;
  }
 
- .cust-support > a > h5:hover {
+ .cust-support > a:hover {
      color: #fff;
  }
 
@@ -492,9 +525,16 @@
          z-index: 99;
      }
 
+/*
      .menu-pads {
          padding-left: 3rem;
      }
+*/
+     .navbar-nav>li>a,
+     .nav>li>a,
+     .navbar-form {
+    padding: 1rem 1rem 1rem 4rem;
+}
 
      .text-to-speech {
          width: 100%;
