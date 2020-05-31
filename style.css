@@ -527,6 +527,35 @@
 
 
 
+/*   Styling for contact page
+*/
+label {
+    color: #343741;
+}
+
+.btn-message {
+    color: #fff;
+    background-color: #009CBD
+}
+
+.text-muted {
+    font-size: 1.5rem;
+}
+
+.services p {
+     font-size: 2rem;
+     padding-bottom: 1rem;
+ }
+
+#contact-form {
+         padding-bottom: 4rem;
+}
+
+.links,
+.services a {
+    color: #009CBD;
+    text-decoration: underline;
+}
 
 
 
@@ -728,12 +757,16 @@
 
  }
 
+
+
  @media only screen and (max-width: 426px) {
 
+/*
      form-group,
      input {
          max-width: 68%;
      }
+*/
 
      .o-text {
          padding-right: 20%;
@@ -832,10 +865,12 @@
 
  @media only screen and (max-width: 1023px) and (min-width: 768px) {
 
+/*
      form-group,
      input {
          max-width: 75%;
      }
+*/
 
      .o-text,
      .c-text,
@@ -940,6 +975,10 @@
          width: 100%;
      }
 
+     #contact-form {
+         padding-left: 10rem;
+         padding-right: 10rem;
+     }
  }
 
  @media screen and (max-width: 745px) {
@@ -958,3 +997,9 @@
 
 
  }
+@media only screen and (max-width: 550px) {
+    
+    #contact-form {
+         padding: 4rem;
+     }
+}
