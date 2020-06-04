@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
 <?php get_header(); /* Tells WordPress to include header.php */ ?>
 <!--        Body section-->
         <section class="container-fluid landing-links">
@@ -65,4 +63,3 @@
         </div><!--          container-->
     </section>
 <?php get_footer(); /* Tells WordPress to include footer.php */ ?>
-</html>
