@@ -1,0 +1,427 @@
+@media only screen and (max-width: 767px) {
+     .header-img {
+         width: 250%
+     }
+
+
+     .navbar-nav {
+         flex-flow: column wrap;
+     }
+
+     .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+         color: #343741;
+     }
+
+     .navbar-inverse .navbar-nav > li > a {
+         border-bottom: 1px solid;
+         border-bottom-color: white;
+     }
+
+     .desktop-header {
+         display: none;
+         position: absolute;
+         top: 0.6em;
+         left: 1em;
+         z-index: 99;
+     }
+
+     .navbar-nav > li > a,
+     .nav > li > a,
+     .navbar-form {
+         padding: 1rem 1rem 1rem 4rem;
+     }
+
+     .text-to-speech {
+         width: 100%;
+         padding-left: 40px;
+         border-radius: 0;
+         margin-bottom: 2rem;
+     }
+
+
+     .d-text {
+         order: 1;
+         background: url(images/leaf-bg-sm.png);
+         background-position: 26rem;
+         background-repeat: no-repeat;
+         background-size: 40%;
+     }
+
+     .d-text p,
+     .c-text p {
+         width: 75%;
+     }
+
+     .o-text {
+         padding-right: 30%;
+         padding-left: 6%;
+     }
+
+     .d-bg {
+         order: 2;
+         background: none;
+     }
+
+     .c-text {
+         order: 1;
+         background: url(images/circle-bg-sm.png);
+         background-position: 26rem;
+         background-repeat: no-repeat;
+         background-size: 40%;
+     }
+
+     .c-bg {
+         order: 2;
+         background: none;
+
+     }
+
+     .o-text {
+         order: 1;
+         background: url(images/triangle-bg-sm.png);
+         background-position: 26rem;
+         background-repeat: no-repeat;
+         background-size: 40%;
+     }
+
+     .o-bg {
+         order: 2;
+         background: none;
+     }
+
+     .c2image,
+     .d2image,
+     .o2image {
+         display: none;
+         position: absolute;
+         top: 0;
+         left: 0;
+         z-index: 99;
+     }
+
+     .c-image,
+     .d-image,
+     .o-image {
+         display: inline;
+     }
+
+     .red-btn {
+         margin-bottom: 3rem;
+     }
+
+     .bg-1 {
+         align-content: center;
+         text-align: center;
+         padding: 2rem 0;
+     }
+
+     .donate-section {
+         justify-content: center;
+
+     }
+
+     .footer-center {
+         display: flex;
+         flex-flow: column wrap;
+         align-items: center;
+
+     }
+
+     .footer-img {
+         padding: 0 5rem;
+
+     }
+
+
+     .social-links {
+         margin: 2rem 0;
+     }
+
+     .contact-info {
+         display: flex;
+         flex-flow: column wrap;
+         align-items: center;
+     }
+
+
+     .bg-3 p {
+         font-size: 12px
+     }
+
+     .donate-footer {
+         text-align: center;
+         padding: 0 4rem 2rem;
+
+     }
+
+
+     .social {
+         margin: 0.5rem;
+     }
+
+
+     .contact {
+         text-align: center;
+         margin-top: 2rem;
+
+     }
+
+     .info-1 {
+         text-align: center;
+         margin: 0;
+
+     }
+
+     .bg-3 {
+         padding: 1rem 2rem;
+     }
+
+     .bg-3 p {
+         font-size: 10px;
+     }
+
+
+     /*     landing page styling*/
+
+     .tts-landing {
+         width: 100%;
+         border-radius: 0;
+         padding-left: 6rem;
+         margin-top: 1rem;
+     }
+
+     .bc-bg {
+         background-position: 40rem;
+     }
+
+ }
+
+ @media only screen and (max-width: 426px) {
+
+     form-group,
+     input {
+         max-width: 68%;
+     }
+
+     .o-text {
+         padding-right: 20%;
+     }
+
+     /*     landing page styling*/
+
+     .bc-bg {
+         background-position: 24rem;
+     }
+
+     .landing-img {
+         width: 100%;
+         margin: 0 0 2rem 2rem;
+     }
+
+ }
+
+ @media only screen and (max-width: 322px) {
+
+     .d-text,
+     .c-text,
+     .o-text {
+
+         background-position: 22rem;
+     }
+ }
+
+
+
+
+ @media only screen and (min-width: 768px) {
+     .header-img {
+         margin-bottom: 1em;
+         padding-top: 2rem;
+     }
+
+     .desktop-header {
+         margin: 0.5em 0;
+     }
+
+     .desktop-header h5,
+     .desktop-header h6 {
+
+         color: #00a4c7;
+         display: block;
+         text-align: right;
+         position: relative;
+         right: 4rem;
+     }
+
+     form.navbar-form.navbar-right {
+         background-color: #fff;
+         margin: 0.5em 0;
+     }
+
+     .desktop-input {
+         background-color: #f3f2f1;
+     }
+
+     .navbar-nav .search-nav {
+         display: none;
+         position: absolute;
+         top: 0.6em;
+         left: 1em;
+         z-index: 99;
+     }
+
+     .navbar-nav .cust-support {
+         display: none;
+         position: absolute;
+         z-index: 99;
+     }
+
+     a.dropdown-toggle {
+         border-left: solid 1px #fff;
+     }
+
+     .navbar-inverse .navbar-nav > li > a {
+         text-align: center;
+         padding: 2rem;
+     }
+
+     .navbar-nav > li {
+         display: flex;
+         align-items: center;
+     }
+
+     /*     Styling for landing pages*/
+
+     .bc-bg {
+         background-position: top right;
+         margin-right: 4rem;
+     }
+ }
+
+ @media only screen and (max-width: 1023px) and (min-width: 768px) {
+
+     form-group,
+     input {
+         max-width: 75%;
+     }
+
+     .o-text,
+     .c-text,
+     .d-text {
+         /*    width: 30%;*/
+         justify-content: center;
+     }
+
+     .c-image,
+     .d-image,
+     .o-image {
+         display: none;
+         position: absolute;
+         top: 0;
+         left: 0;
+         z-index: 99;
+     }
+
+     .d2image,
+     .o2image {
+         position: relative;
+         right: 8rem;
+     }
+
+     .c2image {
+         position: relative;
+         left: 8rem;
+     }
+ }
+
+
+
+ @media only screen and (min-width: 1024px) {
+
+     .o-text,
+     .c-text,
+     .d-text {
+         /*    width: 30%;*/
+         justify-content: center;
+     }
+
+     .c-image {
+         position: relative;
+         bottom: 0rem;
+         left: 9rem;
+     }
+
+     .c2image,
+     .d2image,
+     .o2image {
+         display: none;
+         position: absolute;
+         top: 0;
+         left: 0;
+         z-index: 99;
+     }
+
+     .c-image,
+     .d-image,
+     .o-image {
+         display: inline;
+     }
+
+     .social {
+         height: 4rem;
+         width: 4rem;
+     }
+
+ }
+
+ @media only screen and (min-width: 1078px) {
+
+     .navbar-inverse .navbar-nav > li > a {
+
+         padding: 2rem 4rem;
+     }
+ }
+
+ @media screen and (max-width: 1024px) {
+
+
+     .social-links {
+         width: 60%
+     }
+
+     .contact-info {
+         width: 100%;
+     }
+
+
+ }
+
+ @media screen and (max-width: 990px) {
+
+
+     .social-links {
+         width: 50%;
+     }
+
+
+     .contact-info {
+         width: 100%;
+     }
+
+ }
+
+ @media screen and (max-width: 745px) {
+
+     .footer-center {
+         margin: 2rem 0;
+     }
+
+
+
+     .donate-footer {}
+
+     .social-links {
+         width: 100%;
+     }
+
+ }
