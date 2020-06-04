@@ -1,7 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-    
-    
 <body>
 <section class="container-fluid bg-1">
         <div class="container">
@@ -66,5 +62,4 @@
         <p>© 2020 Alzheimer’s WA. All Rights Reserved. <a class="footer-legal" href="https://www.alzheimerswa.org.au/copyright" target="_blank">Copyright.</a> <a class="footer-legal" href="https://www.alzheimerswa.org.au/privacy-policy" target="_blank">Privacy Policy.</a></p>
     </footer>
 </body>
-</html>
 <?php wp_footer(); ?>
