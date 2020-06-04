@@ -247,7 +247,7 @@
      border-radius: 4px;
  }
 
- .landing-links h2 {
+ h2 {
      color: #00a4c7;
  }
 
@@ -453,7 +453,7 @@
 
 
 
- /*Styling for Landing links page*/
+ /*Styling for Landing links pages based on memory cafes page*/
 
  .bc-bg {
      background: url(images/circles-subpage.png);
@@ -526,6 +526,61 @@
  }
 
 
+ /*
+
+Styling for subpages based on Setting up Memory cafes
+*/
+
+.sub-page {
+    margin-bottom: 4rem;
+}
+
+ .video-section {
+     padding: 4rem 0;
+ }
+
+ .video {
+     background-color: lightgray;
+     width: 100%;
+     margin-top: 2rem;
+ }
+
+ .a-list {
+     list-style-image: url(images/red-bullet.png);
+
+ }
+
+ .a-list li,
+ .b-list li {
+     padding-left: 1rem;
+ }
+
+ .b-list {
+     list-style-image: url(images/blue-bullet.png);
+
+ }
+
+ol {
+    color: #E1523D;
+    margin: 1rem 0 0 3rem;
+    font-size: 2.5rem;
+}
+
+ol li {
+    padding-bottom: 1rem;
+}
+
+li p {
+    color: #343741;
+    font-size: 1.8rem;
+}
+
+h7 {
+    color: #343741;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: normal;
+}
 
 
 
