@@ -1,5 +1,6 @@
 <?php get_header(); /* Tells WordPress to include header.php */ ?>
 <!--        Body section-->
+<?php echo do_shortcode('[sp_wpcarousel id="13"]'); ?>
         <section class="container-fluid landing-links">
         <div class="container">
             <div class="row">
