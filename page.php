@@ -164,8 +164,7 @@
 
                 <div class="col-xs-1"></div>
             </div><!--row-->
-
-        </section><!--intro landing page text with image-->
+                </section><!--intro landing page text with image-->
 
         <section class="container-fluid more-info">
             <div class="col-xs-1"></div>
@@ -196,6 +195,7 @@
                     
                 
                 </div>-->
+                </div>
             </div>
             <div class="col-xs-1"></div>
         </section>
