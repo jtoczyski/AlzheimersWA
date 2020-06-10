@@ -11,8 +11,9 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
-    
-    
+
+    <!--    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">-->
+    <!--    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>-->
 
 </head>
 
@@ -93,9 +94,9 @@
                             </li>
                             <li><a href="contact.html">Contact</a></li>
                             <li>
-                                    <a class="cust-support" href="tel:1300667788" ><img src="images/phone-icon.png" alt="blue phone icon"><img src="images/phone-icon-white.png" class="hover-white" alt="white phone icon" > Call Customer Support
+                                <a class="cust-support" href="tel:1300667788"><img src="images/phone-icon.png" alt="blue phone icon"><img src="images/phone-icon-white.png" class="hover-white" alt="white phone icon"> Call Customer Support
                                 </a>
-                                </li>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -108,9 +109,9 @@
                 <div class="col-xs-10">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Memory Cafès</li>
+                        <li class="breadcrumb-item active" aria-current="page">Contact</li>
                     </ol>
-                    <h1>Memory Cafès</h1>
+                    <h1>Contact Us</h1>
                 </div>
                 <div class="col-xs-1"></div>
 
@@ -128,21 +129,19 @@
             <div class="row intro">
                 <div class="col-xs-1"></div>
                 <div class="col-xs-10">
-                    <img class="landing-img" alt="gathering at memory cafe" src="images/cafe-2.jpg">
-                    <p>Once a month in a select number of cafés across Perth, a very special morning tea takes place.
+                    <img class="landing-img" alt="couple holding hands" src="images/holding-hands.png">
+                    <p>Alzheimer’s WA’s Dementia Friendly Communities focuses on you and your community surrounding dementia, and finding ways to keep those living with the condition connected to the world around them.
+                        <!--
                         <br>
                         <br>
-
-                        The morning tea is for people living with dementia; an informal and social affair where people can feel welcomed and accepted remain socially active and make new friends.
+                        Social isolation is a widespread problem among those living with dementia. We believe the best way to combat this issue is for the community to be aware of the condition.
                         <br>
                         <br>
-                        In recognising the need to encourage inclusion of people living with dementia in the local community, Alzheimer’s WA has partnered with local Government and businesses to bring the Memory Café concept to Western Australia.
-                        <br>
-                        <br>
-                        Each of the cafés involved has an inviting and friendly atmosphere, employs delightful staff and offers delicious coffee and cake.
-                        <br>
-                        <br>
-                        Do you, a family member or friend live with dementia? Visit a Memory Café, enjoy a coffee and some great conversation.
+                        Find out more about dementia, how to communicate with people living with dementia, and places that are dementia-friendly near you within our website.
+-->
+                    </p>
+                    <h3>Together we can help prevent the stigma surrounding dementia.</h3>
+                    <p>If your town is interested in becoming a Dementia Friendly Town, or you would like to get involved in Memory Cafés please contact us on 1300 66 77 88 or <a  href="mailto:dfc@alzheimerswa.org.au"class="links">dfc@alzheimerswa.org.au</a>.
                     </p>
                 </div>
                 <div class="col-xs-1"></div>
@@ -150,34 +149,127 @@
 
         </section><!--                intro landing page text with image-->
 
+
+        <section>
+
+            <form id="contact-form" method="post" action="contact.php" role="form">
+
+                <div class="messages"></div>
+
+                <div class="controls">
+
+                    <div class="row">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-5">
+                            <div class="form-group">
+                                <label for="form_name">First Name *</label>
+                                <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your first name *" required="required" data-error="First name is required.">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-5">
+                            <div class="form-group">
+                                <label for="form_lastname">Last Name *</label>
+                                <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your last name *" required="required" data-error="Last name is required.">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-5">
+                            <div class="form-group">
+                                <label for="form_email">Email *</label>
+                                <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-5">
+                            <div class="form-group">
+                                <label for="form_phone">Phone *</label>
+                                <input id="form_phone" type="text" name="phone" class="form-control" placeholder="Please enter your phone number *" required="required" data-error="Valid number is required.">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-1"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-5">
+                            <div class="form-group">
+                                <label for="form_postcode">Postcode</label>
+                                <input id="form_postcode" type="text" name="email" class="form-control" placeholder="Please enter your postcode" data-error="Valid postcode is required.">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-5">
+                            <div class="form-group">
+                                <label for="form_business">Business</label>
+                                <input id="form_business" type="text" name="business" class="form-control" placeholder="Please enter your company name">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-10">
+                            <div class="form-group">
+                                <label for="form_message">Message *</label>
+                                <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-10">
+                            <input type="submit" class="btn btn-message btn-send" value="Send message">
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-10">
+                            <p class="text-muted">
+                                <strong>*</strong> These fields are required.</p>
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
+                </div>
+
+            </form>
+        </section><!--        contact form-->
+
+
         <section class="container-fluid more-info">
             <div class="col-xs-1"></div>
             <div class="col-xs-10">
-                <h2>Further Information</h2>
+                <h2>Head Office</h2>
                 <div class="row">
-                <div class="col-sm-6">
-                    <h3>Search for a Cafè Near Me</h3>
-                    <p>Search by suburb or on the map for a Memory Cafè nearest you.</p>
-                    <div class="learnmore">
-                         <button type="button" class="btn red-btn" data-toggle="collapse" data-target="#cafe-map">Search Cafès</button>
+                    <div class="col-sm-4">
+                        <p>55 Walters Drive<br>
+                            Osborne Park WA 6017<br>
+                            Telephone: 1300 66 77 88<br>
+                            Fax: (08) 9388 2739</p>
+                        <h4>Postal Address</h4>
+                        <p> PO Box 1509, Subiaco WA 6904
+                        </p>
                     </div>
+                    <div class="col-sm-6">
+                        <span style="color:darkmagenta">(INSERT MAP OF HEAD OFFICE WITH WP PLUGIN)</span>
                     </div>
-                <div class="col-sm-6">
-                    <h3>Setting up a Memory Cafè</h3>
-                    <p>Find information and advice on setting up a Memory Cafè in your area.</p>
-                    <div class="learnmore">
-                        <a href="#" class="btn red-btn" role="button">
-                            <h4>Learn more</h4>
-                        </a>
-                    </div></div>
                 </div>
-                
-                <div class="row">
-                    <div class="collapse" id="cafe-map">
-                    (insert WP map plug-in here)
-                    </div>
-                    
-                
+                <div class="services">
+                <p>Alzheimer’s WA also offers a range of <a href="https://www.alzheimerswa.org.au/training/">training</a> and <a href="https://www.alzheimerswa.org.au/consultancy-services/">consultancy services</a> to further grow your understanding of dementia and support those in the community on their dementia journey.</p>
                 </div>
             </div>
             <div class="col-xs-1"></div>
@@ -185,7 +277,7 @@
 
 
 
-<!--Footer section-->
+        <!--Footer section-->
 
         <section class="container-fluid bg-1">
             <div class="container">
@@ -255,7 +347,7 @@
         <footer class="container-fluid bg-3 text-left">
             <p>© 2020 Alzheimer’s WA. All Rights Reserved. <a class="footer-legal" href="https://www.alzheimerswa.org.au/copyright" target="_blank">Copyright.</a> <a class="footer-legal" href="https://www.alzheimerswa.org.au/privacy-policy" target="_blank">Privacy Policy.</a></p>
         </footer>
-        
+
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -299,5 +391,11 @@
                 }
             }
         </script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js" integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8=" crossorigin="anonymous"></script>
+        <script src="contact.js"></script>
     </div>
 </body></html>
