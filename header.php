@@ -61,7 +61,7 @@
                     <div class="navbar-header">
                         <div class="col-xs-1"></div>
                         <div class="col-xs-4">
-                            <a href="#"><img class="header-img" alt="Alzheimer's WA Logo" src="<?php the_field("headerlogo");?>"></a> 
+                            <a href="https://www.alzheimerswa.org.au/"><img class="header-img" alt="Alzheimer's WA Logo" src="<?php the_field("headerlogo");?>"></a> 
                         </div>
                         <div class="col-xs-1"></div>
                         <div class="col-xs-6 right-menu">
