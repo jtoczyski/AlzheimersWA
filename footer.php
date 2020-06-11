@@ -9,7 +9,7 @@
         </div>
 
  <div class="col-sm-3 article-cent">
-     <a href="https://www.alzheimerswa.org.au/get-involved/donate/" class="btn btn-default btn-lg" target="_blank"><h3>Donate</h3></a>
+     <a href="<?php the_field('donatelink'); ?>" class="btn btn-default btn-lg"><h3>Donate</h3></a>
         </div>
     <div class="col-sm-2"></div>
 
