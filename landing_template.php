@@ -65,7 +65,30 @@
                 
 <!--                INSERT map plug-in HERE-->
 
-
+ <div class="row">
+                    <div class="col-sm-6">
+                        <h3><?php the_field("furtherinfosubheading3"); ?></h3>
+                        <p><?php the_field("textforfurtherinfo3"); ?> </p>
+                        
+                         <div class= "learnmore">
+                        <a href="<?php the_field("button3"); ?>" class="btn red-btn" role="button">
+                            <h4><?php the_field("button3text"); ?></h4>
+                        </a>
+                    </div><!--button to learnmore -->
+                        
+                        
+            
+                    </div>
+                    <div class="col-sm-6">
+                        <h3><?php the_field("furtherinfosubheading4"); ?></h3>
+                        <p><?php the_field("textforfurtherinfo4"); ?> </p>
+                        <div class= "learnmore">
+                        <a href="<?php the_field("button4"); ?>" class="btn red-btn" role="button">
+                            <h4><?php the_field("button4text"); ?></h4>
+                        </a>
+                    </div><!--button to learnmore -->
+                    </div>
+                </div>
             </div>
             <div class="col-xs-1"></div>
         </section>
