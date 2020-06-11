@@ -61,7 +61,7 @@
                     <div class="navbar-header">
                         <div class="col-xs-1"></div>
                         <div class="col-xs-4">
-                            <a href="#"><img class="header-img" src="images/awa-logo-with-tagline-final.png" alt="Alzheimer's WA Logo"></a> 
+                            <a href="#"><img class="header-img" alt="Alzheimer's WA Logo" src="<?php the_field("headerlogo");?>"></a> 
                         </div>
                         <div class="col-xs-1"></div>
                         <div class="col-xs-6 right-menu">
@@ -80,7 +80,7 @@
                             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span> 
                             </button>
 
                             
