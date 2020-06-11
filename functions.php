@@ -16,4 +16,8 @@ function add_menu_link_class( $atts, $item, $args ) {
     }
     return $atts;
 }
+	if ( get_field('headerlogo') ) {
+		echo 'style="background: url(' . get_field('headerlogo') . ')"';
+	}
+
 ?>
