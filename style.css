@@ -455,11 +455,24 @@
 
  /*Styling for Landing links pages based on memory cafes page*/
 
- .bc-bg {
+.circle-bg {
      background: url(images/circles-subpage.png);
      background-repeat: no-repeat;
      background-size: contain;
  }
+
+.triangle-bg {
+     background: url(images/triangles-subpages.png);
+     background-repeat: no-repeat;
+     background-size: contain;
+ }
+
+.leaf-bg {
+     background: url(images/leaf-subpages.png);
+     background-repeat: no-repeat;
+     background-size: contain;
+ }
+
 
  .breadcrumb {
      background: none;
@@ -806,7 +819,9 @@ label {
          margin-top: 1rem;
      }
 
-     .bc-bg {
+     .circle-bg,
+     .triangle-bg,
+     .leaf-bg {
          background-position: 40rem;
      }
 
@@ -829,7 +844,9 @@ label {
 
      /*     landing page styling*/
 
-     .bc-bg {
+     .circle-bg,
+     .triangle-bg,
+     .leaf-bg {
          background-position: 24rem;
      }
 
@@ -912,7 +929,9 @@ label {
 
      /*     Styling for landing pages*/
 
-     .bc-bg {
+     .circle-bg,
+     .triangle-bg,
+     .leaf-bg {
          background-position: top right;
          margin-right: 4rem;
      }
