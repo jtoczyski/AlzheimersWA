@@ -89,6 +89,19 @@
                 </div>
                 <div class="row">
                     <div class="collapse navbar-collapse" id="myNavbar">
+                        
+                        <ul class="nav navbar-nav">
+  <?php wp_nav_menu(array(
+        'menu' => 'Top menu',
+        'items_wrap'=>'%3$s',
+        'container' => false,
+        'list_item_class' => "nav-item",
+        'link_class' => "nav-link",
+        )); ?>
+</ul>
+
+                        
+<!--
                         <ul class="nav navbar-nav">
                             <li class="search-nav">
                             <form class="navbar-form navbar-right">
@@ -126,6 +139,7 @@
                                 </a>
                                 </li>
                         </ul>
+-->
                     </div>
                 </div>
             </div>
