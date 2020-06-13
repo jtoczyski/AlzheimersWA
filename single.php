@@ -1,6 +1,6 @@
 <?php get_header(); /* Tells WordPress to include header.php */ ?>
 
-<div class="breadcrumb"><?php get_breadcrumb(); ?></div>
+<!--<div class="breadcrumb"><?php get_breadcrumb(); ?></div>-->
 <div class="container-fluid maincontainer">
     <div class="container">
         <div class="row">
