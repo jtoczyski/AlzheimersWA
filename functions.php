@@ -19,10 +19,7 @@ function add_menu_link_class( $atts, $item, $args ) {
 	if ( get_field('headerlogo') ) {
 		echo 'style="background: url(' . get_field('headerlogo') . ')"';
 	}
-
-?>
-
-<?php
+/*
 function get_breadcrumb() {
     echo '<a href="'.home_url().'" rel="nofollow">Home</a>';
     if (is_category() || is_single()) {
@@ -42,4 +39,6 @@ function get_breadcrumb() {
         echo '</em>"';
     }
 }
+*/
+
 ?>
