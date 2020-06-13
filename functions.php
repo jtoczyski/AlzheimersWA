@@ -10,36 +10,9 @@ function theme_add_bootstrap() {
 add_action( 'wp_enqueue_scripts', 'theme_add_bootstrap' );
 add_theme_support( 'post-thumbnails' );
 
-function add_menu_link_class( $atts, $item, $args ) {
-    if ( $args->link_class ) {
-        $atts['class'] = $args->link_class;
-    }
-    return $atts;
-}
-	if ( get_field('headerlogo') ) {
-		echo 'style="background: url(' . get_field('headerlogo') . ')"';
-	}
-/*
-function get_breadcrumb() {
-    echo '<a href="'.home_url().'" rel="nofollow">Home</a>';
-    if (is_category() || is_single()) {
-        echo "&nbsp;&nbsp;&#187;\005C&nbsp;";
-        the_category(' &bull; ');
-            if (is_single()) {
-                echo " &nbsp;&nbsp;\005C&nbsp;&nbsp; ";
-                the_title();
-            }
-    } elseif (is_page()) {
-        echo "&nbsp;&nbsp;\005C&nbsp;&nbsp;";
-        echo the_title();
-    } elseif (is_search()) {
-        echo "&nbsp;&nbsp;\005C&nbsp;&nbsp;Search Results for... ";
-        echo '"<em>';
-        echo the_search_query();
-        echo '</em>"';
-    }
-}
-*/
+?>
+
+<?php
 function add_menu_link_class( $atts, $item, $args ) {
 if($args->link_class) {$atts['class'] = $args->link_class;
 }
@@ -51,5 +24,10 @@ if($args->list_item_class){$classes[] = $args->list_item_class;
                           }return $classes;
     }
 add_filter('nav_menu_css_class', 'add_menu_list_item_class', 1, 3);
+ ?>
 
+<?php
+	if ( get_field('headerlogo') ) {
+		echo 'style="background: url(' . get_field('headerlogo') . ')"';
+	}
 ?>
