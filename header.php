@@ -51,7 +51,7 @@
 <body>
 
     <div id="page-wrap">
-
+<header>
         <!--Navbar-->
         <nav class="navbar navbar-inverse">
             <div class="container-fluid">
@@ -144,3 +144,4 @@
                 </div>
             </div>
         </nav>
+        </header>
