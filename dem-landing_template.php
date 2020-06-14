@@ -1,6 +1,6 @@
 <?php
     /*
-    Template Name: Cafe landing
+    Template Name: Dementia landing
     */
     ?>
 <?php get_header(); /* Tells WordPress to include header.php */ ?>
@@ -84,7 +84,7 @@
                     
                     <div class="col-sm-4">
                         <div class="pdf-link">
-                            <a href="<?php the_field("pdfbutton3"); ?>" class="btn grey-btn" role="button">
+                            <a href="<?php the_field("pdfbutton6"); ?>" class="btn grey-btn" role="button">
                             <?php the_field("pdfbutton6text"); ?>
                             </a>
                         </div>                
