@@ -455,19 +455,19 @@
 
  /*Styling for Landing links pages based on memory cafes page*/
 
-.circle-bg {
+ .circle-bg {
      background: url(images/circles-subpage.png);
      background-repeat: no-repeat;
      background-size: contain;
  }
 
-.triangle-bg {
+ .triangle-bg {
      background: url(images/triangles-subpages.png);
      background-repeat: no-repeat;
      background-size: contain;
  }
 
-.leaf-bg {
+ .leaf-bg {
      background: url(images/leaf-subpages.png);
      background-repeat: no-repeat;
      background-size: contain;
@@ -526,7 +526,8 @@
      padding-bottom: 1rem;
  }
 
- .more-info h2 {
+ .more-info h2,
+ .resources h2 {
      color: #E1523D;
  }
 
@@ -538,15 +539,57 @@
      font-size: 1.8rem;
  }
 
+ /*Styling for dementia landing page*/
+ /*
+
+.pdf-link {
+    display: flex;
+     flex-wrap: wrap;
+    
+}
+*/
+
+ .flex-container {
+     display: flex;
+     flex-flow: row wrap;
+     justify-content: space-around;
+ }
+
+ .grey-btn {
+     /*
+     display: inline-flex;
+     flex-flow: column wrap;
+     overflow-wrap: anywhere;
+*/
+     color: #009CBD;
+     background-color: #f3f2f1;
+     padding: 0.5em 0.5em;
+     font-size: 1.2em;
+     margin-bottom: 1em;
+     padding: 1em;
+     text-align: center;
+
+ }
+
+ a {
+     overflow-wrap: anywhere;
+ }
+
+ .grey-btn:hover {
+     background-color: #009CBD;
+     color: #fff;
+     border-color: #009CBD;
+ }
+
 
  /*
 
 Styling for subpages based on Setting up Memory cafes
 */
 
-.sub-page {
-    margin-bottom: 4rem;
-}
+ .sub-page {
+     margin-bottom: 4rem;
+ }
 
  .video-section {
      padding: 4rem 0;
@@ -573,57 +616,57 @@ Styling for subpages based on Setting up Memory cafes
 
  }
 
-ol {
-    color: #E1523D;
-    margin: 1rem 0 0 3rem;
-    font-size: 2.5rem;
-}
+ ol {
+     color: #E1523D;
+     margin: 1rem 0 0 3rem;
+     font-size: 2.5rem;
+ }
 
-ol li {
-    padding-bottom: 1rem;
-}
+ ol li {
+     padding-bottom: 1rem;
+ }
 
-li p {
-    color: #343741;
-    font-size: 1.8rem;
-}
+ li p {
+     color: #343741;
+     font-size: 1.8rem;
+ }
 
-h7 {
-    color: #343741;
-    font-weight: 700;
-    font-size: 2rem;
-    line-height: normal;
-}
+ h7 {
+     color: #343741;
+     font-weight: 700;
+     font-size: 2rem;
+     line-height: normal;
+ }
 
-/*   Styling for contact page
+ /*   Styling for contact page
 */
-label {
-    color: #343741;
-}
+ label {
+     color: #343741;
+ }
 
-.btn-message {
-    color: #fff;
-    background-color: #009CBD
-}
+ .btn-message {
+     color: #fff;
+     background-color: #009CBD
+ }
 
-.text-muted {
-    font-size: 1.5rem;
-}
+ .text-muted {
+     font-size: 1.5rem;
+ }
 
-.services p {
+ .services p {
      font-size: 2rem;
      padding-bottom: 1rem;
  }
 
-#contact-form {
-         padding-bottom: 4rem;
-}
+ #contact-form {
+     padding-bottom: 4rem;
+ }
 
-.links,
-.services a {
-    color: #009CBD;
-    text-decoration: underline;
-}
+ .links,
+ .services a {
+     color: #009CBD;
+     text-decoration: underline;
+ }
 
 
 
@@ -831,7 +874,7 @@ label {
 
  @media only screen and (max-width: 426px) {
 
-/*
+     /*
      form-group,
      input {
          max-width: 68%;
@@ -939,7 +982,7 @@ label {
 
  @media only screen and (max-width: 1023px) and (min-width: 768px) {
 
-/*
+     /*
      form-group,
      input {
          max-width: 75%;
@@ -1071,9 +1114,10 @@ label {
 
 
  }
-@media only screen and (max-width: 550px) {
-    
-    #contact-form {
+
+ @media only screen and (max-width: 550px) {
+
+     #contact-form {
          padding: 4rem;
      }
-}
+ }
