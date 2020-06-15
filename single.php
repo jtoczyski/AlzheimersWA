@@ -1,6 +1,5 @@
 <?php get_header(); /* Tells WordPress to include header.php */ ?>
 
-<!--<div class="breadcrumb"><?php get_breadcrumb(); ?></div>-->
 <div class="container-fluid maincontainer">
     <div class="container">
         <div class="row">
@@ -8,7 +7,7 @@
 <h2>LATEST ARTICLES</h2>	
 
 
-<article class="excerpts"> <!--we can reuse the css on the old article to restyle the new dynamic posts-->
+<article class="excerpts"> 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 					
 	<div <?php post_class(); ?>>
