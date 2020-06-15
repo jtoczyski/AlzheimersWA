@@ -18,7 +18,7 @@ if(function_exists('bcn_display'))
 bcn_display();
 }?>
 </div>
-                    <h1><?php the_field("titleformemorypage"); ?></h1>
+                    <h1><?php the_field("titlefordementiapage"); ?></h1>
                 </div>
                 <div class="col-xs-1"></div>
 
