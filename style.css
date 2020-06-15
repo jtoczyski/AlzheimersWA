@@ -255,7 +255,7 @@
      color: white;
      background-color: #f1563f;
      padding: 0.5em 0.5em;
-     
+
  }
 
  .btn h4 {
@@ -541,9 +541,9 @@
  }
 
  /*Styling for dementia landing page*/
- 
 
-/*
+
+ /*
 .pdf-link {
     width: 50%;
     
@@ -558,7 +558,7 @@
  }
 
  .grey-btn {
-     
+
      display: inline-flex;
      flex-flow: column wrap;
      overflow-wrap: anywhere;
@@ -575,6 +575,7 @@
  }
 
  a {
+     color: #00a4c7;
      overflow-wrap: anywhere;
  }
 
@@ -671,7 +672,7 @@ Styling for subpages based on Setting up Memory cafes
      text-decoration: underline;
  }
 
-    
+
  @media only screen and (max-width: 767px) {
      .header-img {
          width: 250%;
