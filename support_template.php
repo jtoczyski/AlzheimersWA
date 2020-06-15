@@ -18,7 +18,7 @@ if(function_exists('bcn_display'))
 {
 bcn_display();
 }?>
-</div>
+</div><!--                breadcrumbs-->
 
                 <h1><?php the_field("titleforsupportpage"); ?></h1>
             </div>
@@ -54,6 +54,7 @@ bcn_display();
 
                     <div class="learnmore">
                         <a href="<?php the_field("buttonforservice1"); ?>" class="btn red-btn" role="button">
+                            <?php the_field("buttonforservice1Text"); ?>
                         </a>
                     </div>
                     <!--button to families and friends course -->
@@ -66,6 +67,7 @@ bcn_display();
 
                     <div class="learnmore">
                         <a href="<?php the_field("buttonforservice2"); ?>" class="btn red-btn" role="button">
+                            <?php the_field("buttonforservice2Text"); ?>
                         </a>
                     </div>
                     <!--friendship clubs -->
@@ -79,6 +81,7 @@ bcn_display();
 
                     <div class="learnmore">
                         <a href="<?php the_field("buttonforservice3"); ?>" class="btn red-btn" role="button">
+                            <?php the_field("buttonforservice3Text"); ?>
                         </a>
                     </div>
                     <!--button to adjusting to change -->
