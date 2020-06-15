@@ -11,8 +11,13 @@
         <div class="row leaf-bg">
             <div class="col-xs-1"></div>
             <div class="col-xs-10">
-
-                <!--                    Add breadcrumb plugin here-->
+<div class="breadcrumb" typeof="BreadcrumbList" vocab="https://schema.org/">
+<?php
+if(function_exists('bcn_display'))
+{
+bcn_display();
+}?>
+</div>
 
                 <h1><?php the_field("titleforadvocatepage"); ?></h1>
             </div>
