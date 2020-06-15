@@ -86,12 +86,6 @@
                                     </div>
 
                                 </div>
-                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                </button>
-
 
                             </div>
                         </div>
@@ -99,7 +93,6 @@
                     <div class="row">
                         <div class="collapse navbar-collapse" id="myNavbar">
                             <?php wp_nav_menu( array( 'theme_location' => 'max_mega_menu_1' ) ); ?>
-
 
                         </div>
                     </div>
