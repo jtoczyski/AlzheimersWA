@@ -5,8 +5,21 @@
     ?>
 <?php get_header(); /* Tells WordPress to include header.php */ ?>
 <!--        Body section-->
+            <?php
+global $more;//define a global variable
+$more = 0;// the global varibale is now equal to 0
+query_posts('cat=3');//look for posts that have the category of 2
+if(have_posts()) ://if we have posts to display
+while(have_posts()) :the_post();//LOOP through all the posts and find the one that has a category of 2 get thet title and content
+?>
+            <div><p class="about-text"><?php the_content() ?></p></div>
+<?php
+endwhile;
+endif;
+wp_reset_query();?>
         <section class="container-fluid landing-links">
-        <div class="container">
+        <div class="container">    
+
             <div class="row">
         <div class="text-to-speech">
 <!--                button for text-to-speech function-->
@@ -42,15 +55,16 @@
                         </a>
                     </div>
                     </div>
-                </div>
                 
             <div class="col-sm-6 c-bg"><!--image-->                    
                 <img class = 'c-image img-responsive' alt = 'couple at a cafe' src ='<?php the_field("sectionimage2");?>'>
                     <!--<img class = 'c2image img-responsive' alt = 'couple at a cafe cropped' src = 'images/cafe-md.jpg'> CUSTOM FIELD FOR RESPONSIVE IMAGE???--> 
                 </div>
+            </div>
+
 
         <div class="col-sm-1"></div>
-            </div><!--        memory cafe row-->
+            <!--        memory cafe row-->
             
              <div class="row organisation">
                  <div class="col-sm-1"></div>
@@ -67,6 +81,7 @@
                     </div>
                  <div class="col-sm-1"></div>
             </div><!--info for organisations row-->
+            </div>
         </div><!--container-->
     </section>
 <?php get_footer(); /* Tells WordPress to include footer.php */ ?>
