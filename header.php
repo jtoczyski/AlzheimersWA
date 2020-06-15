@@ -62,7 +62,7 @@
                         <div class="navbar-header">
                             <div class="col-xs-1"></div>
                             <div class="col-xs-4">
-                                <a href="https://www.alzheimerswa.org.au/"><img class="header-img" alt="Alzheimer's WA Logo" src="<?php the_field("headerlogo");?>"></a>
+                                <a href="https://dementiafriendlywa.com.au/"><img class="header-img" alt="Alzheimer's WA Logo" src="<?php the_field("headerlogo");?>"></a>
                             </div>
                             <div class="col-xs-1"></div>
                             <div class="col-xs-6 right-menu">
@@ -74,6 +74,8 @@
                                     </a>
                                     <div class="navbar-form navbar-right">
                                         <div class="form-group">
+					
+				
                                             <?php if ( is_active_sidebar( 'sidebar1' ) ) : ?>
 
                                             <ul id="sidebar">
@@ -92,10 +94,9 @@
                     </div>
                     <div class="row">
                         <div class="collapse navbar-collapse" id="myNavbar">
-                            <?php wp_nav_menu( array( 'theme_location' => 'max_mega_menu_1' ) ); ?>
-
+                           <?php wp_nav_menu( array( 'theme_location' => 'max_mega_menu_1' ) ); ?>
                         </div>
                     </div>
-                </div>
+                    </div>
             </nav>
         </header>
