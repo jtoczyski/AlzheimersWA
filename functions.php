@@ -27,3 +27,16 @@ add_filter('nav_menu_css_class', 'add_menu_list_item_class', 1, 3);
 echo 'style="background: url(' . get_field('headerlogo') . ')"';
 	}
 ?>
+<?php
+function sidebar() {
+               register_sidebar( array(
+ 'name'          => 'sidebar',
+'id'            => 'sidebar1',
+'before_widget' => '<div>',
+'after_widget'  => '</div>',
+'before_title'  => '<p class="rounded">',
+'after_title'   => '</p>',
+) );
+}
+add_action( 'widgets_init', 'sidebar' );
+?>
