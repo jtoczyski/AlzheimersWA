@@ -98,57 +98,9 @@
                     </div>
                     <div class="row">
                         <div class="collapse navbar-collapse" id="myNavbar">
-
-                            <ul class="nav navbar-nav">
-                                <?php wp_nav_menu(array(
-        'menu' => 'Top menu',
-        'items_wrap'=>'%3$s',
-        'container' => false,
-        'list_item_class' => "nav-item",
-        'link_class' => "nav-link",
-        )); ?>
-                            </ul>
+                            <?php wp_nav_menu( array( 'theme_location' => 'max_mega_menu_1' ) ); ?>
 
 
-                            <!--
-                        <ul class="nav navbar-nav">
-                            <li class="search-nav">
-                            <form class="navbar-form navbar-right">
-                                    <div class="form-group">
-                                        <input type="text" id="mySearch2" onkeyup="myFunction()" title="Type in a category">
-                            
-                                    <button type="submit" class="btn btn-search">Search</button></div>
-                                </form></li>
-                            <li><a href="index.html">Home</a></li>
-                            <li class="dropdown">
-                                <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0)">What is Dementia?</a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">5 Simple Tips</a></li>
-                                    <li><a href="#">Where to Access Support</a></li>
-                                    <li><a href="#">Becoming an Advocate</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a class="dropdown-toggle"  href="cafes.html">Memory Cafés</a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Setting up a Memory Café</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0)">Information for Organisations</a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Resources for Businesses</a></li>
-                                    <li><a href="#">Resources for Local Governments</a></li>
-                                    <li><a href="#">Success Stories</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Contact</a></li>
-                            <li>
-                                    <a class="cust-support" href="tel:1300667788" ><img src="images/phone-icon.png" alt="blue phone icon"><img src="images/phone-icon-white.png" class="hover-white" alt="white phone icon" > Call Customer Support
-                                </a>
-                                </li>
-                        </ul>
--->
                         </div>
                     </div>
                 </div>
