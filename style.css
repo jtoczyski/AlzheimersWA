@@ -450,8 +450,20 @@
  .contact-info p {
      font-size: 1.5rem;
  }
+.rsbtn .rsbtn_left .rsbtn_text {
+    font-family: "Lucida Grande","Lucida Sans","Lucida",sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 16px;
+    margin: 5px 10px;
+    padding-left: 20px;
+    background: transparent url(img/blue-speaker.png) no-repeat scroll 0 -641px;
+}
 
-
+.zeno_font_resizer > a {
+    color: #00a4c7;
+}
 
 
  /*Styling for Landing links pages based on memory cafes page*/
