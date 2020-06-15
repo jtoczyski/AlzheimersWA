@@ -2,8 +2,8 @@
     <meta charset="<?php bloginfo('charset'); ?>">
 
 
-	<title>
-		   <?php
+    <title>
+        <?php
 		      if (function_exists('is_tag') && is_tag()) {
 		         single_tag_title("Tag Archive for &quot;"); echo '&quot; - '; }
 		      elseif (is_archive()) {
@@ -21,29 +21,30 @@
 		      if ($paged>1) {
 		         echo ' - page '. $paged; }
 		   ?>
-	</title>
-	
-	
-	<meta name="description" content="<?php bloginfo('description'); ?>">
+    </title>
 
 
-<!—Viewport responsive  -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0">		
-	
-<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/_/img/favicon.ico">
-	<!-- This is the traditional favicon.
+    <meta name="description" content="<?php bloginfo('description'); ?>">
+
+
+    <!—Viewport responsive -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/_/img/favicon.ico">
+        <!-- This is the traditional favicon.
 		 - size: 16x16 or 32x32
 		 - transparency is OK -->
-    <!—Google fonts  -->
-        
-        <link href="https://fonts.googleapis.com/css?family=Raleway:400,800" rel="stylesheet">
+        <!—Google fonts -->
 
-    
-       
-    <!-- CSS:  -->
-<!--remove all our styles and any Javascript code. Wordpress automatically calls javascript /jquery elsewhere, calls to javascript are not needed in the header or the footer now-->
-    
-<?php wp_head(); ?> <!--very important that this is added-->
+            <link href="https://fonts.googleapis.com/css?family=Raleway:400,800" rel="stylesheet">
+
+
+
+            <!-- CSS:  -->
+            <!--remove all our styles and any Javascript code. Wordpress automatically calls javascript /jquery elsewhere, calls to javascript are not needed in the header or the footer now-->
+
+            <?php wp_head(); ?>
+            <!--very important that this is added-->
 
 
 </head>
@@ -51,57 +52,65 @@
 <body>
 
     <div id="page-wrap">
-<header>
-        <!--Navbar-->
-        <nav class="navbar navbar-inverse">
-            <div class="container-fluid">
-                <div class="row">
+        <header>
+            <!--Navbar-->
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <div class="row">
 
 
-                    <div class="navbar-header">
-                        <div class="col-xs-1"></div>
-                        <div class="col-xs-4">
-                            <a href="https://www.alzheimerswa.org.au/"><img class="header-img" alt="Alzheimer's WA Logo" src="<?php the_field("headerlogo");?>"></a> 
-                        </div>
-                        <div class="col-xs-1"></div>
-                        <div class="col-xs-6 right-menu">
-                            <div class="row desktop-header">
-                                
-                                <a href="tel:1300667788" ><h6>Customer Support:</h6> <h5>1300 66 77 88</h5>
-                                </a> 
-                                <form class="navbar-form navbar-right">
-                                    <div class="form-group">
-                                        <input class="desktop-input" type="text" id="mySearch" onkeyup="myFunction()" title="Type in a category">
-                            
-                                    <button type="submit" class="btn btn-search">Search</button></div>
-                                </form>
-                                
+                        <div class="navbar-header">
+                            <div class="col-xs-1"></div>
+                            <div class="col-xs-4">
+                                <a href="https://www.alzheimerswa.org.au/"><img class="header-img" alt="Alzheimer's WA Logo" src="<?php the_field("headerlogo");?>"></a>
                             </div>
-                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span> 
-                            </button>
+                            <div class="col-xs-1"></div>
+                            <div class="col-xs-6 right-menu">
+                                <div class="row desktop-header">
 
-                            
+                                    <a href="tel:1300667788">
+                                        <h6>Customer Support:</h6>
+                                        <h5>1300 66 77 88</h5>
+                                    </a>
+                                    <div class="navbar-form navbar-right">
+                                        <div class="form-group">
+                                            <?php if ( is_active_sidebar( 'sidebar1' ) ) : ?>
+
+                                            <ul id="sidebar">
+
+                                                <?php dynamic_sidebar( 'sidebar1' ); ?>
+
+                                            </ul>
+
+                                            <?php endif; ?></div>
+                                    </div>
+
+                                </div>
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+
+
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="collapse navbar-collapse" id="myNavbar">
-                        
-                        <ul class="nav navbar-nav">
-  <?php wp_nav_menu(array(
+                    <div class="row">
+                        <div class="collapse navbar-collapse" id="myNavbar">
+
+                            <ul class="nav navbar-nav">
+                                <?php wp_nav_menu(array(
         'menu' => 'Top menu',
         'items_wrap'=>'%3$s',
         'container' => false,
         'list_item_class' => "nav-item",
         'link_class' => "nav-link",
         )); ?>
-</ul>
+                            </ul>
 
-                        
-<!--
+
+                            <!--
                         <ul class="nav navbar-nav">
                             <li class="search-nav">
                             <form class="navbar-form navbar-right">
@@ -140,8 +149,8 @@
                                 </li>
                         </ul>
 -->
+                        </div>
                     </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
         </header>
