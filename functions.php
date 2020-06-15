@@ -1,5 +1,4 @@
 <?php
-
 function theme_add_bootstrap() {
     wp_enqueue_style( 'bootstrap-css', get_template_directory_uri() . '/css/bootstrap.min.css' );
     wp_enqueue_style( 'style-css', get_template_directory_uri() . '/style.css' );
@@ -9,9 +8,7 @@ function theme_add_bootstrap() {
 }
 add_action( 'wp_enqueue_scripts', 'theme_add_bootstrap' );
 add_theme_support( 'post-thumbnails' );
-
 ?>
-
 <?php
 function add_menu_link_class( $atts, $item, $args ) {
 if($args->link_class) {$atts['class'] = $args->link_class;
@@ -25,9 +22,8 @@ if($args->list_item_class){$classes[] = $args->list_item_class;
     }
 add_filter('nav_menu_css_class', 'add_menu_list_item_class', 1, 3);
  ?>
-
 <?php
 	if ( get_field('headerlogo') ) {
-		echo 'style="background: url(' . get_field('headerlogo') . ')"';
+echo 'style="background: url(' . get_field('headerlogo') . ')"';
 	}
 ?>
