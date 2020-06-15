@@ -24,6 +24,24 @@ bcn_display();
                 <div class="col-xs-1"></div>
 
             </div><!--            row with circles background-->
+    
+                <div class="row">
+        <div class="text-to-speech">
+<!--                button for text-to-speech function-->
+            <p>Listen to this page</p>
+<?php
+global $more;//define a global variable
+$more = 0;// the global varibale is now equal to 0
+query_posts('cat=10');//look for posts that have the category of 10
+if(have_posts()) ://if we have posts to display
+while(have_posts()) :the_post();//LOOP through all the posts and find the one that has a category of 10 get the content
+?>
+            <div><p class=""><?php the_content() ?></p></div>
+<?php
+endwhile;
+endif;
+wp_reset_query();?>
+</div>
 
             
             <div class="row intro">
@@ -49,11 +67,26 @@ bcn_display();
                         <h3><?php the_field("mfurtherinfosubheading1"); ?></h3>
                         <p><?php the_field("mtextforfurtherinfo1"); ?> </p>
                         
+                        
                          <div class= "learnmore">
+                             <div class= "dropdown">
                         <a href="<?php the_field("memorybutton1"); ?>" class="btn red-btn" role="button">
                             <h4><?php the_field("memorybutton1text"); ?></h4>
-                        </a>
-                    </div><!--button to cafes map -->
+                            </a>
+<?php 
+global $more;//define a global variable
+$more = 0;// the global varibale is now equal to 0
+query_posts('cat=12');//look for posts that have the category of 12
+if(have_posts()) ://if we have posts to display
+while(have_posts()) :the_post();//LOOP through all the posts and find the one that has a category of 12 get the content
+?>
+            <div class="dropdown-content"><p><?php the_content() ?></p></div>
+<?php
+endwhile;
+endif;
+wp_reset_query();?>
+                             </div> <!--dropdown-->
+                        </div><!--button to cafes map -->
                         
             
                     </div>
@@ -69,8 +102,6 @@ bcn_display();
                     </div>
                 </div>
                 
-<div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=university%20of%20san%20francisco&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.net/blog/divi-discount-code-elegant-themes-coupon/"></a></div><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div>
-
             </div>
             <div class="col-xs-1"></div>
         </section>
