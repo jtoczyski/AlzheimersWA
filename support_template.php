@@ -99,45 +99,21 @@ bcn_display();
                 <div class="row">
                     <div class="col-sm-4">
                         <div class="pdf-link">
-                            <a href="<?php the_field("supportresource1"); ?>" class="btn grey-btn" role="button">
+                            <a href="<?php the_field("supportresource1"); ?>" class="grey-btn" role="button">
                             </a>
                         </div>                
                     </div>
                     
                     <div class="col-sm-4">
                         <div class="pdf-link">
-                            <a href="<?php the_field("supportresource2"); ?>" class="btn grey-btn" role="button">
+                            <a href="<?php the_field("supportresource2"); ?>" class="grey-btn" role="button">
                             </a>
                         </div>                
                     </div>
                     
                     <div class="col-sm-4">
                         <div class="pdf-link">
-                            <a href="<?php the_field("supportresource3"); ?>" class="btn grey-btn" role="button">
-                            </a>
-                        </div>                
-                    </div>
-                    
-                </div>
-                
-                <div class="row">
-                    <div class="col-sm-4">
-                        <div class="pdf-link">
-                            <a href="<?php the_field("supportresource4"); ?>" class="btn grey-btn" role="button">
-                            </a>
-                        </div>                
-                    </div>
-                    
-                    <div class="col-sm-4">
-                        <div class="pdf-link">
-                            <a href="<?php the_field("supportresource5"); ?>" class="btn grey-btn" role="button">
-                            </a>
-                        </div>                
-                    </div>
-                    
-                    <div class="col-sm-4">
-                        <div class="pdf-link">
-                            <a href="<?php the_field("supportresource6"); ?>" class="btn grey-btn" role="button">
+                            <a href="<?php the_field("supportresource3"); ?>" class="grey-btn" role="button">
                             </a>
                         </div>                
                     </div>
@@ -147,21 +123,21 @@ bcn_display();
                 <div class="row">
                     <div class="col-sm-4">
                         <div class="pdf-link">
-                            <a href="<?php the_field("supportresource7"); ?>" class="btn grey-btn" role="button">
+                            <a href="<?php the_field("supportresource4"); ?>" class="grey-btn" role="button">
                             </a>
                         </div>                
                     </div>
                     
                     <div class="col-sm-4">
                         <div class="pdf-link">
-                            <a href="<?php the_field("supportresource8"); ?>" class="btn grey-btn" role="button">
+                            <a href="<?php the_field("supportresource5"); ?>" class="grey-btn" role="button">
                             </a>
                         </div>                
                     </div>
                     
                     <div class="col-sm-4">
                         <div class="pdf-link">
-                            <a href="<?php the_field("supportresource9"); ?>" class="btn grey-btn" role="button">
+                            <a href="<?php the_field("supportresource6"); ?>" class="grey-btn" role="button">
                             </a>
                         </div>                
                     </div>
@@ -171,21 +147,45 @@ bcn_display();
                 <div class="row">
                     <div class="col-sm-4">
                         <div class="pdf-link">
-                            <a href="<?php the_field("supportresource10"); ?>" class="btn grey-btn" role="button">
+                            <a href="<?php the_field("supportresource7"); ?>" class="grey-btn" role="button">
                             </a>
                         </div>                
                     </div>
                     
                     <div class="col-sm-4">
                         <div class="pdf-link">
-                            <a href="<?php the_field("supportresource11"); ?>" class="btn grey-btn" role="button">
+                            <a href="<?php the_field("supportresource8"); ?>" class="grey-btn" role="button">
                             </a>
                         </div>                
                     </div>
                     
                     <div class="col-sm-4">
                         <div class="pdf-link">
-                            <a href="<?php the_field("supportresource12"); ?>" class="btn grey-btn" role="button">
+                            <a href="<?php the_field("supportresource9"); ?>" class="grey-btn" role="button">
+                            </a>
+                        </div>                
+                    </div>
+                    
+                </div>
+                
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="pdf-link">
+                            <a href="<?php the_field("supportresource10"); ?>" class="grey-btn" role="button">
+                            </a>
+                        </div>                
+                    </div>
+                    
+                    <div class="col-sm-4">
+                        <div class="pdf-link">
+                            <a href="<?php the_field("supportresource11"); ?>" class="grey-btn" role="button">
+                            </a>
+                        </div>                
+                    </div>
+                    
+                    <div class="col-sm-4">
+                        <div class="pdf-link">
+                            <a href="<?php the_field("supportresource12"); ?>" class="grey-btn" role="button">
                             </a>
                         </div>                
                     </div>
