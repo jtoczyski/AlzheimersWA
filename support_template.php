@@ -100,6 +100,7 @@ bcn_display();
                     <div class="col-sm-4">
                         <div class="pdf-link">
                             <a href="<?php the_field("supportresource1"); ?>" class="grey-btn" role="button">
+                                 <?php the_field("supportresource1text"); ?>
                             </a>
                         </div>                
                     </div>
@@ -107,6 +108,7 @@ bcn_display();
                     <div class="col-sm-4">
                         <div class="pdf-link">
                             <a href="<?php the_field("supportresource2"); ?>" class="grey-btn" role="button">
+                                 <?php the_field("supportresource2text"); ?>
                             </a>
                         </div>                
                     </div>
@@ -114,6 +116,7 @@ bcn_display();
                     <div class="col-sm-4">
                         <div class="pdf-link">
                             <a href="<?php the_field("supportresource3"); ?>" class="grey-btn" role="button">
+                                 <?php the_field("supportresource3text"); ?>
                             </a>
                         </div>                
                     </div>
@@ -124,6 +127,7 @@ bcn_display();
                     <div class="col-sm-4">
                         <div class="pdf-link">
                             <a href="<?php the_field("supportresource4"); ?>" class="grey-btn" role="button">
+                                 <?php the_field("supportresource4text"); ?>
                             </a>
                         </div>                
                     </div>
@@ -131,6 +135,7 @@ bcn_display();
                     <div class="col-sm-4">
                         <div class="pdf-link">
                             <a href="<?php the_field("supportresource5"); ?>" class="grey-btn" role="button">
+                                 <?php the_field("supportresource5text"); ?>
                             </a>
                         </div>                
                     </div>
@@ -138,6 +143,7 @@ bcn_display();
                     <div class="col-sm-4">
                         <div class="pdf-link">
                             <a href="<?php the_field("supportresource6"); ?>" class="grey-btn" role="button">
+                                 <?php the_field("supportresource6text"); ?>
                             </a>
                         </div>                
                     </div>
@@ -148,6 +154,7 @@ bcn_display();
                     <div class="col-sm-4">
                         <div class="pdf-link">
                             <a href="<?php the_field("supportresource7"); ?>" class="grey-btn" role="button">
+                                 <?php the_field("supportresource7text"); ?>
                             </a>
                         </div>                
                     </div>
@@ -155,6 +162,7 @@ bcn_display();
                     <div class="col-sm-4">
                         <div class="pdf-link">
                             <a href="<?php the_field("supportresource8"); ?>" class="grey-btn" role="button">
+                                 <?php the_field("supportresource8text"); ?>
                             </a>
                         </div>                
                     </div>
@@ -162,6 +170,7 @@ bcn_display();
                     <div class="col-sm-4">
                         <div class="pdf-link">
                             <a href="<?php the_field("supportresource9"); ?>" class="grey-btn" role="button">
+                                 <?php the_field("supportresource9text"); ?>
                             </a>
                         </div>                
                     </div>
@@ -172,6 +181,7 @@ bcn_display();
                     <div class="col-sm-4">
                         <div class="pdf-link">
                             <a href="<?php the_field("supportresource10"); ?>" class="grey-btn" role="button">
+                                 <?php the_field("supportresource10text"); ?>
                             </a>
                         </div>                
                     </div>
@@ -179,6 +189,7 @@ bcn_display();
                     <div class="col-sm-4">
                         <div class="pdf-link">
                             <a href="<?php the_field("supportresource11"); ?>" class="grey-btn" role="button">
+                                 <?php the_field("supportresource11text"); ?>
                             </a>
                         </div>                
                     </div>
@@ -186,6 +197,7 @@ bcn_display();
                     <div class="col-sm-4">
                         <div class="pdf-link">
                             <a href="<?php the_field("supportresource12"); ?>" class="grey-btn" role="button">
+                                 <?php the_field("supportresource12text"); ?>
                             </a>
                         </div>                
                     </div>
