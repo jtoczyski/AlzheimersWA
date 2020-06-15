@@ -543,10 +543,12 @@
  /*Styling for dementia landing page*/
  
 
+/*
 .pdf-link {
-    width: 200px;
+    width: 50%;
     
 }
+*/
 
 
  .flex-container {
@@ -556,11 +558,11 @@
  }
 
  .grey-btn {
-     /*
+     
      display: inline-flex;
      flex-flow: column wrap;
      overflow-wrap: anywhere;
-*/
+
      color: #009CBD;
      background-color: #f3f2f1;
      padding: 0.5em 0.5em;
@@ -568,6 +570,7 @@
      margin-bottom: 1em;
      padding: 1em;
      text-align: center;
+     width: 100%;
 
  }
 
@@ -668,55 +671,6 @@ Styling for subpages based on Setting up Memory cafes
      text-decoration: underline;
  }
 
-
-
-#mega-menu-wrap-max_mega_menu_1 .mega-menu-toggle {
-    display: none;
-    z-index: 1;
-    cursor: pointer;
-    background: #f3f2f1!important;
-    border-radius: 2px 2px 2px 2px;
-    line-height: 40px;
-    height: 40px;
-    text-align: left;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    -webkit-tap-highlight-color: transparent;
-    outline: none;
-    white-space: nowrap;
-}
-
-#mega-menu-wrap-max_mega_menu_1 #mega-menu-max_mega_menu_1 > li.mega-menu-item.mega-current-menu-item > a.mega-menu-link, #mega-menu-wrap-max_mega_menu_1 #mega-menu-max_mega_menu_1 > li.mega-menu-item.mega-current-menu-ancestor > a.mega-menu-link, #mega-menu-wrap-max_mega_menu_1 #mega-menu-max_mega_menu_1 > li.mega-menu-item.mega-current-page-ancestor > a.mega-menu-link {
-    background: #f3f2f1!important;
-    color: #343741!important;
-    font-weight: normal;
-    text-decoration: none;
-    border-color: #fff;
-}
-
-#mega-menu-wrap-max_mega_menu_1 #mega-menu-max_mega_menu_1 > li.mega-menu-item.mega-toggle-on > a.mega-menu-link {
-    background: #f3f2f1!important;
-    color: #343741!important;
-    font-weight: normal;
-    text-decoration: none;
-    border-color: #fff;
-}
-
-@media only screen and (max-width: 600px) {
-#mega-menu-wrap-max_mega_menu_1 #mega-menu-max_mega_menu_1 > li.mega-menu-item.mega-current-menu-item > a.mega-menu-link, #mega-menu-wrap-max_mega_menu_1 #mega-menu-max_mega_menu_1 > li.mega-menu-item.mega-current-menu-ancestor > a.mega-menu-link, #mega-menu-wrap-max_mega_menu_1 #mega-menu-max_mega_menu_1 > li.mega-menu-item.mega-current-page-ancestor > a.mega-menu-link {
-    color: #343741!important;
-    background: #f3f2f1!important;
-}
-    }
-
-@media only screen and (min-width: 601px) {
-#mega-menu-wrap-max_mega_menu_1 {
-    background: #009CBD !important;
-}
-}
     
  @media only screen and (max-width: 767px) {
      .header-img {
