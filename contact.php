@@ -20,9 +20,8 @@ bcn_display();
 }?>
                 </div>
                 <h1><?php the_field("titleofcontactpage"); ?></h1>
-            </div>
-            
-             <div class="row">
+
+                <div class="row">
                     <!--text-to-speech function-->
 
                     <button class="text-to-speech" type="button" data-toggle="collpase" data-target="<?php the_field("ttsbutton");?>">
@@ -50,6 +49,7 @@ endif;
 wp_reset_query();?>
                     </div>
                 </div>
+            </div>
             <div class="col-xs-1"></div>
 
 
@@ -70,26 +70,29 @@ wp_reset_query();?>
 
 
     <section>
+        <div class="col-xs-1"></div>
+        <div class="col-xs-10">
+            <div id="contact-form">
 
-        <form id="contact-form" method="post" action="contact.php" role="form">
-            
-            <!--insert form here in wordpress-->
-            <?php 
+                <!--insert form here in wordpress-->
+                <?php 
 global $more;//define a global variable
 $more = 0;// the global varibale is now equal to 0
 query_posts('cat=11');//look for posts that have the category of 11
 if(have_posts()) ://if we have posts to display
 while(have_posts()) :the_post();//LOOP through all the posts and find the one that has a category of 11 get the content
 ?>
-            <div>
-                <p><?php the_content() ?></p>
-            </div>
-            <?php
+                <div>
+                    <p><?php the_content() ?></p>
+                </div>
+                <?php
 endwhile;
 endif;
 wp_reset_query();?>
 
-        </form>
+            </div>
+        </div>
+        <div class="col-xs-1"></div>
     </section><!--        contact form-->
 
 
@@ -102,7 +105,25 @@ wp_reset_query();?>
                     <p><?php the_field("address1"); ?> </p>
                 </div>
                 <div class="col-sm-6">
-                    <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=55%20Walters%20Drive%20Osborne%20Park%20WA%206017&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://2torrentz.net"></a></div><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div>
+                    <div class="mapouter">
+                        <div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=55%20Walters%20Drive%20Osborne%20Park%20WA%206017&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://2torrentz.net"></a></div>
+                        <style>
+                            .mapouter {
+                                position: relative;
+                                text-align: right;
+                                height: 500px;
+                                width: 600px;
+                            }
+
+                            .gmap_canvas {
+                                overflow: hidden;
+                                background: none !important;
+                                height: 500px;
+                                width: 600px;
+                            }
+
+                        </style>
+                    </div>
                 </div>
             </div>
             <div class="services">
