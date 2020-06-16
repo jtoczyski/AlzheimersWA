@@ -116,17 +116,6 @@ wp_reset_query();?>
 
 
                 </div>
-                <div class="col-sm-6">
-                    <h3><?php the_field("subheading4");?></h3>
-                    <p><?php the_field("subexcerpt4");?> </p>
-
-                    <div class="learnmore">
-                        <a href="<?php the_field("othersubpagebutton4");?>" class="btn red-btn" role="button">
-                            <h4><?php the_field("othersubpagebuttontext4");?></h4>
-                        </a>
-                    </div>
-                    <!--button to learnmore success stories-->
-                </div>
 
             </div>
 
