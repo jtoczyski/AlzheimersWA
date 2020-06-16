@@ -22,18 +22,16 @@ bcn_display();
 
                 <h1><?php the_field("titlefororganisationspage"); ?></h1>
 
-
-            </div><!--            row with triangles background-->
-
             <div class="row">
                 <!--text-to-speech function-->
-                <div class="text-to-speech">
-                    <button type="button" data-toggle="collpase" data-target="#rspeaker">
-                    <img alt="text-to-speech icon" src="<?php the_field("ttsicon");?>">
+                        
+                    <button class="text-to-speech" type="button" data-toggle="collpase" data-target="<?php the_field("ttsbutton");?>">
+                    <img class="s-icon" alt="text-to-speech icon" src="<?php the_field("ttsicon");?>">
 
                 <p><?php the_field("ttsname"); ?> </p>
                         </button>
                 </div>
+            <div class="row">
                 <div class="collapse" id="rspeaker">
                     
                     <?php
@@ -54,6 +52,7 @@ wp_reset_query();?>
             </div>
         </div>
         <div class="col-xs-1"></div>
+            </div><!--            row with triangles background-->
 
         <div class="row intro">
             <div class="col-xs-1"></div>
