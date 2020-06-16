@@ -241,7 +241,7 @@
  }
 
  .text-to-speech-home {
-     display: inline-flex;
+/*     display: inline-flex;*/
      float: right;
      background-color: #ccedf4;
      padding: 10px 10px 0 10px;
@@ -509,15 +509,17 @@
      color: #343741;
  }
 
+/*
  .tts-landing {
      float: left;
      background-color: #ccedf4;
      padding: 1rem;
      border-radius: 4px;
  }
+*/
 
  .text-to-speech {
-     display: inline-flex;
+/*     display: inline-flex;*/
      background-color: #ccedf4;
      padding: 10px 10px 0 10px;
      border-radius: 4px;
