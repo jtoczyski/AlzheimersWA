@@ -70,12 +70,7 @@
 
                                     <div class="navbar-form navbar-right">
                                         <div class="form-group">
-					
-                                    <a href="tel:1300667788">
-                                        <h6>Customer Support:</h6>
-                                        <h5>1300 66 77 88</h5>
-                                    </a>
-				
+
                                             <?php if ( is_active_sidebar( 'sidebar1' ) ) : ?>
 
                                             <ul id="sidebar">
@@ -100,10 +95,10 @@
                     </div>
                     <div class="row">
                         <div class="collapse navbar-collapse" id="myNavbar">
-                           <?php wp_nav_menu( array( 'theme_location' => 'max_mega_menu_1' ) ); ?>
+                            <?php wp_nav_menu( array( 'theme_location' => 'max_mega_menu_1' ) ); ?>
 
+                        </div>
                     </div>
-                    </div>
-                    </div>
+                </div>
             </nav>
         </header>
