@@ -37,19 +37,19 @@ endwhile;
 endif;
 wp_reset_query();?>
 </div>
-                
-            </div><!--row-->
-            <div class="row dementia">
+                </div><!--row-->
+            
+            <div class="row dementia"><!-- What is Dementia? row -->
                 <div class="col-sm-1"></div>
                 <div class="col-sm-6 d-bg"> <!--image-->
                     <img class = 'd-image img-responsive' alt = 'support group' src ='<?php the_field("sectionimage1");?>'>
                 </div>
-                <div class="col-sm-4 d-text"> <!--What is Dementia?-->
-                    <h2><?php the_field("titleforsection1"); ?></h2>
-                    <p><?php the_field("sectionparagraph1"); ?> </p>
-                    <div class = 'learnmore' id = 'whatisdementia'>
+                <div class="col-sm-4 d-text"> <!--What is Dementia? div-->
+                    <h2><?php the_field("titleforsection1"); ?></h2><!--What is Dementia? Title-->
+                    <p><?php the_field("sectionparagraph1"); ?> </p><!--What is Dementia? Body Text-->
+                    <div class = 'learnmore' id = 'whatisdementia'><!--What is Dementia? Button Div-->
                         <a href="<?php the_field('learnmore1'); ?>" class="btn red-btn" role="button">
-                            <h4>Learn more</h4>
+                            <h4><?php the_field("learnmore1text"); ?></h4>
                         </a>
                     </div><!--button what is dem? -->
                 </div>
@@ -63,8 +63,9 @@ wp_reset_query();?>
                 <div class="col-sm-4 c-text"><!--Memory Cafes-->
                      <h2><?php the_field("titleforsection2"); ?></h2>
                     <p><?php the_field("sectionparagraph2"); ?> </p>
-                    <div class="learnmore" id="memorycafes">                       <a href="<?php the_field('learnmore2'); ?>" class="btn red-btn" role="button">
-                            <h4>Learn more</h4>
+                    <div class="learnmore" id="memorycafes">                       
+                        <a href="<?php the_field('learnmore2'); ?>" class="btn red-btn" role="button">
+                            <h4><?php the_field("learnmore2text"); ?></h4>
                         </a>
                     </div>
                     </div>
