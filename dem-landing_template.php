@@ -46,7 +46,7 @@ bcn_display();
                 <div class="row">
                     <div class="col-sm-4">
                         <div class="pdf-link">
-                            <a href="<?php the_field("pdfbutton1"); ?>" class="grey-btn" role="button">
+                            <a href="<?php the_field("pdfbutton1"); ?>" target="_blank" class="grey-btn" role="button">
                             <?php the_field("pdfbutton1text"); ?>
                             </a>
                         </div>                
@@ -54,7 +54,7 @@ bcn_display();
                     
                     <div class="col-sm-4">
                         <div class="pdf-link">
-                            <a href="<?php the_field("pdfbutton2"); ?>" class="grey-btn" role="button">
+                            <a href="<?php the_field("pdfbutton2"); ?>" target="_blank" class="grey-btn" role="button">
                             <?php the_field("pdfbutton2text"); ?>
                             </a>
                         </div>                
@@ -62,7 +62,7 @@ bcn_display();
                     
                     <div class="col-sm-4">
                         <div class="pdf-link">
-                            <a href="<?php the_field("pdfbutton3"); ?>" class="grey-btn" role="button">
+                            <a href="<?php the_field("pdfbutton3"); ?>" target="_blank" class="grey-btn" role="button">
                             <?php the_field("pdfbutton3text"); ?>
                             </a>
                         </div>                
@@ -73,15 +73,15 @@ bcn_display();
                 <div class="row">
                     <div class="col-sm-4">
                         <div class="pdf-link">
-                            <a href="<?php the_field("pdfbutton4"); ?>" class="grey-btn" role="button">
+                            <a href="<?php the_field("pdfbutton4"); ?>" target="_blank" class="grey-btn" role="button">
                             <?php the_field("pdfbutton4text"); ?>
                             </a>
                         </div>                
-                    </div>
+                    </div> 
                     
                     <div class="col-sm-4">
                         <div class="pdf-link">
-                            <a href="<?php the_field("pdfbutton5"); ?>" class="grey-btn" role="button">
+                            <a href="<?php the_field("pdfbutton5"); ?>" target="_blank" class="grey-btn" role="button">
                             <?php the_field("pdfbutton5text"); ?>
                             </a>
                         </div>                
@@ -89,7 +89,7 @@ bcn_display();
                     
                     <div class="col-sm-4">
                         <div class="pdf-link">
-                            <a href="<?php the_field("pdfbutton6"); ?>" class="grey-btn" role="button">
+                            <a href="<?php the_field("pdfbutton6"); ?>" target="_blank" class="grey-btn" role="button">
                             <?php the_field("pdfbutton6text"); ?>
                             </a>
                         </div>                
