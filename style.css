@@ -44,6 +44,7 @@
 
  .navbar-inverse .navbar-toggle {
      border: none;
+     display: none;
  }
 
  .navbar-inverse .navbar-toggle:hover {
@@ -459,10 +460,6 @@
     margin: 5px 10px;
     padding-left: 20px;
     background: transparent url(img/blue-speaker.png) no-repeat scroll 0 -641px;
-}
-
-p.zeno_font_resizer > a {
-    color: #00a4c7 !important;
 }
 
 
