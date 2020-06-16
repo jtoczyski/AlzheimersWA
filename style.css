@@ -461,8 +461,8 @@
     background: transparent url(img/blue-speaker.png) no-repeat scroll 0 -641px;
 }
 
-.zeno_font_resizer > a {
-    color: #00a4c7;
+p.zeno_font_resizer > a {
+    color: #00a4c7 !important;
 }
 
 

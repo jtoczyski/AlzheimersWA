@@ -68,13 +68,13 @@
                             <div class="col-xs-6 right-menu">
                                 <div class="row desktop-header">
 
+                                    <div class="navbar-form navbar-right">
+                                        <div class="form-group">
+					
                                     <a href="tel:1300667788">
                                         <h6>Customer Support:</h6>
                                         <h5>1300 66 77 88</h5>
                                     </a>
-                                    <div class="navbar-form navbar-right">
-                                        <div class="form-group">
-					
 				
                                             <?php if ( is_active_sidebar( 'sidebar1' ) ) : ?>
 
