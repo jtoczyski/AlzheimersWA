@@ -241,7 +241,7 @@
  }
 
  .text-to-speech-home {
-/*     display: inline-flex;*/
+     /*     display: inline-flex;*/
      float: right;
      background-color: #ccedf4;
      padding: 10px 10px 0 10px;
@@ -451,16 +451,17 @@
  .contact-info p {
      font-size: 1.5rem;
  }
-.rsbtn .rsbtn_left .rsbtn_text {
-    font-family: "Lucida Grande","Lucida Sans","Lucida",sans-serif;
-    font-size: 12px;
-    font-weight: normal;
-    font-style: normal;
-    line-height: 16px;
-    margin: 5px 10px;
-    padding-left: 20px;
-    background: transparent url(img/blue-speaker.png) no-repeat scroll 0 -641px;
-}
+
+ .rsbtn .rsbtn_left .rsbtn_text {
+     font-family: "Lucida Grande", "Lucida Sans", "Lucida", sans-serif;
+     font-size: 12px;
+     font-weight: normal;
+     font-style: normal;
+     line-height: 16px;
+     margin: 5px 10px;
+     padding-left: 20px;
+     background: transparent url(img/blue-speaker.png) no-repeat scroll 0 -641px;
+ }
 
 
  /*Styling for Landing links pages based on memory cafes page*/
@@ -509,7 +510,7 @@
      color: #343741;
  }
 
-/*
+ /*
  .tts-landing {
      float: left;
      background-color: #ccedf4;
@@ -525,9 +526,10 @@
      text-decoration: underline;
      border: none;
  }
-.s-icon {
-    padding-right: 0.5rem;
-}
+
+ .s-icon {
+     padding-right: 0.5rem;
+ }
 
  .intro {
      padding: 4rem 0;
@@ -692,6 +694,11 @@ Styling for subpages based on Setting up Memory cafes
  .services a {
      color: #009CBD;
      text-decoration: underline;
+ }
+
+ iframe {
+     width: 100%;
+     height: 100%;
  }
 
 
