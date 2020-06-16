@@ -198,7 +198,7 @@ wp_reset_query();?>
                     </div>
                 </div>
                 <div class="services">
-                <p>Alzheimer’s WA also offers a range of <a href="https://www.alzheimerswa.org.au/training/">training</a> and <a href="https://www.alzheimerswa.org.au/consultancy-services/">consultancy services</a> to further grow your understanding of dementia and support those in the community on their dementia journey.</p>
+                <p>Alzheimer’s WA also offers a range of <a href="https://www.alzheimerswa.org.au/training/" target="_blank">training</a> and <a href="https://www.alzheimerswa.org.au/consultancy-services/" target="_blank">consultancy services</a> to further grow your understanding of dementia and support those in the community on their dementia journey.</p>
                 </div>
             </div>
             <div class="col-xs-1"></div>
