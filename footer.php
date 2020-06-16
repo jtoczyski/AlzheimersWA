@@ -31,7 +31,7 @@
             <a class="social-insta" href="https://www.instagram.com/alzheimers_wa/" target="_blank"><img class="social" src="<?php the_field("contactfooterinsta");?>" alt="Alzheimer's WA nstagram"></a>
             <a class="social-in" href="https://www.linkedin.com/company/alzheimers-wa/" target="_blank"><img class="social" src="<?php the_field("contactfooterlinkedin");?>" alt="Alzheimer's WA Linkedin"></a> 
 
-        </div>
+        </div> 
 
  <div class="col-sm-6 contact-info">
      <div class="info-1">
