@@ -240,7 +240,8 @@
 
  }
 
- .text-to-speech {
+ .text-to-speech-home {
+     display: inline-flex;
      float: right;
      background-color: #ccedf4;
      padding: 10px 10px 0 10px;
@@ -515,6 +516,14 @@
      border-radius: 4px;
  }
 
+ .text-to-speech {
+     display: inline-flex;
+     float: right;
+     background-color: #ccedf4;
+     padding: 10px 10px 0 10px;
+     border-radius: 4px;
+ }
+
  .intro {
      padding: 4rem 0;
  }
@@ -714,7 +723,7 @@ Styling for subpages based on Setting up Memory cafes
          padding: 1rem 1rem 1rem 4rem;
      }
 
-     .text-to-speech {
+     .text-to-speech-home {
          width: 100%;
          padding-left: 40px;
          border-radius: 0;

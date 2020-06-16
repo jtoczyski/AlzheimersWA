@@ -21,7 +21,7 @@ wp_reset_query();?>
         <div class="container">    
 
             <div class="row">
-        <div class="text-to-speech">
+        <div class="text-to-speech-home">
 <!--                button for text-to-speech function-->
             <p>Listen to this page</p>
 <?php
