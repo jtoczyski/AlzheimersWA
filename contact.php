@@ -7,108 +7,108 @@
 <!--        Body section-->
 <div id="page-wrap">
 
-    
-        <section class="container-fluid landing-page">
-            <div class="row">
-                <div class="col-xs-1"></div>
-                <div class="col-xs-10">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="index.html" data-toggle="tooltip" title="Go to &#8220;Home&#8221;">Home</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Contact</li>
-                    </ol>
-                    <h1>Contact Us</h1>
+
+    <section class="container-fluid landing-page">
+        <div class="row">
+            <div class="col-xs-1"></div>
+            <div class="col-xs-10">
+                <div class="breadcrumb" typeof="BreadcrumbList" vocab="https://schema.org/">
+                    <?php
+if(function_exists('bcn_display'))
+{
+bcn_display();
+}?>
                 </div>
-                <div class="col-xs-1"></div>
+                <h1><?php the_field("titleofcontactpage"); ?></h1>
+            </div>
+            
+             <div class="row">
+                    <!--text-to-speech function-->
 
+                    <button class="text-to-speech" type="button" data-toggle="collpase" data-target="<?php the_field("ttsbutton");?>">
+                        <img class="s-icon" alt="text-to-speech icon" src="<?php the_field("ttsicon");?>">
 
-            </div><!--            row with circles background-->
-                       
-            <div class="row">
-        <div class="text-to-speech">
-<!--                button for text-to-speech function-->
-            <p>Listen to this page</p>
-<?php
+                        <p><?php the_field("ttsname"); ?> </p>
+                    </button>
+                </div>
+                <div class="row">
+                    <div class="collapse" id="rspeaker">
+
+                        <?php
 global $more;//define a global variable
 $more = 0;// the global varibale is now equal to 0
 query_posts('cat=10');//look for posts that have the category of 10
 if(have_posts()) ://if we have posts to display
 while(have_posts()) :the_post();//LOOP through all the posts and find the one that has a category of 10 get the content
 ?>
-            <div><p class=""><?php the_content() ?></p></div>
-<?php
+                        <div>
+                            <p class=""><?php the_content() ?></p>
+                        </div>
+                        <?php
 endwhile;
 endif;
 wp_reset_query();?>
-</div>
-                <div class="col-xs-1"></div>
-</div>
-            <div class="row intro">
-                <?php 
-global $more;//define a global variable
-$more = 0;// the global varibale is now equal to 0
-query_posts('cat=11');//look for posts that have the category of 12
-if(have_posts()) ://if we have posts to display
-while(have_posts()) :the_post();//LOOP through all the posts and find the one that has a category of 12 get the content
-?>
-            <div><p><?php the_content() ?></p></div>
-<?php
-endwhile;
-endif;
-wp_reset_query();?>
-                <div class="col-xs-1"></div>
-                <div class="col-xs-10">
-                    <img class="landing-img" alt="couple holding hands" src="images/holding-hands.png">
-                    <p>Alzheimer’s WA’s Dementia Friendly Communities focuses on you and your community surrounding dementia, and finding ways to keep those living with the condition connected to the world around them.
-                        <!--
-                        <br>
-                        <br>
-                        Social isolation is a widespread problem among those living with dementia. We believe the best way to combat this issue is for the community to be aware of the condition.
-                        <br>
-                        <br>
-                        Find out more about dementia, how to communicate with people living with dementia, and places that are dementia-friendly near you within our website.
--->
-                    </p>
-                    <h3>Together we can help prevent the stigma surrounding dementia.</h3>
-                    <p>If your town is interested in becoming a Dementia Friendly Town, or you would like to get involved in Memory Cafés please contact us on 1300 66 77 88 or <a  href="mailto:dfc@alzheimerswa.org.au"data-toggle="tooltip" title="Send an email" class="links">dfc@alzheimerswa.org.au</a>.
-                    </p>
+                    </div>
                 </div>
-                <div class="col-xs-1"></div>
-            </div><!--        row-->
-
-        </section><!--                intro landing page text with image-->
+            <div class="col-xs-1"></div>
 
 
-        <section>
+        </div><!--            row with circles background-->
 
-            <form id="contact-form" method="post" action="contact.php" role="form">
-<!--insert form here in wordpress-->
+        <div class="row intro">
 
-            </form>
-        </section><!--        contact form-->
-
-
-        <section class="container-fluid more-info">
             <div class="col-xs-1"></div>
             <div class="col-xs-10">
-                <h2>Head Office</h2>
-                <div class="row">
-                    <div class="col-sm-4">
-                        <p>55 Walters Drive<br>
-                            Osborne Park WA 6017<br>
-                            Telephone: 1300 66 77 88<br>
-                            Fax: (08) 9388 2739</p>
-                        <h4>Postal Address</h4>
-                        <p> PO Box 1509, Subiaco WA 6904
-                        </p>
-                    </div>
-                    <div class="col-sm-6">
-                        <span style="color:darkmagenta">(INSERT MAP OF HEAD OFFICE WITH WP PLUGIN)</span>
-                    </div>
-                </div>
-                <div class="services">
-                <p>Alzheimer’s WA also offers a range of <a href="https://www.alzheimerswa.org.au/training/" target="_blank">training</a> and <a href="https://www.alzheimerswa.org.au/consultancy-services/" target="_blank">consultancy services</a> to further grow your understanding of dementia and support those in the community on their dementia journey.</p>
-                </div>
+                <!--image-->
+                <img class="landing-img" alt="gathering at memory cafe" src="<?php the_field("circleimage");?>">
+                <p><?php the_field("bodyforcontactpage"); ?> </p>
             </div>
             <div class="col-xs-1"></div>
-        </section>
-<?php get_footer(); /* Tells WordPress to include footer.php */ ?>
+        </div><!--        row-->
+
+    </section><!--                intro text with image-->
+
+
+    <section>
+
+        <form id="contact-form" method="post" action="contact.php" role="form">
+            
+            <!--insert form here in wordpress-->
+            <?php 
+global $more;//define a global variable
+$more = 0;// the global varibale is now equal to 0
+query_posts('cat=11');//look for posts that have the category of 11
+if(have_posts()) ://if we have posts to display
+while(have_posts()) :the_post();//LOOP through all the posts and find the one that has a category of 11 get the content
+?>
+            <div>
+                <p><?php the_content() ?></p>
+            </div>
+            <?php
+endwhile;
+endif;
+wp_reset_query();?>
+
+        </form>
+    </section><!--        contact form-->
+
+
+    <section class="container-fluid more-info">
+        <div class="col-xs-1"></div>
+        <div class="col-xs-10">
+            <h2><?php the_field("titleaddresses"); ?></h2>
+            <div class="row">
+                <div class="col-sm-4">
+                    <p><?php the_field("address1"); ?> </p>
+                </div>
+                <div class="col-sm-6">
+                    <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=55%20Walters%20Drive%20Osborne%20Park%20WA%206017&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://2torrentz.net"></a></div><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div>
+                </div>
+            </div>
+            <div class="services">
+                <p><?php the_field("servicestext"); ?> </p>
+            </div>
+        </div>
+        <div class="col-xs-1"></div>
+    </section>
+    <?php get_footer(); /* Tells WordPress to include footer.php */ ?>
