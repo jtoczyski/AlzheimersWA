@@ -43,6 +43,7 @@ endwhile;
 endif;
 wp_reset_query();?>
 </div>
+    </div>
             
             <div class="row intro">
                 <div class="col-xs-1"></div>
@@ -53,7 +54,7 @@ wp_reset_query();?>
                     <h2><?php the_field("subtitlefortips"); ?></h2>
                     <p class="a-list"><?php the_field("bodyfortips"); ?> </p>
                     <div class="pdf-link">
-                            <a href="<?php the_field("buttonfortips"); ?>" class="btn grey-btn" role="button">
+                            <a href="<?php the_field("buttonfortips"); ?>" target="_blank" class="btn grey-btn" role="button">
                             </a>
                         </div> 
                 </div>
