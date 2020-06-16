@@ -90,7 +90,7 @@ wp_reset_query();?>
                     <p><?php the_field("sectionparagraph3"); ?> </p>
                     <div class = 'learnmore' id = 'organisations'>
                         <a href="<?php the_field('learnmore3'); ?>" class="btn red-btn" role="button">
-                            <h4>Learn more</h4>
+                            <h4><?php the_field("learnmore3text"); ?></h4>
                         </a>
                     </div>
                  <div class="col-sm-1"></div>
