@@ -42,6 +42,7 @@ endwhile;
 endif;
 wp_reset_query();?>
 </div>
+    </div>
 
             
             <div class="row intro">
