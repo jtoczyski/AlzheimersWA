@@ -48,8 +48,8 @@ wp_reset_query();?>
                     <h2><?php the_field("titleforsection1"); ?></h2><!--What is Dementia? Title-->
                     <p><?php the_field("sectionparagraph1"); ?> </p><!--What is Dementia? Body Text-->
                     <div class = 'learnmore' id = 'whatisdementia'><!--What is Dementia? Button Div-->
-                        <a href="<?php the_field('learnmore1'); ?>" class="btn red-btn" role="button">
-                            <h4><?php the_field("learnmore1text"); ?></h4>
+                        <a href="<?php the_field('learnmore1'); ?>" class="btn red-btn" role="button"><!--What is Dementia? Button CSS style-->
+                        <h4><?php the_field("learnmore1text"); ?></h4><!--What is Dementia? Button Text-->
                         </a>
                     </div><!--button what is dem? -->
                 </div>
