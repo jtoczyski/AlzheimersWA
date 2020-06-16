@@ -8,16 +8,22 @@
 <div id="page-wrap">
 
 <section id="container-fluid landing-page">
-            <div class="row circle-bg">
+            <div class="row triangle-bg">
                 <div class="col-xs-1"></div>
                 <div class="col-xs-10"> 
-                
-<!--                    Insert Breadcrumbs-->
+       <div class="breadcrumb" typeof="BreadcrumbList" vocab="https://schema.org/">
+<?php
+if(function_exists('bcn_display'))
+{
+bcn_display();
+}?>
+</div>
+                    
                     <h1><?php the_field("titlefororganisationspage"); ?></h1>
                 </div>
                 <div class="col-xs-1"></div>
 
-            </div><!--            row with circles background-->
+            </div><!--            row with triangles background-->
 
             <div class="row"><!--text-to-speech function-->
         <div class="text-to-speech">
