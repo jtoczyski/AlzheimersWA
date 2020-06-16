@@ -701,6 +701,23 @@ Styling for subpages based on Setting up Memory cafes
      height: 100%;
  }
 
+ .mapouter {
+     position: relative;
+     text-align: right;
+     height: 500px;
+     width: 600px;
+ }
+
+ .gmap_canvas {
+     overflow: hidden;
+     background: none !important;
+     height: 500px;
+     width: 600px;
+ }
+
+
+
+ /*START OF MEDIA RULES*/
 
  @media only screen and (max-width: 767px) {
      .header-img {
