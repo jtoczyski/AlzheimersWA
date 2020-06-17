@@ -20,14 +20,32 @@ bcn_display();
 }?>
 </div>
                     
-                    <h1><?php the_field("titleforsubpage"); ?></h1>
-                </div>
+                    <h1><?php the_field("titleforpage"); ?></h1>
+               
+        
+    <div class="row"><!--text-to-speech function-->
+        <div class="text-to-speech">
+<!--button for text-to-speech function-->
+
+<?php
+global $more;//define a global variable
+$more = 0;// the global varibale is now equal to 0
+query_posts('cat=10');//look for posts that have the category of 10
+if(have_posts()) ://if we have posts to display
+while(have_posts()) :the_post();//LOOP through all the posts and find the one that has a category of 10 get the content
+?>
+            <div><p class=""><?php the_content() ?></p></div>
+<?php
+endwhile;
+endif;
+wp_reset_query();?>
+</div>
+    </div>
+                     </div>
                 <div class="col-xs-1"></div>
 
             </div><!--            row with circles background-->
-<!--            Add text-to-speech function HERE
--->
-            
+ 
             <div class="row intro">
                 <div class="col-xs-1"></div>
                 <div class="col-xs-10">
