@@ -52,7 +52,7 @@ wp_reset_query();?>
                 <p><?php the_field("textbody"); ?> </p>
 
                 <h3><?php the_field("titleforvideo"); ?></h3>
-                <div><?php the_field("storyvideo"); ?></div>
+                <div class="video"><?php the_field("storyvideo"); ?></div>
 
                 <p><?php the_field("textcontinued"); ?> </p>
 

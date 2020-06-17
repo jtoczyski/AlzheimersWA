@@ -656,9 +656,7 @@ Styling for subpages based on Setting up Memory cafes
  }
 
  .video {
-     background-color: lightgray;
-     width: 100%;
-     margin-top: 2rem;
+     margin: 2rem 0;
  }
 
  .a-list {

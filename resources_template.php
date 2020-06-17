@@ -55,7 +55,7 @@ wp_reset_query();?>
 
                 <p><?php the_field("bodytext"); ?> </p>
 
-                <div><?php the_field("resourcevideo"); ?></div>
+                <div class="video"><?php the_field("resourcevideo"); ?></div>
                 
                 <div class="learnmore">
                         <a href="<?php the_field("trainingbutton");?>" class="btn red-btn" role="button">

@@ -51,7 +51,7 @@ wp_reset_query();?>
                 <div class="col-xs-10">
                     
                     <p class="a-list"><?php the_field("introtext"); ?> </p>
-                    <div><?php the_field("memoryvid"); ?></div>
+                    <div class="video"><?php the_field("memoryvid"); ?></div>
                     
                 </div>
                 <div class="col-xs-1"></div>
@@ -72,7 +72,7 @@ wp_reset_query();?>
                 <div class="col-xs-1"></div>
             </div><!--        row-->
     
-<div class="row">
+<div class="row intro">
                 <div class="col-xs-1"></div>
                 <div class="col-xs-10">
                     <h2><?php the_field("headingforsubsection2"); ?></h2>
