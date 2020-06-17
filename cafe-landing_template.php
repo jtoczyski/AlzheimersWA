@@ -72,23 +72,9 @@ wp_reset_query();?>
                         
                         
                          <div class= "learnmore">
-                             <div class= "dropdown">
                         <a href="<?php the_field("memorybutton1"); ?>" class="btn red-btn" role="button">
                             <h4><?php the_field("memorybutton1text"); ?></h4>
                             </a>
-<?php 
-global $more;//define a global variable
-$more = 0;// the global varibale is now equal to 0
-query_posts('cat=12');//look for posts that have the category of 12
-if(have_posts()) ://if we have posts to display
-while(have_posts()) :the_post();//LOOP through all the posts and find the one that has a category of 12 get the content
-?>
-            <div class="dropdown-content"><p><?php the_content() ?></p></div>
-<?php
-endwhile;
-endif;
-wp_reset_query();?>
-                             </div> <!--dropdown-->
                         </div><!--button to cafes map -->
                         
             
@@ -103,6 +89,20 @@ wp_reset_query();?>
                         </a>
                     </div><!--button to learnmore -->
                     </div>
+                </div>
+                
+                <div class="row"><?php 
+global $more;//define a global variable
+$more = 0;// the global varibale is now equal to 0
+query_posts('cat=12');//look for posts that have the category of 12
+if(have_posts()) ://if we have posts to display
+while(have_posts()) :the_post();//LOOP through all the posts and find the one that has a category of 12 get the content
+?>
+            <div class=""><p><?php the_content() ?></p></div>
+<?php
+endwhile;
+endif;
+wp_reset_query();?>
                 </div>
                 
             </div>
