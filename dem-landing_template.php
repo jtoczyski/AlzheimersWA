@@ -10,7 +10,8 @@
 <section id="container-fluid landing-page">
             <div class="row leaf-bg">
                 <div class="col-xs-1"></div>
-                <div class="col-xs-10"> 
+               <div class="col-xs-10"> 
+                    
 <div class="breadcrumb" typeof="BreadcrumbList" vocab="https://schema.org/">
 <?php
 if(function_exists('bcn_display'))
@@ -18,16 +19,14 @@ if(function_exists('bcn_display'))
 bcn_display();
 }?>
 </div>
-                    <h1><?php the_field("titlefordementiapage"); ?></h1>
-                </div>
-                <div class="col-xs-1"></div>
-
-            </div><!--            row with leaf background-->
-    
-            <div class="row"><!--text-to-speech function-->
+                    
+                    <h1><?php the_field("titleforpage"); ?></h1>
+               
+        
+    <div class="row"><!--text-to-speech function-->
         <div class="text-to-speech">
 <!--button for text-to-speech function-->
-            <p>Listen to this page</p>
+
 <?php
 global $more;//define a global variable
 $more = 0;// the global varibale is now equal to 0
@@ -41,8 +40,12 @@ endwhile;
 endif;
 wp_reset_query();?>
 </div>
-        </div>
+    </div>
+                     </div>
+                <div class="col-xs-1"></div>
 
+            </div><!--            row with leaf background-->
+    
             
             <div class="row intro">
                 <div class="col-xs-1"></div>

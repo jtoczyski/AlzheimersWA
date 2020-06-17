@@ -20,16 +20,13 @@ bcn_display();
 }?>
 </div>
                     
-                    <h1><?php the_field("titlefortipspage"); ?></h1>
-                </div>
-                <div class="col-xs-1"></div>
-
-            </div><!--            row with leaf background-->
+                    <h1><?php the_field("titleforpage"); ?></h1>
+               
         
     <div class="row"><!--text-to-speech function-->
         <div class="text-to-speech">
 <!--button for text-to-speech function-->
-            <p>Listen to this page</p>
+
 <?php
 global $more;//define a global variable
 $more = 0;// the global varibale is now equal to 0
@@ -44,6 +41,10 @@ endif;
 wp_reset_query();?>
 </div>
     </div>
+                     </div>
+                                <div class="col-xs-1"></div>
+
+            </div><!--            row with leaf background-->
             
             <div class="row intro">
                 <div class="col-xs-1"></div>
@@ -55,6 +56,7 @@ wp_reset_query();?>
                     <p class="a-list"><?php the_field("bodyfortips"); ?> </p>
                     <div class="pdf-link">
                             <a href="<?php the_field("buttonfortips"); ?>" target="_blank" class="btn grey-btn" role="button">
+                                <?php the_field("textbuttonfortips"); ?>
                             </a>
                         </div> 
                 </div>

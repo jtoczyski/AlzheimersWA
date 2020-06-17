@@ -241,12 +241,34 @@
  }
 
  .text-to-speech-home {
-     display: inline-flex;
+     /*     display: inline-flex;*/
      float: right;
      background-color: #ccedf4;
-     padding: 10px 10px 0 10px;
+     padding: 0.5rem;
      border-radius: 4px;
  }
+
+.su-spoiler-icon-plus .su-spoiler-icon:before {
+    content: url(images/blue-speaker.png) !important;
+    margin-right: 1rem !important;
+}
+
+.su-spoiler su-spoiler-style-default su-spoiler-icon-plus su-spoiler-closed,
+.su-accordion {
+     margin-bottom: 0em !important; 
+}
+
+.su-accordion .su-spoiler {
+    margin-bottom: 0 !important;
+}
+
+.su-spoiler-style-default>.su-spoiler-content {
+    padding: 1em 0 0em 27px !important;
+}
+
+.su-spoiler-style-default>.su-spoiler-title {
+    padding-left: 5rem !important;
+}
 
  h2 {
      color: #00a4c7;
@@ -451,19 +473,24 @@
  .contact-info p {
      font-size: 1.5rem;
  }
-.rsbtn .rsbtn_left .rsbtn_text {
-    font-family: "Lucida Grande","Lucida Sans","Lucida",sans-serif;
-    font-size: 12px;
-    font-weight: normal;
-    font-style: normal;
-    line-height: 16px;
-    margin: 5px 10px;
-    padding-left: 20px;
-    background: transparent url(img/blue-speaker.png) no-repeat scroll 0 -641px;
-}
+
+ .rsbtn .rsbtn_left .rsbtn_text {
+     font-family: "Lucida Grande", "Lucida Sans", "Lucida", sans-serif;
+     font-size: 12px;
+     font-weight: normal;
+     font-style: normal;
+     line-height: 16px;
+     margin: 5px 10px;
+     padding-left: 20px;
+     background: transparent url(img/blue-speaker.png) no-repeat scroll 0 -641px;
+ }
 
 
  /*Styling for Landing links pages based on memory cafes page*/
+
+#text {
+    content: "\005C" !important;
+}
 
  .circle-bg {
      background: url(images/circles-subpage.png);
@@ -509,18 +536,26 @@
      color: #343741;
  }
 
+ /*
  .tts-landing {
      float: left;
      background-color: #ccedf4;
      padding: 1rem;
      border-radius: 4px;
  }
+*/
 
  .text-to-speech {
      display: inline-flex;
      background-color: #ccedf4;
-     padding: 10px 10px 0 10px;
-     border-radius: 4px;
+     padding: 1rem;
+     text-decoration: underline;
+     border: none;
+ }
+
+
+ .s-icon {
+     padding-right: 0.5rem;
  }
 
  .intro {
@@ -544,9 +579,14 @@
  }
 
  .more-info h2,
- .resources h2 {
+ .resources h2,
+#contact-form h2 {
      color: #E1523D;
  }
+
+.resources {
+    margin-top: 4rem;
+}
 
  h3 {
      color: #009CBD;
@@ -673,13 +713,20 @@ Styling for subpages based on Setting up Memory cafes
      font-size: 1.5rem;
  }
 
+.address {
+     background-color: #f3f2f1;
+     padding: 4rem 4rem 3rem;
+ }
+
  .services p {
      font-size: 2rem;
      padding-bottom: 1rem;
  }
 
  #contact-form {
-     padding-bottom: 4rem;
+     padding: 4rem !important;
+     background-color: #ccedf4;
+     margin: 4rem 0;
  }
 
  .links,
@@ -688,6 +735,47 @@ Styling for subpages based on Setting up Memory cafes
      text-decoration: underline;
  }
 
+ div.wpforms-container-full .wpforms-form input[type=submit],
+ div.wpforms-container-full .wpforms-form button[type=submit] {
+     background-color: #E1523D !important;
+     border: 1px solid #E1523D !important;
+     border-radius: 4px !important;
+     color: #fff !important;
+     font-size: 1em !important;
+     padding: 0.5em !important;
+ }
+
+ div.wpforms-container-full .wpforms-form input[type=submit]:hover,
+ div.wpforms-container-full .wpforms-form input[type=submit]:active,
+ div.wpforms-container-full .wpforms-form button[type=submit]:hover,
+ div.wpforms-container-full .wpforms-form button[type=submit]:active,
+ div.wpforms-container-full .wpforms-form .wpforms-page-button:hover,
+ div.wpforms-container-full .wpforms-form .wpforms-page-button:active {
+     background-color: #fff !important;
+     color: #E1523D;
+     border-color: #E1523D !important;
+ }
+ }
+
+ .google-maps {
+     position: relative;
+     padding-bottom: 75%;
+     height: 0;
+     overflow: hidden;
+ }
+
+ .google-maps iframe {
+     position: relative;
+     top: 0;
+     left: 0;
+     width: 100% !important;
+/*     height: 100% !important;*/
+     margin-bottom: 1rem !important;
+     float: right;
+ }
+
+
+ /*START OF MEDIA RULES*/
 
  @media only screen and (max-width: 767px) {
      .header-img {
