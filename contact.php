@@ -22,7 +22,8 @@ bcn_display();
 </div>
                     
                     <h1><?php the_field("titleforpage"); ?></h1>
-               
+                               <!--image-->
+                <img class="landing-img" alt="gathering at memory cafe" src="<?php the_field("circleimage");?>">
         
     <div class="row"><!--text-to-speech function-->
         <div class="text-to-speech">
@@ -40,22 +41,16 @@ while(have_posts()) :the_post();//LOOP through all the posts and find the one th
 endwhile;
 endif;
 wp_reset_query();?>
-</div>
+
     </div>
-                     </div>
-            <div class="col-xs-1"></div>
 
 
-        </div><!--            row with circles background-->
+        <div class="intro">
 
-        <div class="row intro">
-
-            <div class="col-xs-1"></div>
-            <div class="col-xs-10">
-                <!--image-->
-                <img class="landing-img" alt="gathering at memory cafe" src="<?php the_field("circleimage");?>">
                 <p><?php the_field("bodyforcontactpage"); ?> </p>
             </div>
+               </div>
+                </div><!--            row with circles background-->
             <div class="col-xs-1"></div>
         </div><!--        row-->
 
