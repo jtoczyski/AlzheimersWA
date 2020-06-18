@@ -248,6 +248,7 @@
      border-radius: 4px;
  }
 
+.text-to-speech-home .su-spoiler-icon-plus .su-spoiler-icon:before,
  .text-to-speech .su-spoiler-icon-plus .su-spoiler-icon:before {
      content: url(images/blue-speaker.png) !important;
      margin-right: 1rem !important;
@@ -796,6 +797,7 @@ Styling for subpages based on Setting up Memory cafes
      padding: 0 !important; 
 }
 
+.vp-pagination__style-default .vp-pagination__item,
 .vp-pagination__style-default {
     display: none !important;
 }
@@ -804,6 +806,9 @@ Styling for subpages based on Setting up Memory cafes
     padding-bottom: 0 !important;
 }
 
+[data-vp-layout="slider"] .vp-portfolio__items-bullets {
+    margin-bottom: 0 !important;
+}
 
 /*
  .vp-portfolio__items-style-emerge .vp-portfolio__item-overlay {
