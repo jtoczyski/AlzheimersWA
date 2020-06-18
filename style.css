@@ -248,27 +248,27 @@
      border-radius: 4px;
  }
 
-.su-spoiler-icon-plus .su-spoiler-icon:before {
-    content: url(images/blue-speaker.png) !important;
-    margin-right: 1rem !important;
-}
+ .su-spoiler-icon-plus .su-spoiler-icon:before {
+     content: url(images/blue-speaker.png) !important;
+     margin-right: 1rem !important;
+ }
 
-.su-spoiler su-spoiler-style-default su-spoiler-icon-plus su-spoiler-closed,
-.su-accordion {
-     margin-bottom: 0em !important; 
-}
+ .su-spoiler su-spoiler-style-default su-spoiler-icon-plus su-spoiler-closed,
+ .su-accordion {
+     margin-bottom: 0em !important;
+ }
 
-.su-accordion .su-spoiler {
-    margin-bottom: 0 !important;
-}
+ .su-accordion .su-spoiler {
+     margin-bottom: 0 !important;
+ }
 
-.su-spoiler-style-default>.su-spoiler-content {
-    padding: 1em 0 0em 27px !important;
-}
+ .su-spoiler-style-default > .su-spoiler-content {
+     padding: 1em 0 0em 27px !important;
+ }
 
-.su-spoiler-style-default>.su-spoiler-title {
-    padding-left: 5rem !important;
-}
+ .su-spoiler-style-default > .su-spoiler-title {
+     padding-left: 5rem !important;
+ }
 
  h2 {
      color: #00a4c7;
@@ -489,9 +489,9 @@
 
  /*Styling for Landing links pages based on memory cafes page*/
 
-#text {
-    content: "\005C" !important;
-}
+ #text {
+     content: "\005C" !important;
+ }
 
  .circle-bg {
      background: url(images/circles-subpage.png);
@@ -581,13 +581,13 @@
 
  .more-info h2,
  .resources h2,
-#contact-form h2 {
+ #contact-form h2 {
      color: #E1523D;
  }
 
-.resources {
-    margin-top: 4rem;
-}
+ .resources {
+     margin-top: 4rem;
+ }
 
  h3 {
      color: #009CBD;
@@ -657,9 +657,7 @@ Styling for subpages based on Setting up Memory cafes
  }
 
  .video {
-     background-color: lightgray;
-     width: 100%;
-     margin-top: 2rem;
+     margin: 2rem 0;
  }
 
  .a-list {
@@ -714,7 +712,7 @@ Styling for subpages based on Setting up Memory cafes
      font-size: 1.5rem;
  }
 
-.address {
+ .address {
      background-color: #f3f2f1;
      padding: 4rem 4rem 3rem;
  }
@@ -770,11 +768,10 @@ Styling for subpages based on Setting up Memory cafes
      top: 0;
      left: 0;
      width: 100% !important;
-/*     height: 100% !important;*/
+     /*     height: 100% !important;*/
      margin-bottom: 1rem !important;
      float: right;
  }
-
 
  /*START OF MEDIA RULES*/
 
@@ -1006,6 +1003,10 @@ Styling for subpages based on Setting up Memory cafes
          margin: 0 0 2rem 2rem;
      }
 
+     .vp-portfolio__items-style-emerge .vp-portfolio__item-meta-title {
+         font-size: 0.6em !important;
+     }
+
  }
 
  @media only screen and (max-width: 322px) {
@@ -1227,5 +1228,18 @@ Styling for subpages based on Setting up Memory cafes
 
      #contact-form {
          padding: 4rem;
+     }
+
+     .vp-portfolio__items-style-emerge .vp-portfolio__item-meta-title {
+         margin-bottom: 0;
+         font-size: 1em !important;
+     }
+ }
+
+ @media screen and (max-width: 650px) {
+     #callnowbutton {
+         position: absolute;
+         top: 15px;
+         right: 0px;
      }
  }
