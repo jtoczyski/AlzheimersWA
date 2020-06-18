@@ -205,7 +205,8 @@
 
  .desktop-header h5,
  .desktop-header h6 {
-     margin: 0 1em 0 0;
+     margin: 0 4em 0 0;
+     font-size: 2rem;
  }
 
  .btn-search {
