@@ -248,10 +248,17 @@
      border-radius: 4px;
  }
 
- .su-spoiler-icon-plus .su-spoiler-icon:before {
+ .text-to-speech .su-spoiler-icon-plus .su-spoiler-icon:before {
      content: url(images/blue-speaker.png) !important;
      margin-right: 1rem !important;
  }
+
+/*
+.su-spoiler-icon-plus .su-spoiler-icon:before {
+     content: url(images/blue-speaker.png) !important;
+     margin-right: 1rem !important;
+ }
+*/
 
  .su-spoiler su-spoiler-style-default su-spoiler-icon-plus su-spoiler-closed,
  .su-accordion {
@@ -772,6 +779,10 @@ Styling for subpages based on Setting up Memory cafes
      margin-bottom: 1rem !important;
      float: right;
  }
+
+.cafe-map {
+    margin-bottom: 4rem;
+}
 
 .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
     bottom: 8rem !important;
