@@ -61,7 +61,7 @@ wp_reset_query();?>
     
            </section>
             
-            <section class="container-fluid">
+            <section class="container-fluid cafe-map">
             <div class="col-xs-1"></div>
             <div class="col-xs-10">
                 <h2><?php the_field("mfurtherinfosubheading1"); ?></h2>
@@ -99,7 +99,6 @@ wp_reset_query();?>
                 </div>
                 </div>
                 
-            </div>
             <div class="col-xs-1"></div>
         </section>
     
