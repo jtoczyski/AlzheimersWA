@@ -21,7 +21,7 @@ endif;
 wp_reset_query();?>
 <section class="container-fluid landing-links">
 
-    <div class="row">
+    <div class="row" style="margin-right: 0;">
         <div class="text-to-speech-home">
             <!--button for text-to-speech function-->
 

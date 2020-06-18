@@ -642,7 +642,7 @@
 
  a {
      color: #00a4c7;
-     overflow-wrap: anywhere;
+/*     overflow-wrap: anywhere;*/
  }
 
  .grey-btn:hover {
@@ -891,9 +891,9 @@ Styling for subpages based on Setting up Memory cafes
          width: 100%;
          padding-left: 40px;
          border-radius: 0;
-         margin-bottom: 2rem;
+         margin-bottom: 2rem !important;
+         margin-right: 0 !important;
      }
-
 
      .d-text {
          order: 1;
