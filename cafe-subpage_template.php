@@ -51,7 +51,18 @@ wp_reset_query();?>
                 <div class="col-xs-10">
                     
                     <p class="a-list"><?php the_field("introtext"); ?> </p>
-                    <div class="video"><?php the_field("memoryvid"); ?></div>
+                     <div class="video"><?php
+global $more;//define a global variable
+$more = 0;// the global varibale is now equal to 0
+query_posts('cat=22');//look for posts that have the category of 10
+if(have_posts()) ://if we have posts to display
+while(have_posts()) :the_post();//LOOP through all the posts and find the one that has a category of 10 get the content
+?>
+            <div><p class=""><?php the_content() ?></p></div>
+<?php
+endwhile;
+endif;
+wp_reset_query();?></div>
                     
                 </div>
                 <div class="col-xs-1"></div>

@@ -1,6 +1,6 @@
 <?php
     /*
-    Template Name: Stories Subpage 1
+    Template Name: Resources for government
     */
     ?>
 <?php get_header(); /* Tells WordPress to include header.php */ ?>
@@ -48,14 +48,32 @@ wp_reset_query();?>
         <div class="row intro">
             <div class="col-xs-1"></div>
             <div class="col-xs-10">
+                <!--image-->
+                <img class="landing-img" alt="gathering at memory cafe" src="<?php the_field("resourcespageimage");?>">
 
-                <p><?php the_field("textbody"); ?> </p>
+                <h2><?php the_field("subtitle1"); ?></h2>
 
-                <h3><?php the_field("titleforvideo"); ?></h3>
-                <div class="video"><?php the_field("storyvideo"); ?></div>
+                <p><?php the_field("bodytext"); ?> </p>
 
-                <p><?php the_field("textcontinued"); ?> </p>
-
+                <div class="video"><?php
+global $more;//define a global variable
+$more = 0;// the global varibale is now equal to 0
+query_posts('cat=26');//look for posts that have the category of 10
+if(have_posts()) ://if we have posts to display
+while(have_posts()) :the_post();//LOOP through all the posts and find the one that has a category of 10 get the content
+?>
+            <div><p class=""><?php the_content() ?></p></div>
+<?php
+endwhile;
+endif;
+wp_reset_query();?></div>
+                
+                <div class="learnmore">
+                        <a href="<?php the_field("trainingbutton");?>" class="btn red-btn" role="button">
+                            <h4><?php the_field("trainingbuttontext");?></h4>
+                        </a>
+                    </div>
+                    <!--button to training portal-->
             </div>
             <div class="col-xs-1"></div>
         </div><!--        row-->
@@ -65,7 +83,7 @@ wp_reset_query();?>
     <section class="container-fluid more-info">
         <div class="col-xs-1"></div>
         <div class="col-xs-10">
-            <h2><?php the_field("titleforothers"); ?></h2>
+            <h2><?php the_field("titlesubsection1"); ?></h2>
             <div class="row">
                 <div class="col-sm-6">
                     <h3><?php the_field("subheading1"); ?></h3>
@@ -93,22 +111,7 @@ wp_reset_query();?>
                 </div>
 
             </div>
-            <div class="row">
-                <div class="col-sm-6">
-                    <h3><?php the_field("subheading3"); ?></h3>
-                    <p><?php the_field("subexcerpt3"); ?> </p>
 
-                    <div class="learnmore">
-                        <a href="<?php the_field("othersubpagebutton3");?>" class="btn red-btn" role="button">
-                            <h4><?php the_field("othersubpagebuttontext3");?></h4>
-                        </a>
-                    </div>
-                    <!--button to resourses for business or local government-->
-
-
-                </div>
-
-            </div>
 
         </div>
         <div class="col-xs-1"></div>

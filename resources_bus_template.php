@@ -1,6 +1,6 @@
 <?php
     /*
-    Template Name: Resources for business/government
+    Template Name: Resources for business
     */
     ?>
 <?php get_header(); /* Tells WordPress to include header.php */ ?>
@@ -55,7 +55,18 @@ wp_reset_query();?>
 
                 <p><?php the_field("bodytext"); ?> </p>
 
-                <div class="video"><?php the_field("resourcevideo"); ?></div>
+                <div class="video"><?php
+global $more;//define a global variable
+$more = 0;// the global varibale is now equal to 0
+query_posts('cat=25');//look for posts that have the category of 10
+if(have_posts()) ://if we have posts to display
+while(have_posts()) :the_post();//LOOP through all the posts and find the one that has a category of 10 get the content
+?>
+            <div><p class=""><?php the_content() ?></p></div>
+<?php
+endwhile;
+endif;
+wp_reset_query();?></div>
                 
                 <div class="learnmore">
                         <a href="<?php the_field("trainingbutton");?>" class="btn red-btn" role="button">
