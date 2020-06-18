@@ -30,4 +30,4 @@ bcn_display();
 
     </section><!--                intro text with image-->
 
-<?php get_footer(); /* Tells WordPress to include footer.php */ ?>
+<?php  include (TEMPLATEPATH . '/error_footer.php');  /* Tells WordPress to include the error.php */ ?>
