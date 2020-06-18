@@ -772,68 +772,6 @@ Styling for subpages based on Setting up Memory cafes
      float: right;
  }
 
-.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
-    bottom: 8rem !important;
-}
-
-[data-vp-layout="slider"][data-vp-slider-bullets="true"] .vp-portfolio__items-wrap {
-     padding-bottom: 0 !important; 
-}
-
-.vp-portfolio__items-style-default .vp-portfolio__item-meta, .vp-portfolio__items-style-default .vp-portfolio__item-meta {
-     padding: 0 !important; 
-}
-
-.vp-pagination__style-default {
-    display: none !important;
-}
-
-[data-vp-layout="slider"][data-vp-slider-bullets="true"] .vp-portfolio__items-wrap {
-    padding-bottom: 0 !important;
-}
-
-
-/*
- .vp-portfolio__items-style-emerge .vp-portfolio__item-overlay {
-     position: relative !important;
-     bottom: 12rem !important;
-     left: -1rem !important;
-     width: 100%;
-     max-height: 50%;
-     padding: 15px 32px;
-     color: #000;
-     background-color: #fff;
-     -webkit-transition: 0.5s -webkit-transform cubic-bezier(0.07, 0.72, 0.24, 1);
-     transition: 0.5s -webkit-transform cubic-bezier(0.07, 0.72, 0.24, 1);
-     transition: 0.5s transform cubic-bezier(0.07, 0.72, 0.24, 1);
-     transition: 0.5s transform cubic-bezier(0.07, 0.72, 0.24, 1), 0.5s -webkit-transform cubic-bezier(0.07, 0.72, 0.24, 1);
-     -webkit-transform: translateY(100%);
-     transform: translateY(100%);
-     will-change: transform;
- }
-
- .vp-portfolio__items-style-emerge .vp-portfolio__item-img img {
-     -webkit-transition: opacity 0.3s, -webkit-transform 2s cubic-bezier(0.08, 0.43, 0.24, 1);
-     transition: opacity 0.3s, -webkit-transform 2s cubic-bezier(0.08, 0.43, 0.24, 1);
-     transition: transform 2s cubic-bezier(0.08, 0.43, 0.24, 1), opacity 0.3s;
-     transition: transform 2s cubic-bezier(0.08, 0.43, 0.24, 1), opacity 0.3s, -webkit-transform 2s cubic-bezier(0.08, 0.43, 0.24, 1);
-     will-change: transform, opacity;
-     padding-bottom: 3rem !important;
- }
-
- [data-vp-layout="slider"][data-vp-slider-bullets="true"] .vp-portfolio__items-wrap {
-     padding-bottom: 0 !important;
- }
-
- figure {
-     display: block;
-     margin-block-start: 0 !important;
-     margin-block-end: -5rem !important;
-     margin-inline-start: 0 !important;
-     margin-inline-end: 0 !important;
- }
-*/
-
  /*START OF MEDIA RULES*/
 
  @media only screen and (max-width: 767px) {
@@ -1018,13 +956,7 @@ Styling for subpages based on Setting up Memory cafes
          font-size: 10px;
      }
 
-     .landing-links {
-         padding-top: 0 !important;
-     }
 
-     .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
-    bottom: 7rem !important;
-}
      /*     landing page styling*/
 
      .tts-landing {
@@ -1042,22 +974,16 @@ Styling for subpages based on Setting up Memory cafes
 
  }
 
- @media only screen and (max-width: 550px) {
 
-     #contact-form {
-         padding: 4rem;
-     }
-
-/*
-     .vp-portfolio__items-style-emerge .vp-portfolio__item-meta-title {
-         margin-bottom: 1rem !important;
-         font-size: 1em !important;
-     }
-*/
- }
 
  @media only screen and (max-width: 426px) {
 
+     /*
+     form-group,
+     input {
+         max-width: 68%;
+     }
+*/
 
      .o-text {
          padding-right: 20%;
@@ -1070,20 +996,17 @@ Styling for subpages based on Setting up Memory cafes
      .leaf-bg {
          background-position: 24rem;
      }
-     
-     .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
-    bottom: 10rem !important;
-}
 
-/*
      .landing-img {
          width: 100%;
          margin: 0 0 2rem 2rem;
      }
-*/
+
+     .vp-portfolio__items-style-emerge .vp-portfolio__item-meta-title {
+         font-size: 0.6em !important;
+     }
 
  }
-
 
  @media only screen and (max-width: 322px) {
 
@@ -1093,29 +1016,8 @@ Styling for subpages based on Setting up Memory cafes
 
          background-position: 22rem;
      }
-
-
-
-/*
-     .vp-portfolio__items-style-emerge .vp-portfolio__item-align-right {
-         text-align: center !important;
-     }
-
-     .vp-portfolio__items-style-emerge .vp-portfolio__item-overlay {
-         left: 0 !important;
-         padding: 0.2rem !important;
-
-     }
-
-     .vp-portfolio__item-overlay {
-         margin-left: 0 !important;
-     }
-
-     figure {
-         margin-block-end: -5.3rem !important;
-     }
-*/
  }
+
 
 
 
@@ -1176,8 +1078,6 @@ Styling for subpages based on Setting up Memory cafes
          align-items: center;
      }
 
-
-
      /*     Styling for landing pages*/
 
      .circle-bg,
@@ -1186,8 +1086,6 @@ Styling for subpages based on Setting up Memory cafes
          background-position: top right;
          margin-right: 4rem;
      }
-
-
  }
 
  @media only screen and (max-width: 1023px) and (min-width: 768px) {
@@ -1242,7 +1140,7 @@ Styling for subpages based on Setting up Memory cafes
      .c-image {
          position: relative;
          bottom: 0rem;
-         left: 3rem !important;
+         left: 9rem;
      }
 
      .c2image,
@@ -1290,15 +1188,6 @@ Styling for subpages based on Setting up Memory cafes
 
  }
 
-/*
-@media screen and (max-width: 1200px) {
- 
-    .c-image {
-        left: 5rem;
-    }
-}
-*/
-
  @media screen and (max-width: 990px) {
 
 
@@ -1334,7 +1223,17 @@ Styling for subpages based on Setting up Memory cafes
 
  }
 
+ @media only screen and (max-width: 550px) {
 
+     #contact-form {
+         padding: 4rem;
+     }
+
+     .vp-portfolio__items-style-emerge .vp-portfolio__item-meta-title {
+         margin-bottom: 0;
+         font-size: 1em !important;
+     }
+ }
 
  @media screen and (max-width: 650px) {
      #callnowbutton {
