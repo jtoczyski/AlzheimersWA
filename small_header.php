@@ -62,7 +62,7 @@
                         <div class="navbar-header">
                             <div class="col-xs-1"></div>
                             <div class="col-xs-4">
-                                <a href="https://dementiafriendlywa.com.au/"><img class="header-img" alt="Alzheimer's WA Logo" src="<?php the_field("headerlogo");?>"></a>
+                                <a href="https://dementiafriendlywa.com.au/"><img class="header-img" alt="Alzheimer's WA Logo" src="https://dementiafriendlywa.com.au/wp-content/uploads/2020/06/awa-logo-with-tagline-final.png"></a>
                             </div>
                             <div class="col-xs-1"></div>
                             <div class="col-xs-6 right-menu">

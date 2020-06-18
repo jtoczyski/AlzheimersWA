@@ -46,7 +46,7 @@ wp_reset_query();?>
 
         </div><!--            row with circles background-->
                     
-
+<span style="colour: #343741;"></span>
         <div class="row intro">
             <div class="col-xs-1"></div>
             <div class="col-xs-10">
@@ -66,6 +66,18 @@ wp_reset_query();?>
                 <h2><?php the_field("headingforadvocatesection4"); ?></h2>
                 <p class="a-list"><?php the_field("bodyforadvocatesection4"); ?> </p>
                 <!--                Insert advocate registration form here-->
+                <?php
+global $more;//define a global variable
+$more = 0;// the global varibale is now equal to 0
+query_posts('cat=24');//look for posts that have the category of 10
+if(have_posts()) ://if we have posts to display
+while(have_posts()) :the_post();//LOOP through all the posts and find the one that has a category of 10 get the content
+?>
+            <div><p class=""><?php the_content() ?></p></div>
+<?php
+endwhile;
+endif;
+wp_reset_query();?>
 
             </div>
             <div class="col-xs-1"></div>

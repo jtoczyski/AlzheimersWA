@@ -61,37 +61,14 @@ wp_reset_query();?>
     
            </section>
             
-            <section class="container-fluid more-info">
+            <section class="container-fluid cafe-map">
             <div class="col-xs-1"></div>
             <div class="col-xs-10">
-                <h2><?php the_field("titleforfurtherinformationm"); ?></h2>
+                <h2><?php the_field("mfurtherinfosubheading1"); ?></h2>
+                <p><?php the_field("mtextforfurtherinfo1"); ?> </p>
+                &nbsp;
                 <div class="row">
-                    <div class="col-sm-6">
-                        <h3><?php the_field("mfurtherinfosubheading1"); ?></h3>
-                        <p><?php the_field("mtextforfurtherinfo1"); ?> </p>
-                        
-                        
-                         <div class= "learnmore">
-                        <a href="<?php the_field("memorybutton1"); ?>" class="btn red-btn" role="button">
-                            <h4><?php the_field("memorybutton1text"); ?></h4>
-                            </a>
-                        </div><!--button to cafes map -->
-                        
-            
-                    </div>
-                     <div class="col-sm-6">
-                        <h3><?php the_field("mfurtherinfosubheading2"); ?></h3>
-                        <p><?php the_field("mtextforfurtherinfo2"); ?> </p>
-                        
-                         <div class= "learnmore">
-                        <a href="<?php the_field("memorybutton2"); ?>" class="btn red-btn" role="button">
-                            <h4><?php the_field("memorybutton2text"); ?></h4>
-                        </a>
-                    </div><!--button to learnmore -->
-                    </div>
-                </div>
-                
-                <div class="row"><?php 
+                     <div class="col-sm-6"><?php 
 global $more;//define a global variable
 $more = 0;// the global varibale is now equal to 0
 query_posts('cat=12');//look for posts that have the category of 12
@@ -104,10 +81,47 @@ endwhile;
 endif;
 wp_reset_query();?>
                 </div>
+                     <div class="col-sm-6">
+                         <?php 
+global $more;//define a global variable
+$more = 0;// the global varibale is now equal to 0
+query_posts('cat=23');//look for posts that have the category of 12
+if(have_posts()) ://if we have posts to display
+while(have_posts()) :the_post();//LOOP through all the posts and find the one that has a category of 12 get the content
+?>
+            <div class=""><p><?php the_content() ?></p></div>
+<?php
+endwhile;
+endif;
+wp_reset_query();?>
+                </div>
+                         <p><?php the_field("memorycafemaplist"); ?> </p>
+                </div>
+                </div>
                 
-            </div>
             <div class="col-xs-1"></div>
         </section>
+    
+     <section class="container-fluid more-info">
+            <div class="col-xs-1"></div>
+            <div class="col-xs-10">
+                <h2><?php the_field("titleforfurtherinformationm"); ?></h2>
+                <div class="row">
+                    
+                     <div class="col-sm-6">
+                        <h3><?php the_field("mfurtherinfosubheading2"); ?></h3>
+                        <p><?php the_field("mtextforfurtherinfo2"); ?> </p>
+                        
+                         <div class= "learnmore">
+                        <a href="<?php the_field("memorybutton2"); ?>" class="btn red-btn" role="button">
+                            <h4><?php the_field("memorybutton2text"); ?></h4>
+                        </a>
+                    </div><!--button to learnmore -->
+                    </div>
+                </div>
+                </div>
+                <div class="col-xs-1"></div>
+                </section>
             
     </div>
 <?php get_footer(); /* Tells WordPress to include footer.php */ ?>
