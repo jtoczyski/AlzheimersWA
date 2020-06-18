@@ -27,10 +27,6 @@
      height: inherit;
  }
 
- .nav > li > a {
-     /*     padding: 2rem 10%;*/
- }
-
  .navbar-toggle {
      margin: 1em 0 0 1em;
  }
@@ -162,10 +158,6 @@
 
  .navbar-inverse .navbar-nav > li > a.cust-support {
      color: #00a4c7;
-     /*
-     display: flex;
-     align-items: center;
-*/
  }
 
  .navbar-inverse .navbar-nav > li > a.cust-support:hover {
@@ -242,7 +234,6 @@
  }
 
  .text-to-speech-home {
-     /*     display: inline-flex;*/
      float: right;
      background-color: #ccedf4;
      padding: 0.5rem;
@@ -255,12 +246,6 @@
      margin-right: 1rem !important;
  }
 
-/*
-.su-spoiler-icon-plus .su-spoiler-icon:before {
-     content: url(images/blue-speaker.png) !important;
-     margin-right: 1rem !important;
- }
-*/
 
  .su-spoiler su-spoiler-style-default su-spoiler-icon-plus su-spoiler-closed,
  .su-accordion {
@@ -546,14 +531,6 @@
      color: #343741;
  }
 
- /*
- .tts-landing {
-     float: left;
-     background-color: #ccedf4;
-     padding: 1rem;
-     border-radius: 4px;
- }
-*/
 
  .text-to-speech {
      display: inline-flex;
@@ -609,13 +586,6 @@
  /*Styling for dementia landing page*/
 
 
- /*
-.pdf-link {
-    width: 50%;
-    
-}
-*/
-
 
  .flex-container {
      display: flex;
@@ -642,7 +612,6 @@
 
  a {
      color: #00a4c7;
-/*     overflow-wrap: anywhere;*/
  }
 
  .grey-btn:hover {
@@ -777,10 +746,11 @@ Styling for subpages based on Setting up Memory cafes
      top: 0;
      left: 0;
      width: 100% !important;
-     /*     height: 100% !important;*/
      margin-bottom: 1rem !important;
      float: right;
  }
+
+/*Miscellaneous styling*/
 
 .cafe-map {
     margin-bottom: 4rem;
@@ -811,46 +781,6 @@ Styling for subpages based on Setting up Memory cafes
     margin-bottom: 0 !important;
 }
 
-/*
- .vp-portfolio__items-style-emerge .vp-portfolio__item-overlay {
-     position: relative !important;
-     bottom: 12rem !important;
-     left: -1rem !important;
-     width: 100%;
-     max-height: 50%;
-     padding: 15px 32px;
-     color: #000;
-     background-color: #fff;
-     -webkit-transition: 0.5s -webkit-transform cubic-bezier(0.07, 0.72, 0.24, 1);
-     transition: 0.5s -webkit-transform cubic-bezier(0.07, 0.72, 0.24, 1);
-     transition: 0.5s transform cubic-bezier(0.07, 0.72, 0.24, 1);
-     transition: 0.5s transform cubic-bezier(0.07, 0.72, 0.24, 1), 0.5s -webkit-transform cubic-bezier(0.07, 0.72, 0.24, 1);
-     -webkit-transform: translateY(100%);
-     transform: translateY(100%);
-     will-change: transform;
- }
-
- .vp-portfolio__items-style-emerge .vp-portfolio__item-img img {
-     -webkit-transition: opacity 0.3s, -webkit-transform 2s cubic-bezier(0.08, 0.43, 0.24, 1);
-     transition: opacity 0.3s, -webkit-transform 2s cubic-bezier(0.08, 0.43, 0.24, 1);
-     transition: transform 2s cubic-bezier(0.08, 0.43, 0.24, 1), opacity 0.3s;
-     transition: transform 2s cubic-bezier(0.08, 0.43, 0.24, 1), opacity 0.3s, -webkit-transform 2s cubic-bezier(0.08, 0.43, 0.24, 1);
-     will-change: transform, opacity;
-     padding-bottom: 3rem !important;
- }
-
- [data-vp-layout="slider"][data-vp-slider-bullets="true"] .vp-portfolio__items-wrap {
-     padding-bottom: 0 !important;
- }
-
- figure {
-     display: block;
-     margin-block-start: 0 !important;
-     margin-block-end: -5rem !important;
-     margin-inline-start: 0 !important;
-     margin-inline-end: 0 !important;
- }
-*/
 
  /*START OF MEDIA RULES*/
 
@@ -1066,12 +996,6 @@ Styling for subpages based on Setting up Memory cafes
          padding: 4rem;
      }
 
-/*
-     .vp-portfolio__items-style-emerge .vp-portfolio__item-meta-title {
-         margin-bottom: 1rem !important;
-         font-size: 1em !important;
-     }
-*/
  }
 
  @media only screen and (max-width: 426px) {
@@ -1093,12 +1017,6 @@ Styling for subpages based on Setting up Memory cafes
     bottom: 10rem !important;
 }
 
-/*
-     .landing-img {
-         width: 100%;
-         margin: 0 0 2rem 2rem;
-     }
-*/
 
  }
 
@@ -1112,27 +1030,6 @@ Styling for subpages based on Setting up Memory cafes
          background-position: 22rem;
      }
 
-
-
-/*
-     .vp-portfolio__items-style-emerge .vp-portfolio__item-align-right {
-         text-align: center !important;
-     }
-
-     .vp-portfolio__items-style-emerge .vp-portfolio__item-overlay {
-         left: 0 !important;
-         padding: 0.2rem !important;
-
-     }
-
-     .vp-portfolio__item-overlay {
-         margin-left: 0 !important;
-     }
-
-     figure {
-         margin-block-end: -5.3rem !important;
-     }
-*/
  }
 
 
@@ -1210,17 +1107,9 @@ Styling for subpages based on Setting up Memory cafes
 
  @media only screen and (max-width: 1023px) and (min-width: 768px) {
 
-     /*
-     form-group,
-     input {
-         max-width: 75%;
-     }
-*/
-
      .o-text,
      .c-text,
      .d-text {
-         /*    width: 30%;*/
          justify-content: center;
      }
 
@@ -1253,7 +1142,6 @@ Styling for subpages based on Setting up Memory cafes
      .o-text,
      .c-text,
      .d-text {
-         /*    width: 30%;*/
          justify-content: center;
      }
 
@@ -1308,14 +1196,6 @@ Styling for subpages based on Setting up Memory cafes
 
  }
 
-/*
-@media screen and (max-width: 1200px) {
- 
-    .c-image {
-        left: 5rem;
-    }
-}
-*/
 
  @media screen and (max-width: 990px) {
 
