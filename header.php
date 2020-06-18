@@ -95,6 +95,7 @@
                     </div>
                     <div class="row">
                         <div class="collapse navbar-collapse" id="myNavbar">
+                            
                             <?php wp_nav_menu( array( 'theme_location' => 'max_mega_menu_1' ) ); ?>
 
                         </div>
