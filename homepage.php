@@ -22,8 +22,8 @@ wp_reset_query();?>
 
             <div class="row">
         <div class="text-to-speech-home">
-<!--                button for text-to-speech function-->
-            <p>Listen to this page</p>
+<!--button for text-to-speech function-->
+
 <?php
 global $more;//define a global variable
 $more = 0;// the global varibale is now equal to 0
