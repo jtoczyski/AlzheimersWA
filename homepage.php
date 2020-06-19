@@ -49,6 +49,7 @@ wp_reset_query();?>
         <div class="col-sm-6 d-bg">
             <!--image-->
             <img class='d-image img-responsive' alt='support group' src='<?php the_field("sectionimage1");?>'>
+            <img class="d2image img-responsive" alt="support group cropped" src='<?php the_field("sectionimage1md");?>'>
         </div>
         <div class="col-sm-4 d-text">
             <!--What is Dementia? div-->
@@ -88,6 +89,7 @@ wp_reset_query();?>
         <div class="col-sm-6 c-bg">
             <!--image-->
             <img class='c-image img-responsive' alt='couple at a cafe' src='<?php the_field("sectionimage2");?>'>
+            <img class="c2image img-responsive" alt="couple at a cafe cropped" src='<?php the_field("sectionimage2md");?>'>
             <!--<img class = 'c2image img-responsive' alt = 'couple at a cafe cropped' src = 'images/cafe-md.jpg'> CUSTOM FIELD FOR RESPONSIVE IMAGE???-->
         </div>
         <div class="col-sm-1"></div>
@@ -102,6 +104,7 @@ wp_reset_query();?>
         <div class="col-sm-6 o-bg">
             <!--image-->
             <img class='o-image img-responsive' alt='supermarket employee' src='<?php the_field("sectionimage3");?>'>
+            <img class="o2image img-responsive" alt="supermarket employee cropped" src='<?php the_field("sectionimage3md");?>'>
         </div>
         <div class="col-sm-4 o-text">
             <!--Info for Orgs-->
